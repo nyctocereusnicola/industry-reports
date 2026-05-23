@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行业报告集合站 — 飞书同步</title>
+    <style>
+        /* ========== Reset & Base ========== */
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{
+            --primary:#1d4ed8;--primary-light:#3b82f6;--primary-bg:#eff6ff;
+            --bg:#f1f5f9;--card:#ffffff;--text:#1e293b;--text2:#64748b;
+            --border:#e2e8f0;--success:#10b981;--warning:#f59e0b;--danger:#ef4444;
+            --radius:12px;--shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+            --shadow-hover:0 10px 25px rgba(0,0,0,.08),0 4px 10px rgba(0,0,0,.04);
+            --transition:0.2s cubic-bezier(.4,0,.2,1);
+        }
+        body{
+            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+            background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;
+        }
+        a{color:var(--primary);text-decoration:none}
+        button{cursor:pointer;border:none;font-family:inherit}
+
+        /* ========== Header ========== */
+        .header{
+            background:linear-gradient(135deg,#1e3a5f 0%,#1d4ed8 50%,#7c3aed 100%);
+            color:#fff;padding:0 24px;position:sticky;top:0;z-index:100;
+            box-shadow:0 2px 12px rgba(0,0,0,.15);
+        }
+        .header-inner{
+            max-width:1280px;margin:0 auto;display:flex;align-items:center;
+            justify-content:space-between;height:60px;gap:16px
+        }
+        .logo{font-size:20px;font-weight:700;letter-spacing:.5px;white-space:nowrap}
+        .logo span{opacity:.85;font-weight:400;font-size:14px;margin-left:8px}
+        .header-right{display:flex;align-items:center;gap:12px}
+        .sync-btn{
+            display:flex;align-items:center;gap:6px;padding:8px 16px;
+            background:rgba(255,255,255,.15);color:#fff;border-radius:8px;
+            font-size:13px;font-weight:500;transition:var(--transition);
+            border:1px solid rgba(255,255,255,.25);
+        }
+        .sync-btn:hover{background:rgba(255,255,255,.25)}
+        .sync-btn:disabled{opacity:.6;cursor:not-allowed}
+        .sync-btn .icon-sync{font-size:16px;transition:transform .6s}
+        .sync-btn.syncing .icon-sync{animation:spin .8s linear infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .last-sync{font-size:12px;color:rgba(255,255,255,.7)}
+
+        /* ========== Hero / Stats ========== */
+        .hero{padding:32px 24px 24px;background:#fff;border-bottom:1px solid var(--border)}
+        .hero-inner{max-width:1280px;margin:0 auto}
+        .hero h1{font-size:28px;font-weight:800;color:var(--text);margin-bottom:4px}
+        .hero p{color:var(--text2);font-size:15px;margin-bottom:20px}
+        .stats-row{display:flex;gap:16px;flex-wrap:wrap}
+        .stat-card{
+            flex:1;min-width:140px;background:var(--primary-bg);border-radius:var(--radius);
+            padding:16px 20px;display:flex;align-items:center;gap:14px
+        }
+        .stat-icon{font-size:28px}
+        .stat-info .stat-num{font-size:24px;font-weight:700;color:var(--text)}
+        .stat-info .stat-label{font-size:13px;color:var(--text2)}
+
+        /* ========== Toolbar ========== */
+        .toolbar{max-width:1280px;margin:0 auto;padding:20px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+        .search-box{flex:1;min-width:280px;position:relative}
+        .search-box input{
+            width:100%;padding:10px 16px 10px 40px;border:2px solid var(--border);
+            border-radius:10px;font-size:15px;outline:none;transition:var(--transition);
+            background:#fff
+        }
+        .search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(29,78,216,.1)}
+        .search-box .search-icon{
+            position:absolute;left:14px;top:50%;transform:translateY(-50%);
+            color:var(--text2);font-size:18px
+        }
+        .filter-pills{display:flex;gap:8px;flex-wrap:wrap}
+        .pill{
+            padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500;
+            background:#fff;color:var(--text2);border:1px solid var(--border);
+            transition:var(--transition);white-space:nowrap
+        }
+        .pill:hover{border-color:var(--primary);color:var(--primary)}
+        .pill.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+        /* ========== Content Grid ========== */
+        .content{max-width:1280px;margin:0 auto;padding:0 24px 40px}
+        .report-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+        .report-card{
+            background:var(--card);border-radius:var(--radius);padding:20px;
+            box-shadow:var(--shadow);transition:var(--transition);
+            display:flex;flex-direction:column;border:1px solid var(--border);
+            position:relative;overflow:hidden
+        }
+        .report-card:hover{
+            box-shadow:var(--shadow-hover);transform:translateY(-2px);
+            border-color:#cbd5e1
+        }
+        .card-type-badge{
+            position:absolute;top:0;right:0;padding:4px 12px;
+            font-size:11px;font-weight:600;border-radius:0 0 0 8px;
+        }
+        .card-type-doc{background:#eff6ff;color:#1d4ed8}
+        .card-type-docx{background:#eff6ff;color:#1d4ed8}
+        .card-type-sheet{background:#f0fdf4;color:#16a34a}
+        .card-type-bitable{background:#fefce8;color:#ca8a04}
+        .card-type-slides{background:#fef2f2;color:#dc2626}
+        .card-type-mindnote{background:#f5f3ff;color:#7c3aed}
+        .card-type-folder{background:#fff7ed;color:#ea580c}
+        .card-type-file{background:#f8fafc;color:#475569}
+        .card-icon-row{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+        .file-type-icon{font-size:24px;line-height:1}
+        .file-type-label{font-size:12px;color:var(--text2);font-weight:500}
+        .card-title{
+            font-size:16px;font-weight:600;color:var(--text);line-height:1.4;
+            display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+            overflow:hidden;margin-bottom:10px;min-height:44px
+        }
+        .card-summary{
+            font-size:13px;color:var(--text2);line-height:1.6;flex:1;
+            display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;
+            overflow:hidden;margin-bottom:14px
+        }
+        .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+        .card-tag{
+            font-size:11px;padding:2px 8px;background:#f1f5f9;
+            color:var(--text2);border-radius:4px
+        }
+        .card-meta{
+            display:flex;align-items:center;justify-content:space-between;
+            font-size:12px;color:var(--text2);padding-top:12px;
+            border-top:1px solid var(--border)
+        }
+        .card-link{
+            display:inline-flex;align-items:center;gap:4px;padding:6px 14px;
+            background:var(--primary);color:#fff;border-radius:6px;
+            font-size:13px;font-weight:500;transition:var(--transition);margin-top:auto
+        }
+        .card-link:hover{background:var(--primary-light);color:#fff}
+
+        /* ========== Pagination ========== */
+        .pagination{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:32px}
+        .page-btn{
+            padding:8px 14px;border-radius:8px;border:1px solid var(--border);
+            background:#fff;font-size:14px;transition:var(--transition)
+        }
+        .page-btn:hover:not(:disabled){border-color:var(--primary);color:var(--primary)}
+        .page-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+        .page-btn:disabled{opacity:.4;cursor:default}
+        .page-info{font-size:14px;color:var(--text2);padding:0 8px}
+
+        /* ========== States ========== */
+        .loading-skeleton{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+        .skeleton-card{background:#fff;border-radius:var(--radius);padding:20px;height:220px;animation:pulse 1.5s ease-in-out infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+        .skeleton-card .sk-line{height:14px;background:#e2e8f0;border-radius:4px;margin-bottom:12px}
+        .skeleton-card .sk-line:nth-child(1){width:70%}
+        .skeleton-card .sk-line:nth-child(2){width:90%}
+        .skeleton-card .sk-line:nth-child(3){width:100%}
+        .skeleton-card .sk-line:nth-child(4){width:60%}
+
+        .empty-state{text-align:center;padding:60px 20px}
+        .empty-state .empty-icon{font-size:64px;margin-bottom:16px}
+        .empty-state h3{font-size:20px;color:var(--text);margin-bottom:8px}
+        .empty-state p{color:var(--text2);font-size:15px}
+        .toast{
+            position:fixed;top:20px;right:20px;z-index:9999;
+            padding:12px 20px;border-radius:8px;font-size:14px;font-weight:500;
+            box-shadow:0 4px 12px rgba(0,0,0,.15);animation:slideIn .3s ease;
+            display:none
+        }
+        .toast.show{display:block}
+        .toast.success{background:#10b981;color:#fff}
+        .toast.error{background:#ef4444;color:#fff}
+        @keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+
+        /* ========== Responsive ========== */
+        @media(max-width:768px){
+            .header-inner{height:52px}
+            .logo{font-size:17px}.logo span{display:none}
+            .hero{padding:20px 16px}
+            .hero h1{font-size:22px}
+            .toolbar{padding:12px 16px;flex-direction:column}
+            .search-box{min-width:100%}
+            .filter-pills{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;width:100%}
+            .content{padding:0 12px 32px}
+            .report-grid{grid-template-columns:1fr;gap:12px}
+            .stats-row{gap:8px}
+            .stat-card{padding:12px 16px;min-width:100px}
+            .stat-icon{font-size:22px}
+            .stat-info .stat-num{font-size:20px}
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">📊 行业报告集合站<span>| 飞书同步</span></div>
+            <div class="header-right">
+                <span class="last-sync" id="lastSyncText">加载中...</span>
+                <button class="sync-btn" id="syncBtn" onclick="triggerSync()">
+                    <span class="icon-sync">🔄</span> 同步报告
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Stats -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>行业研究 · 尽在掌握</h1>
+            <p>搜索浏览行业洞察报告，每份报告均可一键跳转飞书查看完整源文件</p>
+            <div class="stats-row" id="statsRow">
+                <div class="stat-card"><span class="stat-icon">📄</span><div class="stat-info"><div class="stat-num" id="statTotal">-</div><div class="stat-label">报告总数</div></div></div>
+                <div class="stat-card"><span class="stat-icon">📂</span><div class="stat-info"><div class="stat-num" id="statCats">-</div><div class="stat-label">分类数量</div></div></div>
+                <div class="stat-card"><span class="stat-icon">📝</span><div class="stat-info"><div class="stat-num" id="statDocs">-</div><div class="stat-label">飞书文档</div></div></div>
+                <div class="stat-card"><span class="stat-icon">⏱️</span><div class="stat-info"><div class="stat-num" id="statSync">-</div><div class="stat-label">最近同步</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="搜索报告标题、标签、摘要..." oninput="onSearch()">
+        </div>
+        <div class="filter-pills" id="categoryPills">
+            <button class="pill active" onclick="setCategory('')">全部</button>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div id="reportGrid" class="report-grid"></div>
+        <div id="pagination" class="pagination"></div>
+        <div id="loadingSkeleton" class="loading-skeleton" style="display:none"></div>
+        <div id="emptyState" class="empty-state" style="display:none">
+            <div class="empty-icon">📭</div>
+            <h3>暂无匹配的报告</h3>
+            <p>试试调整搜索条件，或点击"同步报告"从飞书获取最新数据</p>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // ========== State ==========
+        let currentPage = 1;
+        let currentSearch = '';
+        let currentCategory = '';
+        let pageSize = 12;
+
+        // ========== API ==========
+        async function api(path) {
+            const resp = await fetch(path);
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            return resp.json();
+        }
+
+        // ========== Render ==========
+        function fileTypeIcon(type) {
+            const map = {doc:'📝',docx:'📝',sheet:'📊',bitable:'🗂️',slides:'🎞️',mindnote:'🧠',folder:'📁'};
+            return map[type] || '📎';
+        }
+        function fileTypeClass(type) { return `card-type-${type}`; }
+        function fileTypeLabel(ext) { return ext || '文件'; }
+
+        function formatTime(ts) {
+            if (!ts) return '未知';
+            try {
+                let d;
+                if (typeof ts === 'number') {
+                    d = new Date(ts > 1e12 ? ts : ts * 1000);
+                } else {
+                    d = new Date(ts);
+                }
+                if (isNaN(d.getTime())) return ts;
+                const now = new Date();
+                const diff = now - d;
+                if (diff < 60000) return '刚刚';
+                if (diff < 3600000) return Math.floor(diff/60000) + '分钟前';
+                if (diff < 86400000) return Math.floor(diff/3600000) + '小时前';
+                if (diff < 604800000) return Math.floor(diff/86400000) + '天前';
+                return d.toLocaleDateString('zh-CN',{month:'short',day:'numeric'});
+            } catch(e) {
+                return ts;
+            }
+        }
+
+        function renderCard(r) {
+            const tags = (r.tags || '').split(',').filter(t => t.trim());
+            const isDemo = r.file_token && r.file_token.startsWith('demo_');
+            const url = isDemo ? '#' : (r.feishu_url || '#');
+            const target = isDemo ? '' : ' target="_blank" rel="noopener"';
+            return `
+            <div class="report-card">
+                <span class="card-type-badge ${fileTypeClass(r.file_type)}">${fileTypeLabel(r.file_ext)}</span>
+                <div class="card-icon-row">
+                    <span class="file-type-icon">${fileTypeIcon(r.file_type)}</span>
+                    <span class="file-type-label">${fileTypeLabel(r.file_ext)}</span>
+                </div>
+                <div class="card-title" title="${escapeHtml(r.title)}">${escapeHtml(r.title)}</div>
+                <div class="card-summary">${escapeHtml(r.summary || '暂无摘要')}</div>
+                ${tags.length ? `<div class="card-tags">${tags.map(t => `<span class="card-tag">${escapeHtml(t)}</span>`).join('')}</div>` : ''}
+                <div class="card-meta">
+                    <span>🕐 ${formatTime(r.feishu_modified)}</span>
+                    <span>👁 ${r.view_count || 0} 次查看</span>
+                </div>
+                <a class="card-link" href="${url}"${target}>
+                    ${isDemo ? '📌 示例数据' : '🔗 在飞书查看'} ${isDemo ? '' : '→'}
+                </a>
+            </div>`;
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function renderSkeleton(n = 6) {
+            let html = '';
+            for (let i = 0; i < n; i++) {
+                html += `<div class="skeleton-card"><div class="sk-line"></div><div class="sk-line"></div><div class="sk-line"></div><div class="sk-line"></div></div>`;
+            }
+            return html;
+        }
+
+        function renderPagination(total, page, totalPages) {
+            if (totalPages <= 1) return '';
+            let html = `<button class="page-btn" onclick="goPage(${page-1})" ${page<=1?'disabled':''}>‹ 上一页</button>`;
+            const start = Math.max(1, page - 2);
+            const end = Math.min(totalPages, page + 2);
+            for (let i = start; i <= end; i++) {
+                html += `<button class="page-btn ${i===page?'active':''}" onclick="goPage(${i})">${i}</button>`;
+            }
+            html += `<button class="page-btn" onclick="goPage(${page+1})" ${page>=totalPages?'disabled':''}>下一页 ›</button>`;
+            html += `<span class="page-info">共 ${total} 条</span>`;
+            return html;
+        }
+
+        // ========== Load ==========
+        async function loadReports() {
+            const grid = document.getElementById('reportGrid');
+            const pagination = document.getElementById('pagination');
+            const skeleton = document.getElementById('loadingSkeleton');
+            const empty = document.getElementById('emptyState');
+
+            grid.style.display = 'none';
+            empty.style.display = 'none';
+            skeleton.style.display = 'grid';
+            skeleton.innerHTML = renderSkeleton(6);
+            pagination.innerHTML = '';
+
+            try {
+                const params = new URLSearchParams({
+                    search: currentSearch,
+                    category: currentCategory,
+                    page: currentPage,
+                    page_size: pageSize,
+                });
+                const data = await api('/api/reports?' + params.toString());
+
+                skeleton.style.display = 'none';
+
+                if (data.data.length === 0) {
+                    empty.style.display = 'block';
+                } else {
+                    grid.style.display = 'grid';
+                    grid.innerHTML = data.data.map(renderCard).join('');
+                }
+                pagination.innerHTML = renderPagination(data.total, data.page, data.total_pages);
+            } catch (e) {
+                skeleton.style.display = 'none';
+                empty.style.display = 'block';
+                empty.querySelector('h3').textContent = '加载失败';
+                empty.querySelector('p').textContent = e.message;
+                showToast('加载失败: ' + e.message, 'error');
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const data = await api('/api/stats');
+                document.getElementById('statTotal').textContent = data.total;
+                document.getElementById('statCats').textContent = data.categories.length;
+                const docTypes = ['doc', 'docx'];
+                const docCount = (data.file_types || [])
+                    .filter(f => docTypes.includes(f.file_type))
+                    .reduce((s, f) => s + f.cnt, 0);
+                document.getElementById('statDocs').textContent = docCount;
+
+                if (data.last_sync) {
+                    document.getElementById('statSync').textContent = formatTime(data.last_sync.synced_at);
+                    document.getElementById('lastSyncText').textContent = '最近同步: ' + formatTime(data.last_sync.synced_at);
+                }
+
+                // 渲染分类筛选
+                const pills = document.getElementById('categoryPills');
+                let pillsHtml = '<button class="pill active" onclick="setCategory(\'\')">全部</button>';
+                (data.categories || []).forEach(c => {
+                    if (c.category) {
+                        pillsHtml += `<button class="pill" onclick="setCategory('${escapeHtml(c.category)}')">${escapeHtml(c.category)} (${c.cnt})</button>`;
+                    }
+                });
+                pills.innerHTML = pillsHtml;
+            } catch (e) {
+                console.error('Stats load error:', e);
+            }
+        }
+
+        // ========== Actions ==========
+        function onSearch() {
+            currentSearch = document.getElementById('searchInput').value.trim();
+            currentPage = 1;
+            loadReports();
+        }
+
+        function setCategory(cat) {
+            currentCategory = cat;
+            currentPage = 1;
+            document.querySelectorAll('#categoryPills .pill').forEach(p => {
+                p.classList.toggle('active', p.textContent.startsWith(cat) || (cat === '' && p.textContent === '全部'));
+            });
+            loadReports();
+        }
+
+        function goPage(p) {
+            currentPage = p;
+            loadReports();
+            window.scrollTo({top:300,behavior:'smooth'});
+        }
+
+        async function triggerSync() {
+            const btn = document.getElementById('syncBtn');
+            if (btn.classList.contains('syncing')) return;
+            btn.classList.add('syncing');
+            btn.innerHTML = '<span class="icon-sync">🔄</span> 同步中...';
+            try {
+                const resp = await fetch('/api/sync', {method:'POST'});
+                const data = await resp.json();
+                if (data.status === 'success') {
+                    showToast(`同步完成！共 ${data.file_count} 个文件`, 'success');
+                } else {
+                    showToast(data.reason || '同步失败', 'error');
+                }
+            } catch (e) {
+                showToast('同步请求失败: ' + e.message, 'error');
+            }
+            btn.classList.remove('syncing');
+            btn.innerHTML = '<span class="icon-sync">🔄</span> 同步报告';
+            await Promise.all([loadReports(), loadStats()]);
+        }
+
+        function showToast(msg, type) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.className = 'toast show ' + type;
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => { toast.className = 'toast'; }, 3000);
+        }
+
+        // ========== Init ==========
+        document.addEventListener('DOMContentLoaded', () => {
+            loadStats();
+            loadReports();
+        });
+    </script>
+</body>
+</html>
