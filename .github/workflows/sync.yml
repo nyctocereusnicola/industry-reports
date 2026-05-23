@@ -1,0 +1,49 @@
+name: 飞书同步报告
+
+on:
+  # 每 30 分钟自动运行
+  schedule:
+    - cron: "*/30 * * * *"
+  # 手动触发
+  workflow_dispatch:
+  # 推送到 main 时触发（用于初始化）
+  push:
+    branches:
+      - main
+    paths:
+      - "sync_reports.py"
+      - ".github/workflows/sync.yml"
+
+# 权限：允许写入仓库内容
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install httpx python-dotenv
+
+      - name: 运行同步脚本
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_FOLDER_TOKEN: ${{ secrets.FEISHU_FOLDER_TOKEN }}
+        run: python sync_reports.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --staged --quiet || git commit -m "🔄 自动同步飞书报告 — $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
