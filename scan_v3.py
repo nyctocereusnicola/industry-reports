@@ -1,8 +1,10 @@
 """
-飞书扫描 v3 — 极简版
-所有文件放一个文件夹，关键词自动分类，一次 API 扫描完成。
+飞书扫描 v3.1 — 修复版
+- 修复时间戳解析（Unix秒 → 日期）
+- 过滤文件夹不统计
+- 补充关键词覆盖
 """
-import httpx, json, time, os, traceback, re
+import httpx, json, time, os, traceback
 
 # --- 配置 ---
 APP_ID     = os.getenv("FEISHU_APP_ID",     "cli_aa9bf80b5678dbee")
@@ -10,12 +12,14 @@ APP_SECRET = os.getenv("FEISHU_APP_SECRET", "BSrMFRLJSEOv9cngkERqEcg83IRbj2oi")
 ROOT       = os.getenv("FEISHU_FOLDER_TOKEN","YYLHfvuCylpAQVdzTRxcdDpgnyc")
 BASE       = "https://open.feishu.cn/open-apis"
 OUT_DIR    = "docs/data/categories"
-DELAY      = 0.3
+DELAY      = 0.2
 
-# --- 关键词分类规则（从上到下，命中即归类）---
+# --- 关键词分类规则 ---
 RULES = [
     ("美妆",     ["美妆","护肤","彩妆","面膜","精华","口红","化妆","美容","防晒","洁面",
-                  "卸妆","粉底","眼影","BB霜","隔离","乳液","面霜","抗老","祛痘","美白"]),
+                  "卸妆","粉底","眼影","BB霜","隔离","乳液","面霜","抗老","祛痘","美白",
+                  "美妝","上美","欧莱雅","兰蔻","雅诗兰黛","资生堂","理容","皮肤",
+                  "寡肽","玻尿酸","烟酰胺","敏感肌","痘痘","痤疮","保湿","毛孔","角质"]),
     ("宠物",     ["宠物","猫","狗","猫粮","狗粮","萌宠","宠物食品","宠物用品","猫咪",
                   "狗狗","猫狗","罐头","冻干"]),
     ("抖音",     ["抖音","douyin","TikTok","短视频","直播","抖店","抖音电商"]),
@@ -44,7 +48,17 @@ CATEGORY_LIST = [name for name, _ in RULES] + ["其他"]
 COMPILED = [(name, [kw.lower() for kw in kws]) for name, kws in RULES]
 
 
-def classify(filename: str) -> tuple:
+def to_date(ts):
+    """Unix 时间戳 → YYYY-MM-DD"""
+    if not ts:
+        return ""
+    try:
+        return time.strftime("%Y-%m-%d", time.gmtime(int(ts)))
+    except:
+        return ""
+
+
+def classify(filename: str):
     text = filename.lower()
     for cat_name, keywords in COMPILED:
         matched = [kw for kw in keywords if kw in text]
@@ -53,7 +67,7 @@ def classify(filename: str) -> tuple:
     return "其他", []
 
 
-def get_token() -> str:
+def get_token():
     r = httpx.post(
         f"{BASE}/auth/v3/tenant_access_token/internal",
         json={"app_id": APP_ID, "app_secret": APP_SECRET},
@@ -61,41 +75,31 @@ def get_token() -> str:
     )
     d = r.json()
     if d.get("code") != 0:
-        raise Exception(f"获取 token 失败: {d}")
+        raise Exception(f"Token 失败: {d}")
     return d["tenant_access_token"]
 
 
-def process_file(f: dict) -> dict:
-    """飞书原始数据 → 前端卡片格式，跳过文件夹"""
+def process_file(f: dict):
     name = f.get("name", "未命名")
     ftype = f.get("type", "")
 
-    # 跳过文件夹和快捷方式
-    if ftype in ("folder", "shortcut"):
+    # 跳过文件夹
+    if ftype == "folder":
         return None
 
-    # 分类
     cat, keywords = classify(name)
 
-    # 标题：去扩展名
+    # 去扩展名
     title = name
     for ext in [".pdf",".docx",".doc",".pptx",".ppt",".xlsx",".xls",".txt",".md",".csv"]:
         if title.lower().endswith(ext):
             title = title[:-len(ext)]
             break
 
-    # 日期：飞书返回的是 Unix 时间戳（秒），需转换为日期字符串
     mtime = f.get("modified_time", "")
     ctime = f.get("created_time", "")
-    def ts_to_date(ts):
-        try:
-            return time.strftime("%Y-%m-%d", time.gmtime(int(ts)))
-        except:
-            return ""
-    date = ts_to_date(mtime)
+    date = to_date(mtime)
     year = date[:4] if date else "未知"
-
-    # 质量评分
     score = min(100, 50 + len(keywords) * 5 + min(len(name) // 8, 20))
 
     return {
@@ -109,14 +113,16 @@ def process_file(f: dict) -> dict:
         "url":            f.get("url", ""),
         "type":           ftype,
         "size":           f.get("size", 0),
-        "created_time":   ctime,
-        "modified_time":  mtime,
+        "created_time":   to_date(ctime),
+        "modified_time":  to_date(mtime),
     }
 
-def list_all_files(token: str, folder_token: str) -> list:
+
+def list_all_files(token: str, folder_token: str):
     all_files = []
     page_token = None
     seen = set()
+    skipped_folders = 0
 
     for page_num in range(1, 200):
         params = {"folder_token": folder_token, "page_size": 50}
@@ -131,16 +137,18 @@ def list_all_files(token: str, folder_token: str) -> list:
         )
         d = r.json()
         if d.get("code") != 0:
-            raise Exception(f"获取文件列表失败 (page {page_num}): {d}")
+            raise Exception(f"列表失败 (page {page_num}): {d}")
 
         data = d.get("data", {})
-        batch = data.get("files", [])
-        for f in batch:
+        for f in data.get("files", []):
             tid = f.get("token", "")
             if tid and tid not in seen:
                 seen.add(tid)
                 result = process_file(f)
-                if result is not None:
+                if result is None:
+                    skipped_folders += 1
+                    print(f"   ⏭️  跳过文件夹: {f.get('name')}")
+                else:
                     all_files.append(result)
 
         if not data.get("has_more"):
@@ -151,17 +159,16 @@ def list_all_files(token: str, folder_token: str) -> list:
         page_token = new_token
         time.sleep(DELAY)
 
+    print(f"   跳过 {skipped_folders} 个文件夹")
     return all_files
 
 
 def scan():
-    print("=== scan_v3 开始 ===")
-    print("  → 获取 Token ...")
+    print("=== scan_v3.1 开始 ===")
     token = get_token()
     print("  → Token OK")
-    print(f"  → 扫描文件夹 ...")
     files = list_all_files(token, ROOT)
-    print(f"  → 共获取 {len(files)} 个文件")
+    print(f"  → 共 {len(files)} 个文件")
 
     cats = {c: [] for c in CATEGORY_LIST}
     for f in files:
@@ -180,7 +187,8 @@ def scan():
                 "file_count": len(items),
                 "files": items,
             }, fh, ensure_ascii=False, indent=2)
-        print(f"  💾 {cat_name}: {len(items)} 篇")
+        if items:
+            print(f"  💾 {cat_name}: {len(items)} 篇")
 
     with open(os.path.join(OUT_DIR, "_index.json"), "w", encoding="utf-8") as fh:
         json.dump({
