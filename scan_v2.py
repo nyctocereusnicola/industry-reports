@@ -128,7 +128,7 @@ def scan():
         ftype = item.get("type", "")
         print(f"   📂 {name} → {cat_name} (type={ftype})")
 
-        if ftype == "folder":
+        if         if True:  # 不管 type，只要命中分类映射就扫描子文件:
             try:
                 files = list_all(token, token_str)
             except Exception as e:
