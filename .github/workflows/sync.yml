@@ -1,18 +1,20 @@
 name: 飞书同步报告
 
 on:
-  # 每 30 分钟自动运行
   schedule:
     - cron: "*/30 * * * *"
-  # 手动触发
   workflow_dispatch:
-  # 推送到 main 时触发（用于初始化）
+    inputs:
+      reason:
+        description: "触发原因（可选）"
+        required: false
+        default: "手动同步"
   push:
     branches:
       - main
     paths:
-      - "scan_v2.py"
-      - ".github/workflows/sync.yml"
+      - scan_v2.py
+      - .github/workflows/sync.yml
 
 # 权限：允许写入仓库内容
 permissions:
