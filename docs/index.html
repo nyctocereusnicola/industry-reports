@@ -31,6 +31,12 @@
             letter-spacing:-.3px;
         }
         .sb-logo span{font-size:11px;color:var(--text2);font-weight:400;margin-left:6px}
+        .sb-sync{
+            display:flex;align-items:center;gap:8px;
+            padding:8px 20px;font-size:11px;color:var(--text2);
+            background:#f0fdf4;border-bottom:1px solid #dcfce7;
+        }
+        .sb-sync.outdated{background:#fffbeb;border-bottom-color:#fde68a}
         .sb-stats{
             padding:14px 20px;border-bottom:1px solid var(--border);
             display:flex;gap:12px;flex-wrap:wrap;
@@ -107,6 +113,42 @@
         .dedup-toggle:hover{background:var(--primary3);border-color:var(--primary2)}
         .dedup-toggle input{width:14px;height:14px;accent-color:var(--primary);cursor:pointer}
         .dedup-toggle .dt-label{font-weight:500}
+
+        /* 刷新按钮 */
+        .refresh-btn{
+            display:inline-flex;align-items:center;gap:6px;
+            padding:8px 16px;border-radius:7px;border:1px solid var(--primary);
+            background:var(--primary);color:#fff;font-size:12px;font-weight:600;
+            cursor:pointer;transition:.15s;white-space:nowrap;
+            font-family:inherit;
+        }
+        .refresh-btn:hover{background:var(--primary2);border-color:var(--primary2)}
+        .refresh-btn:active{transform:scale(.97)}
+        .refresh-btn.loading{opacity:.7;pointer-events:none}
+        .refresh-btn .rf-icon{font-size:15px;transition:transform .3s}
+        .refresh-btn.loading .rf-icon{animation:spin .7s linear infinite}
+
+        /* 同步状态 */
+        .sync-status{
+            display:flex;align-items:center;gap:6px;
+            font-size:11px;color:var(--text2);white-space:nowrap;
+        }
+        .sync-status .ss-dot{
+            width:7px;height:7px;border-radius:50%;
+        }
+        .ss-dot.ok{background:#10b981;box-shadow:0 0 4px rgba(16,185,129,.4)}
+        .ss-dot.old{background:#f59e0b;box-shadow:0 0 4px rgba(245,158,11,.4)}
+        .ss-dot.err{background:#ef4444;box-shadow:0 0 4px rgba(239,68,68,.4)}
+
+        /* Actions 链接 */
+        .actions-link{
+            display:inline-flex;align-items:center;gap:3px;
+            font-size:10px;color:var(--text2);padding:3px 8px;
+            border-radius:4px;border:1px solid var(--border);
+            background:#f8fafc;text-decoration:none;white-space:nowrap;
+            transition:.15s;
+        }
+        .actions-link:hover{background:var(--primary3);color:var(--primary);border-color:var(--primary2)}
 
         /* 重复标记 */
         .card.dup-card{border-left:3px solid #f59e0b;opacity:.85}
@@ -241,6 +283,10 @@
 <!-- ==================== 侧栏 ==================== -->
 <aside class="sidebar">
     <div class="sb-logo">📊 行业报告<span>飞书同步</span></div>
+    <div class="sb-sync" id="sbSync">
+        <span class="ss-dot ok"></span>
+        <span id="sbSyncText">数据就绪</span>
+    </div>
     <div class="sb-stats">
         <div class="sb-stat"><strong id="sTotal">-</strong>总报告</div>
         <div class="sb-stat"><strong id="sCats">15</strong>行业</div>
@@ -271,6 +317,10 @@
             <input type="checkbox" id="dedupChk" checked onchange="onDedup()">
             <span class="dt-label">去重</span>
         </label>
+        <button class="refresh-btn" id="refreshBtn" onclick="refreshData()" title="重新拉取最新数据">
+            <span class="rf-icon">🔄</span> 刷新数据
+        </button>
+        <a class="actions-link" href="https://github.com/nyctocereusnicola/industry-reports/actions/workflows/sync.yml" target="_blank" rel="noopener" title="前往 GitHub Actions 触发同步">⚡ 同步</a>
     </div>
 
     <!-- 统计面板 -->
@@ -341,11 +391,67 @@ function init() {
 
 async function loadIdx() {
     try {
-        const r = await fetch("data/categories/_index.json");
+        const r = await fetch("data/categories/_index.json?" + Date.now());
         if (r.ok) catIdx = await r.json();
         document.getElementById("kpiUpdate").textContent =
             "最近同步：" + (catIdx?.updated || "未知");
+        updateSyncStatus(catIdx);
     } catch(e) { console.warn("索引加载失败"); }
+}
+
+function updateSyncStatus(idx) {
+    const el = document.getElementById("sbSync");
+    const txt = document.getElementById("sbSyncText");
+    const dot = el?.querySelector(".ss-dot");
+    if (!idx?.updated) {
+        txt.textContent = "尚未同步";
+        dot.className = "ss-dot err";
+        el.className = "sb-sync outdated";
+        return;
+    }
+    const lastSync = new Date(idx.updated);
+    const now = new Date();
+    const diffMin = (now - lastSync) / 60000;
+    if (diffMin < 60) {
+        dot.className = "ss-dot ok";
+        txt.textContent = Math.round(diffMin) + " 分钟前同步";
+        el.className = "sb-sync";
+    } else if (diffMin < 1440) {
+        dot.className = "ss-dot ok";
+        txt.textContent = Math.round(diffMin / 60) + " 小时前同步";
+        el.className = "sb-sync";
+    } else {
+        dot.className = "ss-dot old";
+        txt.textContent = Math.round(diffMin / 1440) + " 天前同步";
+        el.className = "sb-sync outdated";
+    }
+}
+
+async function refreshData() {
+    const btn = document.getElementById("refreshBtn");
+    btn.classList.add("loading");
+    btn.querySelector(".rf-icon").textContent = "⏳";
+    btn.childNodes[1].textContent = " 刷新中...";
+
+    try {
+        await loadIdx();
+        await loadAll();
+        btn.classList.remove("loading");
+        btn.querySelector(".rf-icon").textContent = "✅";
+        btn.childNodes[1].textContent = " 已刷新";
+        setTimeout(() => {
+            btn.querySelector(".rf-icon").textContent = "🔄";
+            btn.childNodes[1].textContent = " 刷新数据";
+        }, 2000);
+    } catch(e) {
+        btn.classList.remove("loading");
+        btn.querySelector(".rf-icon").textContent = "❌";
+        btn.childNodes[1].textContent = " 失败重试";
+        setTimeout(() => {
+            btn.querySelector(".rf-icon").textContent = "🔄";
+            btn.childNodes[1].textContent = " 刷新数据";
+        }, 3000);
+    }
 }
 
 async function loadAll() {

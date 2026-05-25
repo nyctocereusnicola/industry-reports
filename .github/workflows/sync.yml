@@ -11,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - "sync_reports.py"
+      - "scan_v2.py"
       - ".github/workflows/sync.yml"
 
 # 权限：允许写入仓库内容
@@ -31,14 +31,14 @@ jobs:
           python-version: "3.11"
 
       - name: 安装依赖
-        run: pip install httpx python-dotenv
+        run: pip install httpx
 
-      - name: 运行同步脚本
+      - name: 扫描飞书 → 分类JSON
         env:
           FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_FOLDER_TOKEN: ${{ secrets.FEISHU_FOLDER_TOKEN }}
-        run: python sync_reports.py
+        run: python scan_v2.py
 
       - name: 提交更新
         run: |
