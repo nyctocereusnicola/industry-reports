@@ -1,27 +1,23 @@
 {
   "category": "小红书",
-  "folder_name": "小紅書平台",
-  "file_count": 2,
+  "file_count": 1,
   "files": [
     {
-      "token": "W57yfHmWqlgj25dJVaicQpaBnud",
-      "name": "書籍",
+      "token": "TL3gf1uLrlHx0odx7vYc3JIBn6g",
+      "title": "小紅書平台",
+      "summary": "",
+      "tags": [
+        "小红书",
+        "小紅書"
+      ],
+      "score": 55,
+      "year": "1779",
+      "date": "1779261232",
+      "url": "https://my.feishu.cn/drive/folder/TL3gf1uLrlHx0odx7vYc3JIBn6g",
       "type": "folder",
-      "url": "https://my.feishu.cn/drive/folder/W57yfHmWqlgj25dJVaicQpaBnud",
-      "created_time": "1779261232",
-      "modified_time": "1779261248",
-      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
-      "size": 0
-    },
-    {
-      "token": "SS74fueNAlTMsLdekFvc52Fon08",
-      "name": "運營方法與課件",
-      "type": "folder",
-      "url": "https://my.feishu.cn/drive/folder/SS74fueNAlTMsLdekFvc52Fon08",
-      "created_time": "1779261216",
-      "modified_time": "1779261234",
-      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
-      "size": 0
+      "size": 0,
+      "created_time": "1779258405",
+      "modified_time": "1779261232"
     }
   ]
 }

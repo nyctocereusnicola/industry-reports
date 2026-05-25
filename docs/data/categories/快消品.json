@@ -1,6 +1,23 @@
 {
   "category": "快消品",
-  "folder_name": "快消品",
-  "file_count": 0,
-  "files": []
+  "file_count": 1,
+  "files": [
+    {
+      "token": "PYqgfbCqelx3u5d6IQJcC8IInCg",
+      "title": "快消品",
+      "summary": "",
+      "tags": [
+        "快消品",
+        "快消"
+      ],
+      "score": 55,
+      "year": "1779",
+      "date": "1779260878",
+      "url": "https://my.feishu.cn/drive/folder/PYqgfbCqelx3u5d6IQJcC8IInCg",
+      "type": "folder",
+      "size": 0,
+      "created_time": "1779258581",
+      "modified_time": "1779260878"
+    }
+  ]
 }
