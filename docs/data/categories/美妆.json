@@ -1,347 +1,139 @@
 {
   "category": "美妆",
-  "file_count": 20,
+  "file_count": 8,
   "files": [
     {
-      "token": "AHhCbN9ucoEjqgxJOu6cncW1nFf",
-      "title": "2025 防晒化妆品消费者洞察",
+      "token": "Sq8ibsisGoHvGVxjMVPcsjHGnhf",
+      "title": "AOEO护肤品牌手册",
       "summary": "",
       "tags": [
         "美妆",
-        "化妆",
-        "防晒"
-      ],
-      "score": 62,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/AHhCbN9ucoEjqgxJOu6cncW1nFf",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "FgeMblcSpoFEzkxR0oAcoV3inyf",
-      "title": "2025 中国防晒市场新趋势洞察报告",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/FgeMblcSpoFEzkxR0oAcoV3inyf",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "H73cbGWfSofwrjxOZWScKAYPnee",
-      "title": "2024 防晒霜消费趋势报告 艺恩",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/H73cbGWfSofwrjxOZWScKAYPnee",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "L3iBbyDijooQqrxSf8UcULW2nZ8",
-      "title": "2024 防晒行业趋势白皮书 天猫美妆×TMIC",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆",
-        "防晒"
-      ],
-      "score": 63,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/L3iBbyDijooQqrxSf8UcULW2nZ8",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "LM3dbCPYSoVaWtxBYaecNDlUnTd",
-      "title": "2024 防晒喷雾市场洞察报告",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/LM3dbCPYSoVaWtxBYaecNDlUnTd",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "RBSobs8UJo995pxFgzvcgAwcnOV",
-      "title": "2024 蝉妈妈智库：抖音防晒喷雾行业趋势分析",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 58,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/RBSobs8UJo995pxFgzvcgAwcnOV",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "V4ixbbB5iorisKxsPiLc73GTnZf",
-      "title": "2024 快手防晒类目数据报告",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/V4ixbbB5iorisKxsPiLc73GTnZf",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "Ps9hbihwZoW6lAxRkuIc8IP5neg",
-      "title": "2024 中国防晒化妆品行业消费趋势洞察研究报告",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "化妆",
-        "防晒"
-      ],
-      "score": 63,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/Ps9hbihwZoW6lAxRkuIc8IP5neg",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "W250bpzako5Pe1xAzJBcaTQMnyc",
-      "title": "2023 防晒行业调研（案例：Mistine、安热沙、美康粉黛）-品数",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 59,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/W250bpzako5Pe1xAzJBcaTQMnyc",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "BUL4bRYvXoItVjxtGZdc2pSrnyg",
-      "title": "2023 防晒喷雾白皮书 天图&美妆网",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆",
-        "防晒"
-      ],
-      "score": 62,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/BUL4bRYvXoItVjxtGZdc2pSrnyg",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "X1fGbHPAwoNg11xH9vtcIHIWnpd",
-      "title": "2022 防晒市场洞察及趋势前瞻",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/X1fGbHPAwoNg11xH9vtcIHIWnpd",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "Kz1CbUie1onvYNxaZLacA9YMnSf",
-      "title": "2021 防晒白皮书",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "防晒"
+        "护肤"
       ],
       "score": 56,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/Kz1CbUie1onvYNxaZLacA9YMnSf",
+      "url": "https://my.feishu.cn/file/Sq8ibsisGoHvGVxjMVPcsjHGnhf",
       "type": "file",
       "size": 0,
       "created_time": "2026-05-25",
       "modified_time": "2026-05-25"
     },
     {
-      "token": "MqNvbA7S9oDMIoxv6wYc9HdtnhC",
-      "title": "2019 防晒品类趋势洞察报告-CBNData&天猫美妆",
+      "token": "OQxQb779cox6B2xF1vvcVzW8nqc",
+      "title": "Bigdrop  Brandbook 护肤",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "护肤"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/OQxQb779cox6B2xF1vvcVzW8nqc",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-25",
+      "modified_time": "2026-05-25"
+    },
+    {
+      "token": "XT2fbE3b1o81ZKxrr8TcZ6QEnSg",
+      "title": "Brlab Brandbook  2022 护肤品牌",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "护肤"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/XT2fbE3b1o81ZKxrr8TcZ6QEnSg",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-25",
+      "modified_time": "2026-05-25"
+    },
+    {
+      "token": "Qxe5bRlADoafdnxf10lcedPxnee",
+      "title": "半分一Blank me 粉底液 产品手册 2022国货美妆品牌",
       "summary": "",
       "tags": [
         "美妆",
         "美妆",
-        "防晒"
+        "粉底"
       ],
       "score": 64,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/MqNvbA7S9oDMIoxv6wYc9HdtnhC",
+      "url": "https://my.feishu.cn/file/Qxe5bRlADoafdnxf10lcedPxnee",
       "type": "file",
       "size": 0,
       "created_time": "2026-05-25",
       "modified_time": "2026-05-25"
     },
     {
-      "token": "EZEEb8F2VolM89xuJG9cO5epnig",
-      "title": "2017 防晒品类趋势洞察-CBNData",
+      "token": "SOzTbc7CMoBzzFx7KmccutxVnQg",
+      "title": "半分一Blank me  Brandbook 美妝",
       "summary": "",
       "tags": [
         "美妆",
-        "防晒"
+        "美妝"
       ],
       "score": 58,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/EZEEb8F2VolM89xuJG9cO5epnig",
+      "url": "https://my.feishu.cn/file/SOzTbc7CMoBzzFx7KmccutxVnQg",
       "type": "file",
       "size": 0,
       "created_time": "2026-05-25",
       "modified_time": "2026-05-25"
     },
     {
-      "token": "RNZfb1fvuowTyJxPo18chgxGnub",
-      "title": "2025 中国儿童化妆品行业发展研究报告（2025）-国家市场监督管理总局发展研究中心-2026.1-39页",
+      "token": "ZvQwbhiHcoeHOOxxEXCcEPcvntd",
+      "title": "2023 江海证券 珀莱雅-多元化品牌矩阵叠加大单品策略，美妆龙头涅槃增长",
       "summary": "",
       "tags": [
         "美妆",
-        "化妆"
+        "美妆"
       ],
-      "score": 62,
+      "score": 60,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/RNZfb1fvuowTyJxPo18chgxGnub",
+      "url": "https://my.feishu.cn/file/ZvQwbhiHcoeHOOxxEXCcEPcvntd",
       "type": "file",
       "size": 0,
       "created_time": "2026-05-25",
       "modified_time": "2026-05-25"
     },
     {
-      "token": "JFLEborruomb07x3xAQcSctznUd",
-      "title": "彩妆市场觉醒力在哪里（5页）",
+      "token": "JQk8bJ8UrogN5Dxs4lNcMsyznBd",
+      "title": "2022 珀莱雅-美妆品牌增长力报告：早C晚A天花板，珀莱雅有多强-一面数据-洞见数据",
       "summary": "",
       "tags": [
         "美妆",
-        "彩妆"
+        "美妆"
       ],
-      "score": 57,
+      "score": 60,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/JFLEborruomb07x3xAQcSctznUd",
+      "url": "https://my.feishu.cn/file/JQk8bJ8UrogN5Dxs4lNcMsyznBd",
       "type": "file",
       "size": 0,
       "created_time": "2026-05-25",
       "modified_time": "2026-05-25"
     },
     {
-      "token": "BMO1bXSTRo9iJ1xlxTzcxpVJndh",
-      "title": "RED+CHAMBER朱栈纯净彩妆行业白皮书",
+      "token": "MP69bfDtOow1RTxSiS2cdoHsn7b",
+      "title": "缤兔美妆冰箱品牌手册",
       "summary": "",
       "tags": [
         "美妆",
-        "彩妆"
+        "美妆"
       ],
-      "score": 58,
+      "score": 56,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/BMO1bXSTRo9iJ1xlxTzcxpVJndh",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "FDCrbGG9loetdwxMDoVcs1d3nIe",
-      "title": "2025 线上唇部彩妆消费趋势洞察-用户说-2025-33页",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "彩妆"
-      ],
-      "score": 59,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/FDCrbGG9loetdwxMDoVcs1d3nIe",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "GxQrbp2xooDLV4xjRv5cOxS6nif",
-      "title": "2025 新中式彩妆趋势洞察 艺恩",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "彩妆"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/GxQrbp2xooDLV4xjRv5cOxS6nif",
-      "type": "file",
-      "size": 0,
-      "created_time": "2026-05-25",
-      "modified_time": "2026-05-25"
-    },
-    {
-      "token": "J9ThbOHwuoHHgtxzEiDcTmYZnQc",
-      "title": "2025 彩妆行业趋势灵感图鉴",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "彩妆"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/J9ThbOHwuoHHgtxzEiDcTmYZnQc",
+      "url": "https://my.feishu.cn/file/MP69bfDtOow1RTxSiS2cdoHsn7b",
       "type": "file",
       "size": 0,
       "created_time": "2026-05-25",

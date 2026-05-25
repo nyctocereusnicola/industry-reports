@@ -1,5 +1,40 @@
 {
   "category": "香相关",
-  "file_count": 0,
-  "files": []
+  "file_count": 2,
+  "files": [
+    {
+      "token": "XsT5b0jRVoecZ9xlHOXcZbHMnCc",
+      "title": "香氛品牌AYAts 品牌手册",
+      "summary": "",
+      "tags": [
+        "香相关",
+        "香氛"
+      ],
+      "score": 57,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/XsT5b0jRVoecZ9xlHOXcZbHMnCc",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-25",
+      "modified_time": "2026-05-25"
+    },
+    {
+      "token": "VmYdbQ5HrofZVbxBePDcYGrGnLc",
+      "title": "chillmore香氛品牌介绍",
+      "summary": "",
+      "tags": [
+        "香相关",
+        "香氛"
+      ],
+      "score": 57,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/VmYdbQ5HrofZVbxBePDcYGrGnLc",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-25",
+      "modified_time": "2026-05-25"
+    }
+  ]
 }
