@@ -1,1 +1,507 @@
-{"category": "美妆", "count": 0, "dup_removed": 0, "files": [], "updated": "2026-05-25 10:46:12"}
+{
+  "category": "美妆",
+  "folder_name": "美妝護膚",
+  "file_count": 50,
+  "files": [
+    {
+      "token": "OnHgfl57OlNgUGdpJBqc1q1Xnqg",
+      "name": "重组胶原蛋白",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/OnHgfl57OlNgUGdpJBqc1q1Xnqg",
+      "created_time": "1779685166",
+      "modified_time": "1779685168",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "GDxafhYGglWPhCdnFsJcwCvYnAh",
+      "name": "原料 配方",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/GDxafhYGglWPhCdnFsJcwCvYnAh",
+      "created_time": "1779685156",
+      "modified_time": "1779685166",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "OZ2hfEmvBl1ylKdX0bHcfUbanCc",
+      "name": "眼部护理",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/OZ2hfEmvBl1ylKdX0bHcfUbanCc",
+      "created_time": "1779685149",
+      "modified_time": "1779685156",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "MVc5f3cQXlyQqtd8dwhcbFmNnqb",
+      "name": "营销推广",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/MVc5f3cQXlyQqtd8dwhcbFmNnqb",
+      "created_time": "1779685138",
+      "modified_time": "1779685148",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "FkgFfNhbOly8yzdR7slcwtE6neb",
+      "name": "医美",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/FkgFfNhbOly8yzdR7slcwtE6neb",
+      "created_time": "1779684856",
+      "modified_time": "1779685138",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "GgiPfQNZdlQW6ud5xSwctrJdneG",
+      "name": "品牌资料",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/GgiPfQNZdlQW6ud5xSwctrJdneG",
+      "created_time": "1779681820",
+      "modified_time": "1779684850",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "IABifVEd9lIxEFdCRXbc3lb7nac",
+      "name": "头皮护理",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/IABifVEd9lIxEFdCRXbc3lb7nac",
+      "created_time": "1779681933",
+      "modified_time": "1779681967",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "I0dIfAADvlsOaad3UC8c2i4GnWb",
+      "name": "私处护理",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/I0dIfAADvlsOaad3UC8c2i4GnWb",
+      "created_time": "1779681864",
+      "modified_time": "1779681931",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "ZqBzfq42UlKZuBdmLatcQF7Inpd",
+      "name": "男性美妆个护",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/ZqBzfq42UlKZuBdmLatcQF7Inpd",
+      "created_time": "1779681798",
+      "modified_time": "1779681821",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "SPbefUGYOlmoY1d4DO2c4ecInff",
+      "name": "面膜",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/SPbefUGYOlmoY1d4DO2c4ecInff",
+      "created_time": "1779681776",
+      "modified_time": "1779681798",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "M2JgfOCSylX5FVdxTdqc6AVNnLg",
+      "name": "美容仪",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/M2JgfOCSylX5FVdxTdqc6AVNnLg",
+      "created_time": "1779681773",
+      "modified_time": "1779681781",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "ObGNfQddnlVa7LdhpTIc1zRVnU8",
+      "name": "口腔护理",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/ObGNfQddnlVa7LdhpTIc1zRVnU8",
+      "created_time": "1779681741",
+      "modified_time": "1779681773",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "IBfEfFqe0lWWDsdPXyTcPU7enHe",
+      "name": "防晒",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/IBfEfFqe0lWWDsdPXyTcPU7enHe",
+      "created_time": "1779680773",
+      "modified_time": "1779680802",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "QYEKfU9KYlsdDudTBbTcUrTjnud",
+      "name": "儿童化妆品",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/QYEKfU9KYlsdDudTBbTcUrTjnud",
+      "created_time": "1779680767",
+      "modified_time": "1779680772",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "UJkbfOZ5Cl5iZddxZNBcpGmUnsg",
+      "name": "底妆",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/UJkbfOZ5Cl5iZddxZNBcpGmUnsg",
+      "created_time": "1779680760",
+      "modified_time": "1779680767",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "WEFyfi7ellP9DfdSc7ic0D3Fnhf",
+      "name": "产品实图 展柜实图 展会实图",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/WEFyfi7ellP9DfdSc7ic0D3Fnhf",
+      "created_time": "1779680698",
+      "modified_time": "1779680707",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "Y6IIfX3pslHHE5dUzkLcvephnge",
+      "name": "产品开发数据调研",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/Y6IIfX3pslHHE5dUzkLcvephnge",
+      "created_time": "1779680656",
+      "modified_time": "1779680698",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "LWZjf5qLilzbIXdIernc23Cwnrh",
+      "name": "彩妆",
+      "type": "folder",
+      "url": "https://my.feishu.cn/drive/folder/LWZjf5qLilzbIXdIernc23Cwnrh",
+      "created_time": "1779680312",
+      "modified_time": "1779680370",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "UFm5bpgbDoNrNPxnnQqc49gCnSM",
+      "name": "【MONSTER CODE】野兽代码山海精华Brief.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/UFm5bpgbDoNrNPxnnQqc49gCnSM",
+      "created_time": "1779680285",
+      "modified_time": "1779680287",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "EbdBbhVPIoWJSsxkxA9c3qV8n7R",
+      "name": "微信图片_20240226165734.png",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/EbdBbhVPIoWJSsxkxA9c3qV8n7R",
+      "created_time": "1779678615",
+      "modified_time": "1779678616",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "O64nbS84Ho2hjSxukdAcy9s0nae",
+      "name": "兔头妈妈分龄护肤宣传片发布公关传播方案.pptx",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/O64nbS84Ho2hjSxukdAcy9s0nae",
+      "created_time": "1779678599",
+      "modified_time": "1779678613",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "Wa6vb7a1bogQYHxrF78cLIzmnKg",
+      "name": "上美股份品牌矩阵.png",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/Wa6vb7a1bogQYHxrF78cLIzmnKg",
+      "created_time": "1779678598",
+      "modified_time": "1779678599",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "O0Q5bNrJ4oxHqnxQwHVcs4jbnyg",
+      "name": "人群：95后Boys理容消费微报告 CBNData.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/O0Q5bNrJ4oxHqnxQwHVcs4jbnyg",
+      "created_time": "1779678597",
+      "modified_time": "1779678598",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "XxpVbHpjHoZyAAxJLAYcWYV1nkf",
+      "name": "皮肤干燥分级及皮肤表观形态特征.png",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/XxpVbHpjHoZyAAxJLAYcWYV1nkf",
+      "created_time": "1779678595",
+      "modified_time": "1779678596",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "GQOzbUHHroPLwCxLVzJcmUc9nRg",
+      "name": "欧莱雅 品牌矩阵.jpg",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/GQOzbUHHroPLwCxLVzJcmUc9nRg",
+      "created_time": "1779678594",
+      "modified_time": "1779678595",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "Dz7Dbsp9ootXDKxV6MjcNlI6ncc",
+      "name": "敏感肌护肤品市场调研报告（品域美创，40页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/Dz7Dbsp9ootXDKxV6MjcNlI6ncc",
+      "created_time": "1779678590",
+      "modified_time": "1779678594",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "LmckbaYcFooH3yxsy8BcnTGPnqd",
+      "name": "美妝趨勢.xmind",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/LmckbaYcFooH3yxsy8BcnTGPnqd",
+      "created_time": "1779678589",
+      "modified_time": "1779678590",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "F7vwbOQEmotbm2xxtt2clHpgnGb",
+      "name": "美妝（小紅書）.xmind",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/F7vwbOQEmotbm2xxtt2clHpgnGb",
+      "created_time": "1779678588",
+      "modified_time": "1779678589",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "T2vgbRKRsoNq8KxGPHzckqHNnfc",
+      "name": "美妆连锁全渠道增长：私域存量激活与公域增量博弈.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/T2vgbRKRsoNq8KxGPHzckqHNnfc",
+      "created_time": "1779678586",
+      "modified_time": "1779678588",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "FR49bP4hXoKuufxSGX7cAhZdn8g",
+      "name": "美妆护肤防晒行业调研报告 解数咨询.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/FR49bP4hXoKuufxSGX7cAhZdn8g",
+      "created_time": "1779678584",
+      "modified_time": "1779678586",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "RElib5D0Bo8p57xb6OKcRiY7n8g",
+      "name": "美妆产品12月内容投放策略.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/RElib5D0Bo8p57xb6OKcRiY7n8g",
+      "created_time": "1779678583",
+      "modified_time": "1779678584",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "U8FwbX4t9oqMWNxJbm2c6OT6n3b",
+      "name": "美妆：李凡聪-美妆品牌从品类突围到美学表达-2.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/U8FwbX4t9oqMWNxJbm2c6OT6n3b",
+      "created_time": "1779678580",
+      "modified_time": "1779678583",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "L6tzbA1pSoAR0NxdrxXcy328nQf",
+      "name": "美妆：客户2024_已(注册)备案未上市美妆新品.png",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/L6tzbA1pSoAR0NxdrxXcy328nQf",
+      "created_time": "1779678578",
+      "modified_time": "1779678580",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "Pj5HbytkdoFw0vxQ2fGcsiUunGf",
+      "name": "美妆：2022 美团闪购美妆-即时零售增长新范式-朱琳.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/Pj5HbytkdoFw0vxQ2fGcsiUunGf",
+      "created_time": "1779678577",
+      "modified_time": "1779678579",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "ULEgbX2FZoYz7Xx7jKzcKYxSn5b",
+      "name": "美妆：2022 化妆品行业策略报告：产品为王，机制领先-20211121-国泰君安.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/ULEgbX2FZoYz7Xx7jKzcKYxSn5b",
+      "created_time": "1779678576",
+      "modified_time": "1779678577",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "OKsSbJnnUo4gU6xSGjmckK7pnwc",
+      "name": "美妆：2022 化妆品年度复盘趋势发布.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/OKsSbJnnUo4gU6xSGjmckK7pnwc",
+      "created_time": "1779678571",
+      "modified_time": "1779678576",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "BWh8bESJOowqw6x84LTcBxQFnsz",
+      "name": "美妆：2021 掘金“颜值经济”新消费，见证国货崛起大浪潮-安信证券-2021.6.17-112页.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/BWh8bESJOowqw6x84LTcBxQFnsz",
+      "created_time": "1779678570",
+      "modified_time": "1779678571",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "JmMdbZKkQoGg4cxKUIFcjdFlnjh",
+      "name": "美妆：2021 抖音美妆短视频及直播营销趋势洞察 飞过数据.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/JmMdbZKkQoGg4cxKUIFcjdFlnjh",
+      "created_time": "1779678568",
+      "modified_time": "1779678570",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "WPRAbjtZ6oAtrOxNWmocqSsWnJh",
+      "name": "美妆：2019 中国美妆行业研究报告-鲸准研究院.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/WPRAbjtZ6oAtrOxNWmocqSsWnJh",
+      "created_time": "1779678566",
+      "modified_time": "1779678567",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "PRaRb1uzeoaE6ixKQZHcfVCIngc",
+      "name": "美妆：2019 腾讯国货美妆洞察报告（腾讯&KANTAR，49页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/PRaRb1uzeoaE6ixKQZHcfVCIngc",
+      "created_time": "1779678566",
+      "modified_time": "1779678566",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "MsHBbqIhMoQcNDxwTkAcBZqTnxd",
+      "name": "美妆：2019 社交电商美妆行业报告（精简版）-有赞&腾讯广告.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/MsHBbqIhMoQcNDxwTkAcBZqTnxd",
+      "created_time": "1779678564",
+      "modified_time": "1779678565",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "IjCYb8ip8oF0mNxfIsXcZDWHnWf",
+      "name": "美妆：2019 渠道更迭，国牌崛起：化妆品行业深度报告-国元证券.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/IjCYb8ip8oF0mNxfIsXcZDWHnWf",
+      "created_time": "1779678563",
+      "modified_time": "1779678564",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "ZgUAbk2etonpgExKNSzcpfI6nng",
+      "name": "美妆：2019 美妆行业品牌联合跨界研究-CBNData&天猫.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/ZgUAbk2etonpgExKNSzcpfI6nng",
+      "created_time": "1779678562",
+      "modified_time": "1779678563",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "LdJtbynXeohau0xwqpKczVsCnpf",
+      "name": "美妆：2019 美伊白皮书：流动时代下的自我呵护（阿里妈妈，31页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/LdJtbynXeohau0xwqpKczVsCnpf",
+      "created_time": "1779678561",
+      "modified_time": "1779678562",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "SFFUb1mpHo21PMx6ACzcVImInfh",
+      "name": "美妆：2019 化妆品行业报告（360营销学院，53页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/SFFUb1mpHo21PMx6ACzcVImInfh",
+      "created_time": "1779678560",
+      "modified_time": "1779678560",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "ItilbHvN6oiImax16XjcxxhGnLc",
+      "name": "美妆：2019 东方美谷蓝皮书（化妆品行业）（CBNData&东方美谷&如新中国，60页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/ItilbHvN6oiImax16XjcxxhGnLc",
+      "created_time": "1779678558",
+      "modified_time": "1779678559",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "VzHbbEF5xopMfKxUsYpckHPwnQe",
+      "name": "美妆：2019 Q2美妆新媒体内容营销分析报告（米汇，33页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/VzHbbEF5xopMfKxUsYpckHPwnQe",
+      "created_time": "1779678557",
+      "modified_time": "1779678558",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "FU5gbXoeMogHN5xCXSzcwUYRnqg",
+      "name": "美妆：2018 中国时尚美妆热点趋势报告（CBNData&微博时尚&微博数据中心，37页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/FU5gbXoeMogHN5xCXSzcwUYRnqg",
+      "created_time": "1779678556",
+      "modified_time": "1779678557",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "AAuCbIboTolqmfxRTCocMaSOnpc",
+      "name": "美妆：2018 中国美妆新零售研究报告（亿邦动力：41页）.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/AAuCbIboTolqmfxRTCocMaSOnpc",
+      "created_time": "1779678554",
+      "modified_time": "1779678556",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    },
+    {
+      "token": "JcVgbF0jToV6aBxRk9ocEy6Fn2g",
+      "name": "美妆：2018 亚洲美妆趋势-WGSN Beauty.pdf",
+      "type": "file",
+      "url": "https://my.feishu.cn/file/JcVgbF0jToV6aBxRk9ocEy6Fn2g",
+      "created_time": "1779678552",
+      "modified_time": "1779678554",
+      "owner_id": "ou_397db5a68430c1d029bcbf99d444e79c",
+      "size": 0
+    }
+  ]
+}
