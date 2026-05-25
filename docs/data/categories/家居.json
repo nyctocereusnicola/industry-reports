@@ -1,23 +1,5 @@
 {
   "category": "家居",
-  "file_count": 1,
-  "files": [
-    {
-      "token": "CVpOfbWBNl9CtSdVRm2csPeOn5c",
-      "title": "家居生活",
-      "summary": "",
-      "tags": [
-        "家居",
-        "家居"
-      ],
-      "score": 55,
-      "year": "1779",
-      "date": "1779260950",
-      "url": "https://my.feishu.cn/drive/folder/CVpOfbWBNl9CtSdVRm2csPeOn5c",
-      "type": "folder",
-      "size": 0,
-      "created_time": "1779258463",
-      "modified_time": "1779260950"
-    }
-  ]
+  "file_count": 0,
+  "files": []
 }

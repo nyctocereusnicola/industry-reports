@@ -1,23 +1,5 @@
 {
   "category": "抖音",
-  "file_count": 1,
-  "files": [
-    {
-      "token": "Pc53fEW0QlHw8XdvtT3cPxrLn2d",
-      "title": "抖音平台",
-      "summary": "",
-      "tags": [
-        "抖音",
-        "抖音"
-      ],
-      "score": 55,
-      "year": "1779",
-      "date": "1779258429",
-      "url": "https://my.feishu.cn/drive/folder/Pc53fEW0QlHw8XdvtT3cPxrLn2d",
-      "type": "folder",
-      "size": 0,
-      "created_time": "1779258389",
-      "modified_time": "1779258429"
-    }
-  ]
+  "file_count": 0,
+  "files": []
 }
