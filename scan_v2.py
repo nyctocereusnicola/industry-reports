@@ -9,7 +9,7 @@ APP_SECRET = os.getenv("FEISHU_APP_SECRET", "BSrMFRLJSEOv9cngkERqEcg83IRbj2oi")
 ROOT = os.getenv("FEISHU_FOLDER_TOKEN", "YYLHfvuCylpAQVdzTRxcdDpgnyc")
 BASE = "https://open.feishu.cn/open-apis"
 OUT = "docs/data/categories"
-DELAY = 0.8
+DELAY = 0.3
 
 # 文件夹名 → 行业分类映射
 CAT_MAP = {
@@ -75,14 +75,14 @@ def list_folder(token, folder_token, page_token=None):
 
 
 def list_all(token, folder_token):
-    """获取文件夹下所有文件（自动分页）"""
+    """获取文件夹下所有文件（自动分页），最多100页防止死循环"""
     all_files = []
     page_token = None
-    while True:
+    max_pages = 100
+    for page_num in range(1, max_pages + 1):
         data = list_folder(token, folder_token, page_token)
         files = data.get("files", [])
         for f in files:
-            # 只保留需要的字段
             all_files.append({
                 "token": f.get("token", ""),
                 "name": f.get("name", ""),
@@ -95,7 +95,10 @@ def list_all(token, folder_token):
             })
         if not data.get("has_more"):
             break
-        page_token = data.get("page_token")
+        new_token = data.get("page_token")
+        if not new_token or new_token == page_token:
+            break  # 防止 token 不变导致死循环
+        page_token = new_token
         time.sleep(DELAY)
     return all_files
 
