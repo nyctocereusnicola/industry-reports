@@ -1,6 +1,6 @@
 {
   "category": "美妆",
-  "file_count": 15,
+  "file_count": 12,
   "files": [
     {
       "token": "UFm5bpgbDoNrNPxnnQqc49gCnSM",
@@ -20,8 +20,42 @@
       "modified_time": "1779680287"
     },
     {
-      "token": "X0sDbEfR3oNyMWx6D80cAPV5nGn",
-      "title": "2019 抖音美妆群体分析报告（抖音，55页）",
+      "token": "O64nbS84Ho2hjSxukdAcy9s0nae",
+      "title": "兔头妈妈分龄护肤宣传片发布公关传播方案",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "护肤"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/O64nbS84Ho2hjSxukdAcy9s0nae",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678599",
+      "modified_time": "1779678613"
+    },
+    {
+      "token": "Dz7Dbsp9ootXDKxV6MjcNlI6ncc",
+      "title": "敏感肌护肤品市场调研报告（品域美创，40页）",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "护肤"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/Dz7Dbsp9ootXDKxV6MjcNlI6ncc",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678590",
+      "modified_time": "1779678594"
+    },
+    {
+      "token": "T2vgbRKRsoNq8KxGPHzckqHNnfc",
+      "title": "美妆连锁全渠道增长：私域存量激活与公域增量博弈",
       "summary": "",
       "tags": [
         "美妆",
@@ -30,233 +64,151 @@
       "score": 58,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/X0sDbEfR3oNyMWx6D80cAPV5nGn",
+      "url": "https://my.feishu.cn/file/T2vgbRKRsoNq8KxGPHzckqHNnfc",
       "type": "file",
       "size": 0,
-      "created_time": "1779677406",
-      "modified_time": "1779677411"
+      "created_time": "1779678586",
+      "modified_time": "1779678588"
     },
     {
-      "token": "LHmYbCDMHoewKyxyiPmcw8W0nec",
-      "title": "2019 东方美谷蓝皮书（化妆品行业）（CBNData&东方美谷&如新中国，60页）",
+      "token": "FR49bP4hXoKuufxSGX7cAhZdn8g",
+      "title": "美妆护肤防晒行业调研报告 解数咨询",
       "summary": "",
       "tags": [
+        "美妆",
+        "美妆",
+        "护肤",
+        "防晒"
+      ],
+      "score": 67,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/FR49bP4hXoKuufxSGX7cAhZdn8g",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678584",
+      "modified_time": "1779678586"
+    },
+    {
+      "token": "RElib5D0Bo8p57xb6OKcRiY7n8g",
+      "title": "美妆产品12月内容投放策略",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "美妆"
+      ],
+      "score": 57,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/RElib5D0Bo8p57xb6OKcRiY7n8g",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678583",
+      "modified_time": "1779678584"
+    },
+    {
+      "token": "U8FwbX4t9oqMWNxJbm2c6OT6n3b",
+      "title": "美妆：李凡聪-美妆品牌从品类突围到美学表达-2",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "美妆"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/U8FwbX4t9oqMWNxJbm2c6OT6n3b",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678580",
+      "modified_time": "1779678583"
+    },
+    {
+      "token": "L6tzbA1pSoAR0NxdrxXcy328nQf",
+      "title": "美妆：客户2024_已(注册)备案未上市美妆新品.png",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "美妆"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/L6tzbA1pSoAR0NxdrxXcy328nQf",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678578",
+      "modified_time": "1779678580"
+    },
+    {
+      "token": "Pj5HbytkdoFw0vxQ2fGcsiUunGf",
+      "title": "美妆：2022 美团闪购美妆-即时零售增长新范式-朱琳",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "美妆"
+      ],
+      "score": 58,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/Pj5HbytkdoFw0vxQ2fGcsiUunGf",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678577",
+      "modified_time": "1779678579"
+    },
+    {
+      "token": "ULEgbX2FZoYz7Xx7jKzcKYxSn5b",
+      "title": "美妆：2022 化妆品行业策略报告：产品为王，机制领先-20211121-国泰君安",
+      "summary": "",
+      "tags": [
+        "美妆",
         "美妆",
         "化妆"
       ],
-      "score": 60,
+      "score": 65,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/LHmYbCDMHoewKyxyiPmcw8W0nec",
+      "url": "https://my.feishu.cn/file/ULEgbX2FZoYz7Xx7jKzcKYxSn5b",
       "type": "file",
       "size": 0,
-      "created_time": "1779677405",
-      "modified_time": "1779677406"
+      "created_time": "1779678576",
+      "modified_time": "1779678577"
     },
     {
-      "token": "KkbqbE8DpozaYwxAz9ccbYC5nld",
-      "title": "2019 成分党崛起，功效护肤正逢时-华泰证券",
+      "token": "OKsSbJnnUo4gU6xSGjmckK7pnwc",
+      "title": "美妆：2022 化妆品年度复盘趋势发布",
       "summary": "",
       "tags": [
         "美妆",
-        "护肤"
-      ],
-      "score": 58,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/KkbqbE8DpozaYwxAz9ccbYC5nld",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677403",
-      "modified_time": "1779677405"
-    },
-    {
-      "token": "AlokbFbu7oxnnNxUPoZc5qoJnMh",
-      "title": "2019 Q2美妆新媒体内容营销分析报告（米汇，33页）",
-      "summary": "",
-      "tags": [
         "美妆",
-        "美妆"
+        "化妆"
       ],
-      "score": 59,
+      "score": 62,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/AlokbFbu7oxnnNxUPoZc5qoJnMh",
+      "url": "https://my.feishu.cn/file/OKsSbJnnUo4gU6xSGjmckK7pnwc",
       "type": "file",
       "size": 0,
-      "created_time": "1779677401",
-      "modified_time": "1779677403"
+      "created_time": "1779678571",
+      "modified_time": "1779678576"
     },
     {
-      "token": "DLJhbMVvAooUENxqa12cwzZunkf",
-      "title": "2019 95后线上口红消费研究（CBNData，25页）",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "口红"
-      ],
-      "score": 59,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/DLJhbMVvAooUENxqa12cwzZunkf",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677398",
-      "modified_time": "1779677398"
-    },
-    {
-      "token": "S85CbMkWnodWbcx1QOucAdEvnEh",
-      "title": "2018 中国时尚美妆热点趋势报告（CBNData&微博时尚&微博数据中心，37页）",
+      "token": "BWh8bESJOowqw6x84LTcBxQFnsz",
+      "title": "美妆：2021 掘金“颜值经济”新消费，见证国货崛起大浪潮-安信证券-2021.6.17-112页",
       "summary": "",
       "tags": [
         "美妆",
         "美妆"
       ],
-      "score": 60,
+      "score": 61,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/S85CbMkWnodWbcx1QOucAdEvnEh",
+      "url": "https://my.feishu.cn/file/BWh8bESJOowqw6x84LTcBxQFnsz",
       "type": "file",
       "size": 0,
-      "created_time": "1779677396",
-      "modified_time": "1779677397"
-    },
-    {
-      "token": "WzQGbOyMfoeXtGx5Hcdcvxjknkg",
-      "title": "2018 中国男士美妆护肤消费趋势报告-用户说）",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆",
-        "护肤"
-      ],
-      "score": 63,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/WzQGbOyMfoeXtGx5Hcdcvxjknkg",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677394",
-      "modified_time": "1779677396"
-    },
-    {
-      "token": "RfzrbSBGaoRh9Nxh1Sdct4GKn9f",
-      "title": "2018 中国美妆新零售研究报告（亿邦动力：41页）",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆"
-      ],
-      "score": 58,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/RfzrbSBGaoRh9Nxh1Sdct4GKn9f",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677387",
-      "modified_time": "1779677394"
-    },
-    {
-      "token": "IMr1b8beCoiNwQxTZo6cJSulnIe",
-      "title": "2018 亚洲美妆趋势-WGSN Beauty",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆"
-      ],
-      "score": 58,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/IMr1b8beCoiNwQxTZo6cJSulnIe",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677381",
-      "modified_time": "1779677385"
-    },
-    {
-      "token": "M2yjb0MF5oNKW2xiv3wcF7QZn2d",
-      "title": "2018 微博彩妆行业白皮书（微博营销研究院，69页）",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "彩妆"
-      ],
-      "score": 58,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/M2yjb0MF5oNKW2xiv3wcF7QZn2d",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677379",
-      "modified_time": "1779677381"
-    },
-    {
-      "token": "JNu0btTxyop2I9xBp1ucoktXnab",
-      "title": "2018 双十一美妆个护品类销售排行与消费者研究（维恩咨询，52页）",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆"
-      ],
-      "score": 59,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/JNu0btTxyop2I9xBp1ucoktXnab",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677376",
-      "modified_time": "1779677379"
-    },
-    {
-      "token": "LIUVbcByLo9pdwxs9lOcbFRdnZb",
-      "title": "2018 美妆行业洞察-今日头条",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/LIUVbcByLo9pdwxs9lOcbFRdnZb",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677373",
-      "modified_time": "1779677376"
-    },
-    {
-      "token": "UIdFbdcz8o0FCrxgFFlc9NBVnfc",
-      "title": "2018 美妆社交白皮书-群邑&热巢",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/UIdFbdcz8o0FCrxgFFlc9NBVnfc",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677370",
-      "modified_time": "1779677373"
-    },
-    {
-      "token": "VmMgbKKX3oS7WbxU0v0cLGb2nzd",
-      "title": "2018 美妆趋势报告-CBNData",
-      "summary": "",
-      "tags": [
-        "美妆",
-        "美妆"
-      ],
-      "score": 57,
-      "year": "2026",
-      "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/VmMgbKKX3oS7WbxU0v0cLGb2nzd",
-      "type": "file",
-      "size": 0,
-      "created_time": "1779677364",
-      "modified_time": "1779677370"
+      "created_time": "1779678570",
+      "modified_time": "1779678571"
     }
   ]
 }

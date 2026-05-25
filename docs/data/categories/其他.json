@@ -1,10 +1,42 @@
 {
   "category": "其他",
-  "file_count": 3,
+  "file_count": 6,
   "files": [
     {
-      "token": "GbXhbRZRzogQoPxndx9c0Lcgnnd",
-      "title": "2019 Beauty Trends in Asia",
+      "token": "EbdBbhVPIoWJSsxkxA9c3qV8n7R",
+      "title": "微信图片_20240226165734.png",
+      "summary": "",
+      "tags": [
+        "其他"
+      ],
+      "score": 52,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/EbdBbhVPIoWJSsxkxA9c3qV8n7R",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678615",
+      "modified_time": "1779678616"
+    },
+    {
+      "token": "Wa6vb7a1bogQYHxrF78cLIzmnKg",
+      "title": "上美股份品牌矩阵.png",
+      "summary": "",
+      "tags": [
+        "其他"
+      ],
+      "score": 51,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/Wa6vb7a1bogQYHxrF78cLIzmnKg",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678598",
+      "modified_time": "1779678599"
+    },
+    {
+      "token": "O0Q5bNrJ4oxHqnxQwHVcs4jbnyg",
+      "title": "人群：95后Boys理容消费微报告 CBNData",
       "summary": "",
       "tags": [
         "其他"
@@ -12,43 +44,59 @@
       "score": 53,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/GbXhbRZRzogQoPxndx9c0Lcgnnd",
+      "url": "https://my.feishu.cn/file/O0Q5bNrJ4oxHqnxQwHVcs4jbnyg",
       "type": "file",
       "size": 0,
-      "created_time": "1779677400",
-      "modified_time": "1779677400"
+      "created_time": "1779678597",
+      "modified_time": "1779678598"
     },
     {
-      "token": "NPm0b9FinoJFYvx5U0ac8QE3njg",
-      "title": "2019 Beauty Trends in Asia (KANTAR, 18 pages)",
+      "token": "XxpVbHpjHoZyAAxJLAYcWYV1nkf",
+      "title": "皮肤干燥分级及皮肤表观形态特征.png",
       "summary": "",
       "tags": [
         "其他"
       ],
-      "score": 56,
+      "score": 52,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/NPm0b9FinoJFYvx5U0ac8QE3njg",
+      "url": "https://my.feishu.cn/file/XxpVbHpjHoZyAAxJLAYcWYV1nkf",
       "type": "file",
       "size": 0,
-      "created_time": "1779677399",
-      "modified_time": "1779677399"
+      "created_time": "1779678595",
+      "modified_time": "1779678596"
     },
     {
-      "token": "Krd0bKA11oDtCzxCU8wceCArnsh",
-      "title": "2018 伊丽莎白雅顿：身体护理品类趋势研究报告（生意参谋&CBNData，56页）",
+      "token": "GQOzbUHHroPLwCxLVzJcmUc9nRg",
+      "title": "欧莱雅 品牌矩阵.jpg",
       "summary": "",
       "tags": [
         "其他"
       ],
-      "score": 55,
+      "score": 51,
       "year": "2026",
       "date": "2026-05-25",
-      "url": "https://my.feishu.cn/file/Krd0bKA11oDtCzxCU8wceCArnsh",
+      "url": "https://my.feishu.cn/file/GQOzbUHHroPLwCxLVzJcmUc9nRg",
       "type": "file",
       "size": 0,
-      "created_time": "1779677385",
-      "modified_time": "1779677386"
+      "created_time": "1779678594",
+      "modified_time": "1779678595"
+    },
+    {
+      "token": "LmckbaYcFooH3yxsy8BcnTGPnqd",
+      "title": "美妝趨勢.xmind",
+      "summary": "",
+      "tags": [
+        "其他"
+      ],
+      "score": 51,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/LmckbaYcFooH3yxsy8BcnTGPnqd",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678589",
+      "modified_time": "1779678590"
     }
   ]
 }

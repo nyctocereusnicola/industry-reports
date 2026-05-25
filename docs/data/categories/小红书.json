@@ -1,5 +1,23 @@
 {
   "category": "小红书",
-  "file_count": 0,
-  "files": []
+  "file_count": 1,
+  "files": [
+    {
+      "token": "F7vwbOQEmotbm2xxtt2clHpgnGb",
+      "title": "美妝（小紅書）.xmind",
+      "summary": "",
+      "tags": [
+        "小红书",
+        "小紅書"
+      ],
+      "score": 56,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/F7vwbOQEmotbm2xxtt2clHpgnGb",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779678588",
+      "modified_time": "1779678589"
+    }
+  ]
 }
