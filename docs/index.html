@@ -3,456 +3,492 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>行业报告集合站 — 飞书同步</title>
-    <meta name="description" content="搜索浏览行业洞察报告，一键跳转飞书查看完整源文件">
+    <title>行业报告 — 飞书同步</title>
     <style>
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         :root{
-            --primary:#1d4ed8;--primary-light:#3b82f6;--primary-bg:#eff6ff;
-            --bg:#f1f5f9;--card:#ffffff;--text:#1e293b;--text2:#64748b;
-            --border:#e2e8f0;--success:#10b981;--warning:#f59e0b;--danger:#ef4444;
-            --radius:12px;--shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
-            --shadow-hover:0 10px 25px rgba(0,0,0,.08),0 4px 10px rgba(0,0,0,.04);
-            --transition:0.2s cubic-bezier(.4,0,.2,1);
+            --primary:#2563eb;--primary-light:#3b82f6;--primary-bg:#eff6ff;
+            --bg:#f8fafc;--card:#fff;--text:#1e293b;--text2:#64748b;
+            --border:#e2e8f0;--radius:10px;--sidebar-w:230px;
         }
         body{
-            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-            background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;
+            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+            background:var(--bg);color:var(--text);line-height:1.6;
+            display:flex;min-height:100vh;
         }
-        a{color:var(--primary);text-decoration:none}
-        button{cursor:pointer;border:none;font-family:inherit;font-size:inherit}
-        input{font-family:inherit}
 
-        /* ========== Header ========== */
-        .header{
-            background:linear-gradient(135deg,#1e3a5f 0%,#1d4ed8 50%,#7c3aed 100%);
-            color:#fff;padding:0 24px;position:sticky;top:0;z-index:100;
-            box-shadow:0 2px 12px rgba(0,0,0,.15);
+        /* ===== 左侧栏 ===== */
+        .sidebar{
+            width:var(--sidebar-w);min-width:var(--sidebar-w);
+            background:#fff;border-right:1px solid var(--border);
+            position:fixed;top:0;bottom:0;left:0;z-index:200;
+            display:flex;flex-direction:column;overflow-y:auto;
         }
-        .header-inner{
-            max-width:1280px;margin:0 auto;display:flex;align-items:center;
-            justify-content:space-between;height:60px;gap:16px
+        .sidebar-logo{
+            padding:20px 20px 12px;border-bottom:1px solid var(--border);
+            font-size:18px;font-weight:800;color:var(--primary);
         }
-        .logo{font-size:20px;font-weight:700;letter-spacing:.5px;white-space:nowrap}
-        .logo span{opacity:.85;font-weight:400;font-size:14px;margin-left:8px}
-        .last-sync{font-size:12px;color:rgba(255,255,255,.7)}
+        .sidebar-logo span{font-size:12px;color:var(--text2);font-weight:400;margin-left:6px}
+        .sidebar-stats{
+            padding:12px 20px;border-bottom:1px solid var(--border);
+            font-size:13px;color:var(--text2);
+        }
+        .sidebar-stats strong{color:var(--text);font-size:16px}
+        .sidebar-nav{padding:8px 0;flex:1}
+        .sidebar-nav .nav-section{
+            padding:8px 20px 4px;font-size:11px;font-weight:600;
+            color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;
+        }
+        .sidebar-nav a{
+            display:flex;align-items:center;gap:10px;
+            padding:9px 20px;font-size:14px;color:var(--text);
+            text-decoration:none;transition:all .15s;border-left:3px solid transparent;
+            cursor:pointer;
+        }
+        .sidebar-nav a:hover{background:var(--primary-bg);color:var(--primary)}
+        .sidebar-nav a.active{
+            background:var(--primary-bg);color:var(--primary);
+            border-left-color:var(--primary);font-weight:600;
+        }
+        .sidebar-nav a .count{
+            margin-left:auto;font-size:11px;color:var(--text2);
+            background:#f1f5f9;padding:1px 7px;border-radius:10px;
+        }
+        .sidebar-nav a .count.loading-count{color:transparent;background:#e2e8f0;animation:pulse 1.5s infinite}
+        @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+        .sidebar-footer{
+            padding:14px 20px;border-top:1px solid var(--border);
+            font-size:11px;color:var(--text2);
+        }
 
-        /* ========== Stats ========== */
-        .stats-hero{padding:32px 24px 24px;background:#fff;border-bottom:1px solid var(--border)}
-        .stats-inner{max-width:1280px;margin:0 auto}
-        .stats-inner h1{font-size:28px;font-weight:800;color:var(--text);margin-bottom:4px}
-        .stats-inner p{color:var(--text2);font-size:15px;margin-bottom:20px}
-        .stats-row{display:flex;gap:16px;flex-wrap:wrap}
-        .stat-card{
-            flex:1;min-width:140px;background:var(--primary-bg);border-radius:var(--radius);
-            padding:16px 20px;display:flex;align-items:center;gap:14px
+        /* ===== 右侧主区 ===== */
+        .main{
+            margin-left:var(--sidebar-w);flex:1;min-width:0;
+            display:flex;flex-direction:column;
         }
-        .stat-icon{font-size:28px}
-        .stat-info .stat-num{font-size:24px;font-weight:700;color:var(--text)}
-        .stat-info .stat-label{font-size:13px;color:var(--text2)}
-
-        /* ========== Toolbar ========== */
-        .toolbar{max-width:1280px;margin:0 auto;padding:20px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-        .search-box{flex:1;min-width:280px;position:relative}
+        .main-header{
+            background:#fff;border-bottom:1px solid var(--border);
+            padding:14px 28px;position:sticky;top:0;z-index:100;
+            display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+        }
+        .main-header h2{font-size:20px;font-weight:700;white-space:nowrap}
+        .main-header .breadcrumb{font-size:13px;color:var(--text2)}
+        .search-box{flex:1;min-width:200px;position:relative}
         .search-box input{
-            width:100%;padding:10px 16px 10px 40px;border:2px solid var(--border);
-            border-radius:10px;font-size:15px;outline:none;transition:var(--transition);
-            background:#fff
+            width:100%;padding:8px 14px 8px 36px;border:1.5px solid var(--border);
+            border-radius:8px;font-size:14px;outline:none;transition:.2s;
+            background:#f8fafc;
         }
-        .search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(29,78,216,.1)}
-        .search-box .search-icon{
-            position:absolute;left:14px;top:50%;transform:translateY(-50%);
-            color:var(--text2);font-size:18px;pointer-events:none
+        .search-box input:focus{border-color:var(--primary);background:#fff;box-shadow:0 0 0 3px rgba(37,99,235,.08)}
+        .search-box .s-icon{
+            position:absolute;left:12px;top:50%;transform:translateY(-50%);
+            font-size:15px;color:var(--text2);pointer-events:none;
         }
-        .filter-pills{display:flex;gap:8px;flex-wrap:wrap}
-        .pill{
-            padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500;
-            background:#fff;color:var(--text2);border:1px solid var(--border);
-            transition:var(--transition);white-space:nowrap
-        }
-        .pill:hover{border-color:var(--primary);color:var(--primary)}
-        .pill.active{background:var(--primary);color:#fff;border-color:var(--primary)}
 
-        /* ========== Grid ========== */
-        .content{max-width:1280px;margin:0 auto;padding:0 24px 40px}
-        .report-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-        .report-card{
-            background:var(--card);border-radius:var(--radius);padding:20px;
-            box-shadow:var(--shadow);transition:var(--transition);
-            display:flex;flex-direction:column;border:1px solid var(--border);
-            position:relative;overflow:hidden
+        /* ===== 卡片区 ===== */
+        .content{padding:0 28px 32px;flex:1}
+        .list-header{
+            padding:18px 0 12px;font-size:13px;color:var(--text2);
+            display:flex;justify-content:space-between;align-items:center;
         }
-        .report-card:hover{
-            box-shadow:var(--shadow-hover);transform:translateY(-2px);
-            border-color:#cbd5e1
+        .report-grid{
+            display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;
         }
-        .card-type-badge{
-            position:absolute;top:0;right:0;padding:4px 12px;
-            font-size:11px;font-weight:600;border-radius:0 0 0 8px;
+        .card{
+            background:var(--card);border-radius:var(--radius);
+            border:1px solid var(--border);padding:18px;
+            transition:all .2s;display:flex;flex-direction:column;
+            position:relative;
         }
-        .card-type-doc{background:#eff6ff;color:#1d4ed8}
-        .card-type-docx{background:#eff6ff;color:#1d4ed8}
-        .card-type-sheet{background:#f0fdf4;color:#16a34a}
-        .card-type-bitable{background:#fefce8;color:#ca8a04}
-        .card-type-slides{background:#fef2f2;color:#dc2626}
-        .card-type-mindnote{background:#f5f3ff;color:#7c3aed}
-        .card-type-folder{background:#fff7ed;color:#ea580c}
-        .card-type-file{background:#f8fafc;color:#475569}
-        .card-icon-row{display:flex;align-items:center;gap:8px;margin-bottom:12px}
-        .file-type-icon{font-size:24px;line-height:1}
-        .file-type-label{font-size:12px;color:var(--text2);font-weight:500}
+        .card:hover{border-color:#cbd5e1;box-shadow:0 4px 16px rgba(0,0,0,.06);transform:translateY(-1px)}
+        .card-badge{
+            position:absolute;top:0;right:0;
+            font-size:10px;font-weight:600;padding:3px 10px;
+            border-radius:0 0 0 8px;text-transform:uppercase;
+        }
+        .badge-doc{background:#eff6ff;color:#2563eb}
+        .badge-sheet{background:#f0fdf4;color:#16a34a}
+        .badge-slides{background:#fef2f2;color:#dc2626}
+        .badge-bitable{background:#fefce8;color:#ca8a04}
+        .badge-mindnote{background:#f5f3ff;color:#7c3aed}
+        .badge-file{background:#f8fafc;color:#64748b}
+        .badge-folder{background:#fff7ed;color:#ea580c}
         .card-title{
-            font-size:16px;font-weight:600;color:var(--text);line-height:1.4;
+            font-size:15px;font-weight:600;line-height:1.45;margin-bottom:6px;
             display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
-            overflow:hidden;margin-bottom:10px;min-height:44px
-        }
-        .card-summary{
-            font-size:13px;color:var(--text2);line-height:1.6;flex:1;
-            display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;
-            overflow:hidden;margin-bottom:14px
-        }
-        .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-        .card-tag{
-            font-size:11px;padding:2px 8px;background:#f1f5f9;color:var(--text2);border-radius:4px
+            overflow:hidden;word-break:break-word;
         }
         .card-meta{
-            display:flex;align-items:center;justify-content:space-between;
-            font-size:12px;color:var(--text2);padding-top:12px;
-            border-top:1px solid var(--border)
+            font-size:12px;color:var(--text2);margin-top:auto;padding-top:12px;
+            border-top:1px solid #f1f5f9;
+            display:flex;justify-content:space-between;align-items:center;
         }
         .card-link{
-            display:inline-flex;align-items:center;justify-content:center;gap:4px;
-            padding:8px 14px;background:var(--primary);color:#fff;border-radius:6px;
-            font-size:13px;font-weight:500;transition:var(--transition);margin-top:12px
+            display:inline-flex;align-items:center;gap:4px;
+            margin-top:10px;padding:7px 12px;background:var(--primary-bg);
+            color:var(--primary);border-radius:6px;font-size:13px;font-weight:500;
+            text-decoration:none;transition:.15s;align-self:flex-start;
         }
-        .card-link:hover{background:var(--primary-light);color:#fff}
+        .card-link:hover{background:#dbeafe}
 
-        /* ========== Pagination ========== */
-        .pagination{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:32px}
-        .page-btn{
-            padding:8px 14px;border-radius:8px;border:1px solid var(--border);
-            background:#fff;font-size:14px;transition:var(--transition)
+        /* ===== 分页 ===== */
+        .pagination{
+            display:flex;justify-content:center;align-items:center;gap:6px;
+            margin-top:28px;padding-bottom:20px;
         }
-        .page-btn:hover:not(:disabled){border-color:var(--primary);color:var(--primary)}
-        .page-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-        .page-btn:disabled{opacity:.4;cursor:default}
-        .page-info{font-size:14px;color:var(--text2);padding:0 8px}
-
-        /* ========== States ========== */
-        .loading{text-align:center;padding:60px 20px;color:var(--text2);font-size:15px}
-        .empty-state{text-align:center;padding:60px 20px}
-        .empty-state .empty-icon{font-size:64px;margin-bottom:16px}
-        .empty-state h3{font-size:20px;color:var(--text);margin-bottom:8px}
-        .empty-state p{color:var(--text2);font-size:15px}
-        .error-state{text-align:center;padding:60px 20px;color:var(--danger)}
-
-        /* ========== Footer ========== */
-        .footer{
-            text-align:center;padding:24px;color:var(--text2);font-size:13px;
-            border-top:1px solid var(--border);margin-top:20px
+        .pagination button{
+            padding:7px 13px;border-radius:7px;border:1px solid var(--border);
+            background:#fff;font-size:13px;cursor:pointer;transition:.15s;
         }
-        .footer a{color:var(--primary)}
+        .pagination button:hover:not(:disabled){border-color:var(--primary);color:var(--primary)}
+        .pagination button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+        .pagination button:disabled{opacity:.35;cursor:default}
+        .pagination .info{font-size:13px;color:var(--text2);margin:0 8px}
 
-        /* ========== Responsive ========== */
+        /* ===== 状态 ===== */
+        .loading-state{text-align:center;padding:80px 20px;color:var(--text2)}
+        .loading-state .spinner{
+            width:36px;height:36px;border:3px solid var(--border);
+            border-top-color:var(--primary);border-radius:50%;
+            animation:spin .8s linear infinite;margin:0 auto 16px;
+        }
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .empty-state{text-align:center;padding:80px 20px}
+        .empty-state h3{font-size:18px;color:var(--text);margin-bottom:6px}
+        .empty-state p{color:var(--text2);font-size:14px}
+
+        /* ===== 响应式 ===== */
         @media(max-width:768px){
-            .header-inner{height:52px}
-            .logo{font-size:17px}.logo span{display:none}
-            .stats-hero{padding:20px 16px}
-            .stats-inner h1{font-size:22px}
-            .toolbar{padding:12px 16px;flex-direction:column}
-            .search-box{min-width:100%}
-            .filter-pills{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;width:100%}
-            .content{padding:0 12px 32px}
-            .report-grid{grid-template-columns:1fr;gap:12px}
-            .stats-row{gap:8px}
-            .stat-card{padding:12px 16px;min-width:100px}
-            .stat-icon{font-size:22px}
-            .stat-info .stat-num{font-size:20px}
+            .sidebar{display:none}
+            .main{margin-left:0}
+            .content{padding:0 12px 24px}
+            .main-header{padding:10px 12px}
+            .main-header h2{font-size:17px}
+            .report-grid{grid-template-columns:1fr;gap:10px}
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-inner">
-            <div class="logo">📊 行业报告集合站<span>| 飞书同步</span></div>
-            <span class="last-sync" id="lastSyncText">加载中...</span>
-        </div>
-    </header>
 
-    <!-- Stats -->
-    <section class="stats-hero">
-        <div class="stats-inner">
-            <h1>行业研究 · 尽在掌握</h1>
-            <p>搜索浏览行业洞察报告，每份报告均可一键跳转飞书查看完整源文件</p>
-            <div class="stats-row">
-                <div class="stat-card">
-                    <span class="stat-icon">📄</span>
-                    <div class="stat-info"><div class="stat-num" id="statTotal">-</div><div class="stat-label">报告总数</div></div>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">📂</span>
-                    <div class="stat-info"><div class="stat-num" id="statCats">-</div><div class="stat-label">分类数量</div></div>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">📝</span>
-                    <div class="stat-info"><div class="stat-num" id="statDocs">-</div><div class="stat-label">飞书文档</div></div>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">⏱️</span>
-                    <div class="stat-info"><div class="stat-num" id="statSync">-</div><div class="stat-label">最近同步</div></div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ========== 左侧栏 ========== -->
+<aside class="sidebar">
+    <div class="sidebar-logo">📊 行业报告<span>飞书同步</span></div>
+    <div class="sidebar-stats">
+        共 <strong id="sidebarTotal">-</strong> 篇报告
+        <div style="font-size:11px;color:#94a3b8" id="sidebarSync">加载中...</div>
+    </div>
+    <nav class="sidebar-nav">
+        <div class="nav-section">全部</div>
+        <a data-cat="" class="active" onclick="setCategory('')">
+            📋 全部报告 <span class="count loading-count" id="countAll">-</span>
+        </a>
+        <div class="nav-section" style="margin-top:8px">行业分类</div>
+    </nav>
+    <div class="sidebar-footer">
+        数据来源：飞书 · 托管于 GitHub Pages
+    </div>
+</aside>
 
-    <!-- Toolbar -->
-    <div class="toolbar">
+<!-- ========== 右侧主区 ========== -->
+<div class="main">
+    <div class="main-header">
+        <h2 id="pageTitle">全部报告</h2>
+        <span class="breadcrumb" id="breadcrumb"></span>
         <div class="search-box">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="搜索报告标题、标签、摘要...">
-        </div>
-        <div class="filter-pills" id="categoryPills">
-            <button class="pill active" data-cat="">全部</button>
+            <span class="s-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="搜索报告标题...">
         </div>
     </div>
 
-    <!-- Content -->
     <div class="content">
+        <div class="list-header">
+            <span id="resultInfo">正在加载...</span>
+        </div>
         <div id="reportGrid" class="report-grid"></div>
         <div id="pagination" class="pagination"></div>
-        <div id="loadingState" class="loading">⏳ 正在加载报告...</div>
+        <div id="loadingState" class="loading-state">
+            <div class="spinner"></div>
+            <div>正在加载报告数据...</div>
+        </div>
         <div id="emptyState" class="empty-state" style="display:none">
-            <div class="empty-icon">📭</div>
-            <h3>暂无匹配的报告</h3>
-            <p>试试调整搜索条件，数据会通过飞书自动同步更新</p>
+            <h3>📭 暂无匹配的报告</h3>
+            <p>试试调整搜索条件</p>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        数据来源：<a href="https://www.feishu.cn/" target="_blank" rel="noopener">飞书</a> · 
-        托管于 <a href="https://github.com/" target="_blank" rel="noopener">GitHub Pages</a> · 
-        每 30 分钟自动同步
-    </footer>
+<script>
+// ==================== 配置 ====================
+const PAGE_SIZE = 20;
+const ALL_CATEGORIES = [
+    "潮流时尚","宠物","抖音","小红书","美妆",
+    "海外市场","户外与运动","家居","健康养生","快消品",
+    "母婴","其他","奢侈品","食品饮料","香相关"
+];
 
-    <script>
-    // ===================== 全局状态 =====================
-    const PAGE_SIZE = 12;
-    let allReports = [];
-    let stats = null;
-    let currentPage = 1;
-    let currentSearch = '';
-    let currentCategory = '';
+// ==================== 状态 ====================
+let allReports = [];       // 全部报告
+let catIndex = null;       // _index.json
+let currentCat = "";       // 当前分类
+let currentPage = 1;
+let currentSearch = "";
 
-    // ===================== 工具函数 =====================
-    function escapeHtml(str) {
-        if (!str) return '';
-        const div = document.createElement('div');
-        div.textContent = str;
-        return div.innerHTML;
-    }
+// ==================== 渲染导航 ====================
+function renderNav() {
+    const nav = document.querySelector(".sidebar-nav");
+    // 清除旧分类导航（保留前两个）
+    const existing = nav.querySelectorAll(".cat-link");
+    existing.forEach(e => e.remove());
 
-    function fileTypeIcon(type) {
-        const map = {doc:'📝',docx:'📝',sheet:'📊',bitable:'🗂️',slides:'🎞️',mindnote:'🧠',folder:'📁'};
-        return map[type] || '📎';
-    }
-
-    function fileTypeClass(type) {
-        return `card-type-${type}`;
-    }
-
-    function formatTime(ts) {
-        if (!ts) return '未知';
-        try {
-            const d = new Date(ts);
-            if (isNaN(d.getTime())) return ts;
-            const now = new Date();
-            const diff = now - d;
-            if (diff < 60000) return '刚刚';
-            if (diff < 3600000) return Math.floor(diff / 60000) + '分钟前';
-            if (diff < 86400000) return Math.floor(diff / 3600000) + '小时前';
-            if (diff < 604800000) return Math.floor(diff / 86400000) + '天前';
-            return d.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' });
-        } catch (e) {
-            return ts;
-        }
-    }
-
-    // ===================== 过滤与分页 =====================
-    function getFilteredReports() {
-        let result = [...allReports];
-        if (currentSearch) {
-            const q = currentSearch.toLowerCase();
-            result = result.filter(r =>
-                (r.title || '').toLowerCase().includes(q) ||
-                (r.summary || '').toLowerCase().includes(q) ||
-                (r.tags || '').toLowerCase().includes(q)
-            );
-        }
-        if (currentCategory) {
-            result = result.filter(r => (r.category || '未分类') === currentCategory);
-        }
-        return result;
-    }
-
-    function getPageData() {
-        const filtered = getFilteredReports();
-        const total = filtered.length;
-        const totalPages = Math.ceil(total / PAGE_SIZE);
-        const start = (currentPage - 1) * PAGE_SIZE;
-        const pageData = filtered.slice(start, start + PAGE_SIZE);
-        return { pageData, total, totalPages };
-    }
-
-    // ===================== 渲染 =====================
-    function renderCard(r) {
-        const tags = (r.tags || '').split(',').filter(t => t.trim());
-        const isDemo = r.file_token && r.file_token.startsWith('demo_');
-        const url = isDemo ? '#' : (r.feishu_url || '#');
-        const target = isDemo ? '' : ' target="_blank" rel="noopener"';
-        return `
-        <div class="report-card">
-            <span class="card-type-badge ${fileTypeClass(r.file_type)}">${escapeHtml(r.file_ext || '文件')}</span>
-            <div class="card-icon-row">
-                <span class="file-type-icon">${fileTypeIcon(r.file_type)}</span>
-                <span class="file-type-label">${escapeHtml(r.file_ext || '文件')}</span>
-            </div>
-            <div class="card-title" title="${escapeHtml(r.title)}">${escapeHtml(r.title)}</div>
-            <div class="card-summary">${escapeHtml(r.summary || '暂无摘要')}</div>
-            ${tags.length ? `<div class="card-tags">${tags.map(t => `<span class="card-tag">${escapeHtml(t)}</span>`).join('')}</div>` : ''}
-            <div class="card-meta">
-                <span>🕐 ${formatTime(r.feishu_modified)}</span>
-                <span>👁 ${r.view_count || 0} 次查看</span>
-            </div>
-            <a class="card-link" href="${url}"${target}>
-                ${isDemo ? '📌 示例数据' : '🔗 在飞书查看 →'}
-            </a>
-        </div>`;
-    }
-
-    function renderPagination(total, page, totalPages) {
-        if (totalPages <= 1) return '';
-        let html = `<button class="page-btn" onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>‹ 上一页</button>`;
-        const start = Math.max(1, page - 2);
-        const end = Math.min(totalPages, page + 2);
-        for (let i = start; i <= end; i++) {
-            html += `<button class="page-btn ${i === page ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
-        }
-        html += `<button class="page-btn" onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>下一页 ›</button>`;
-        html += `<span class="page-info">共 ${total} 条</span>`;
-        return html;
-    }
-
-    function renderGrid() {
-        const { pageData, total, totalPages } = getPageData();
-        const grid = document.getElementById('reportGrid');
-        const pagination = document.getElementById('pagination');
-        const empty = document.getElementById('emptyState');
-
-        if (pageData.length === 0) {
-            grid.innerHTML = '';
-            empty.style.display = 'block';
-            pagination.innerHTML = '';
-        } else {
-            empty.style.display = 'none';
-            grid.innerHTML = pageData.map(renderCard).join('');
-            pagination.innerHTML = renderPagination(total, currentPage, totalPages);
-        }
-    }
-
-    function renderStats() {
-        if (!stats) return;
-        document.getElementById('statTotal').textContent = stats.total || 0;
-        document.getElementById('statCats').textContent = (stats.categories || []).length;
-
-        const docTypes = ['doc', 'docx'];
-        const docCount = allReports.filter(r => docTypes.includes(r.file_type || '')).length;
-        document.getElementById('statDocs').textContent = docCount;
-
-        if (stats.last_sync) {
-            document.getElementById('statSync').textContent = formatTime(stats.last_sync);
-            document.getElementById('lastSyncText').textContent = '最近同步: ' + formatTime(stats.last_sync);
-        } else {
-            document.getElementById('lastSyncText').textContent = '';
-        }
-
-        // 渲染分类筛选
-        const pills = document.getElementById('categoryPills');
-        let pillsHtml = `<button class="pill${currentCategory === '' ? ' active' : ''}" data-cat="">全部</button>`;
-        (stats.categories || []).forEach(c => {
-            const name = c.name || '未分类';
-            pillsHtml += `<button class="pill${currentCategory === name ? ' active' : ''}" data-cat="${escapeHtml(name)}">${escapeHtml(name)} (${c.count})</button>`;
-        });
-        pills.innerHTML = pillsHtml;
-
-        // 绑定分类点击事件
-        pills.querySelectorAll('.pill').forEach(btn => {
-            btn.addEventListener('click', function () {
-                setCategory(this.dataset.cat);
-            });
-        });
-    }
-
-    // ===================== 数据加载 =====================
-    async function loadData() {
-        const loading = document.getElementById('loadingState');
-        const empty = document.getElementById('emptyState');
-        loading.style.display = 'block';
-        empty.style.display = 'none';
-
-        try {
-            const resp = await fetch('data/reports.json');
-            if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${resp.statusText}`);
-            const data = await resp.json();
-
-            allReports = data.reports || [];
-            stats = data.stats || null;
-
-            loading.style.display = 'none';
-            renderStats();
-            renderGrid();
-        } catch (e) {
-            loading.innerHTML = `<div class="error-state">❌ 数据加载失败<br><small>${escapeHtml(e.message)}</small></div>`;
-            console.error('数据加载错误:', e);
-        }
-    }
-
-    // ===================== 事件处理 =====================
-    function setCategory(cat) {
-        currentCategory = cat;
-        currentPage = 1;
-        // 更新按钮状态
-        document.querySelectorAll('#categoryPills .pill').forEach(p => {
-            p.classList.toggle('active', p.dataset.cat === cat);
-        });
-        renderGrid();
-    }
-
-    function goPage(p) {
-        const { totalPages } = getPageData();
-        if (p < 1 || p > totalPages) return;
-        currentPage = p;
-        renderGrid();
-        window.scrollTo({ top: 300, behavior: 'smooth' });
-    }
-
-    // ===================== 初始化 =====================
-    document.addEventListener('DOMContentLoaded', () => {
-        // 搜索输入防抖
-        let searchTimer;
-        document.getElementById('searchInput').addEventListener('input', function () {
-            clearTimeout(searchTimer);
-            searchTimer = setTimeout(() => {
-                currentSearch = this.value.trim();
-                currentPage = 1;
-                renderGrid();
-            }, 300);
-        });
-
-        // 加载数据
-        loadData();
+    let totalAll = 0;
+    ALL_CATEGORIES.forEach(cat => {
+        const count = catIndex ? (catIndex.categories.find(cc => cc.name === cat)?.count || 0) : 0;
+        totalAll += count;
+        const a = document.createElement("a");
+        a.className = "cat-link";
+        a.setAttribute("data-cat", cat);
+        a.onclick = function() { setCategory(cat); };
+        a.innerHTML = `📂 ${cat} <span class="count" id="count_${cat.replace(/\s/g,'_')}">${count || '-'}</span>`;
+        nav.appendChild(a);
     });
-    </script>
+
+    // 更新全部计数
+    document.getElementById("countAll").textContent = totalAll || (allReports.length || '-');
+    document.getElementById("countAll").classList.remove("loading-count");
+    document.getElementById("sidebarTotal").textContent = totalAll || (allReports.length || '-');
+
+    ALL_CATEGORIES.forEach(cat => {
+        const el = document.getElementById("count_" + cat.replace(/\s/g, '_'));
+        if (el) el.classList.remove("loading-count");
+    });
+}
+
+// ==================== 数据加载 ====================
+async function loadIndex() {
+    try {
+        const resp = await fetch("data/categories/_index.json");
+        if (resp.ok) {
+            catIndex = await resp.json();
+            document.getElementById("sidebarSync").textContent =
+                "最近同步: " + (catIndex.last_sync || "未知");
+        }
+    } catch(e) {
+        console.log("索引文件未就绪:", e.message);
+    }
+}
+
+async function loadCategory(cat) {
+    const loading = document.getElementById("loadingState");
+    const grid = document.getElementById("reportGrid");
+    loading.style.display = "block";
+    grid.innerHTML = "";
+
+    let reports = [];
+    let sourceLabel = "";
+
+    if (!cat) {
+        // 全部：汇总加载所有分类
+        sourceLabel = "全部";
+        for (const c of ALL_CATEGORIES) {
+            const safe = c.replace(/\//g,"_").replace(/\s/g,"_");
+            try {
+                const resp = await fetch(`data/categories/${safe}.json`);
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (data.reports) reports = reports.concat(data.reports);
+                }
+            } catch(e) {}
+        }
+    } else {
+        sourceLabel = cat;
+        const safe = cat.replace(/\//g,"_").replace(/\s/g,"_");
+        try {
+            const resp = await fetch(`data/categories/${safe}.json`);
+            if (resp.ok) {
+                const data = await resp.json();
+                reports = data.reports || [];
+            }
+        } catch(e) {
+            console.error("加载失败:", e);
+        }
+    }
+
+    allReports = reports;
+    loading.style.display = "none";
+
+    // 更新计数
+    document.getElementById("countAll").textContent = allReports.length;
+    document.getElementById("sidebarTotal").textContent = allReports.length;
+    const countEl = document.getElementById("count_" + (cat || "All").replace(/\s/g,'_'));
+    if (countEl) countEl.textContent = allReports.length;
+
+    renderGrid();
+}
+
+// ==================== 过滤与分页 ====================
+function getFiltered() {
+    let result = [...allReports];
+    if (currentSearch) {
+        const q = currentSearch.toLowerCase();
+        result = result.filter(r =>
+            (r.title||"").toLowerCase().includes(q) ||
+            (r.summary||"").toLowerCase().includes(q)
+        );
+    }
+    return result;
+}
+
+function getPageData() {
+    const filtered = getFiltered();
+    const total = filtered.length;
+    const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const paged = filtered.slice(start, start + PAGE_SIZE);
+    return { paged, total, totalPages };
+}
+
+// ==================== 渲染 ====================
+function esc(s) {
+    if (!s) return "";
+    const d = document.createElement("div");
+    d.textContent = s;
+    return d.innerHTML;
+}
+
+function typeIcon(t) {
+    const m = {doc:"📝",docx:"📝",sheet:"📊",bitable:"🗂️",slides:"🎞️",mindnote:"🧠",folder:"📁"};
+    return m[t] || "📎";
+}
+
+function typeBadge(t) {
+    const m = {docx:"badge-doc",doc:"badge-doc",sheet:"badge-sheet",
+               slides:"badge-slides",bitable:"badge-bitable",
+               mindnote:"badge-mindnote",folder:"badge-folder"};
+    return m[t] || "badge-file";
+}
+
+function fmtTime(ts) {
+    if (!ts) return "";
+    try {
+        const d = new Date(ts);
+        if (isNaN(d.getTime())) return ts.slice(0,10);
+        return d.toLocaleDateString("zh-CN",{month:"short",day:"numeric",year:"numeric"});
+    } catch(e) { return ts; }
+}
+
+function renderCard(r) {
+    const url = r.feishu_url || "#";
+    return `
+    <div class="card">
+        <span class="card-badge ${typeBadge(r.file_type)}">${esc(r.file_ext||"文件")}</span>
+        <div class="card-title" title="${esc(r.title)}">
+            ${typeIcon(r.file_type)} ${esc(r.title)}
+        </div>
+        <a class="card-link" href="${url}" target="_blank" rel="noopener">🔗 飞书查看 →</a>
+        <div class="card-meta">
+            <span>🕐 ${fmtTime(r.feishu_modified)}</span>
+            <span>👁 ${r.view_count||0}</span>
+        </div>
+    </div>`;
+}
+
+function renderGrid() {
+    const { paged, total, totalPages } = getPageData();
+    const grid = document.getElementById("reportGrid");
+    const pag = document.getElementById("pagination");
+    const empty = document.getElementById("emptyState");
+    const info = document.getElementById("resultInfo");
+
+    if (paged.length === 0) {
+        grid.innerHTML = "";
+        empty.style.display = "block";
+        pag.innerHTML = "";
+        info.textContent = "暂无数据";
+    } else {
+        empty.style.display = "none";
+        info.textContent = `共 ${total} 篇报告`;
+        grid.innerHTML = paged.map(renderCard).join("");
+
+        // 分页
+        if (totalPages <= 1) {
+            pag.innerHTML = "";
+        } else {
+            let html = `<button onclick="go(${currentPage-1})" ${currentPage<=1?"disabled":""}>‹ 上一页</button>`;
+            const s = Math.max(1, currentPage-2);
+            const e = Math.min(totalPages, currentPage+2);
+            for (let i=s; i<=e; i++) {
+                html += `<button class="${i===currentPage?'active':''}" onclick="go(${i})">${i}</button>`;
+            }
+            html += `<button onclick="go(${currentPage+1})" ${currentPage>=totalPages?"disabled":""}>下一页 ›</button>`;
+            html += `<span class="info">${currentPage}/${totalPages} 页</span>`;
+            pag.innerHTML = html;
+        }
+    }
+}
+
+// ==================== 事件 ====================
+function setCategory(cat) {
+    currentCat = cat;
+    currentPage = 1;
+    currentSearch = "";
+
+    // 更新导航选中状态
+    document.querySelectorAll(".sidebar-nav a").forEach(a => {
+        a.classList.toggle("active", a.getAttribute("data-cat") === cat);
+    });
+
+    document.getElementById("searchInput").value = "";
+
+    if (cat) {
+        document.getElementById("pageTitle").textContent = cat;
+        document.getElementById("breadcrumb").textContent = "行业报告 / " + cat;
+    } else {
+        document.getElementById("pageTitle").textContent = "全部报告";
+        document.getElementById("breadcrumb").textContent = "";
+    }
+
+    loadCategory(cat);
+}
+
+function go(p) {
+    const { totalPages } = getPageData();
+    if (p<1 || p>totalPages) return;
+    currentPage = p;
+    renderGrid();
+    window.scrollTo({top: 100, behavior: "smooth"});
+}
+
+// ==================== 初始化 ====================
+document.addEventListener("DOMContentLoaded", async () => {
+    // 渲染空分类导航
+    const nav = document.querySelector(".sidebar-nav");
+    ALL_CATEGORIES.forEach(cat => {
+        const a = document.createElement("a");
+        a.className = "cat-link";
+        a.setAttribute("data-cat", cat);
+        a.onclick = function() { setCategory(cat); };
+        a.innerHTML = `📂 ${cat} <span class="count loading-count" id="count_${cat.replace(/\s/g,'_')}">-</span>`;
+        nav.appendChild(a);
+    });
+
+    // 加载索引
+    await loadIndex();
+    renderNav();
+
+    // 搜索防抖
+    let timer;
+    document.getElementById("searchInput").addEventListener("input", function() {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            currentSearch = this.value.trim();
+            currentPage = 1;
+            renderGrid();
+        }, 300);
+    });
+
+    // 默认加载全部
+    loadCategory("");
+});
+</script>
 </body>
 </html>
