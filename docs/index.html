@@ -3,351 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>行业报告 — 飞书同步</title>
+    <title>行业报告仪表盘 — Industry Reports</title>
     <style>
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         :root{
-            --primary:#2563eb;--primary-light:#3b82f6;--primary-bg:#eff6ff;
-            --bg:#f8fafc;--card:#fff;--text:#1e293b;--text2:#64748b;
-            --border:#e2e8f0;--radius:10px;--sidebar-w:230px;
+            --primary:#4f46e5;--primary2:#6366f1;--primary3:#e0e7ff;
+            --bg:#f1f5f9;--card:#fff;--text:#0f172a;--text2:#64748b;
+            --border:#e2e8f0;--r:12px;--sw:240px;
+            --s0:#4f46e5;--s1:#06b6d4;--s2:#10b981;--s3:#f59e0b;--s4:#ef4444;--s5:#8b5cf6;
         }
         body{
             font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
-            background:var(--bg);color:var(--text);line-height:1.6;
-            display:flex;min-height:100vh;
+            background:var(--bg);color:var(--text);line-height:1.5;display:flex;min-height:100vh;
         }
+        a{text-decoration:none;color:inherit}
 
-        /* ===== 左侧栏 ===== */
+        /* ===== 侧栏 ===== */
         .sidebar{
-            width:var(--sidebar-w);min-width:var(--sidebar-w);
+            width:var(--sw);min-width:var(--sw);
             background:#fff;border-right:1px solid var(--border);
-            position:fixed;top:0;bottom:0;left:0;z-index:200;
+            position:fixed;top:0;bottom:0;left:0;z-index:100;
             display:flex;flex-direction:column;overflow-y:auto;
         }
-        .sidebar-logo{
-            padding:20px 20px 12px;border-bottom:1px solid var(--border);
-            font-size:18px;font-weight:800;color:var(--primary);
+        .sb-logo{
+            padding:20px 20px 14px;border-bottom:1px solid var(--border);
+            font-size:17px;font-weight:800;color:var(--primary);
+            letter-spacing:-.3px;
         }
-        .sidebar-logo span{font-size:12px;color:var(--text2);font-weight:400;margin-left:6px}
-        .sidebar-stats{
-            padding:12px 20px;border-bottom:1px solid var(--border);
-            font-size:13px;color:var(--text2);
+        .sb-logo span{font-size:11px;color:var(--text2);font-weight:400;margin-left:6px}
+        .sb-stats{
+            padding:14px 20px;border-bottom:1px solid var(--border);
+            display:flex;gap:12px;flex-wrap:wrap;
         }
-        .sidebar-stats strong{color:var(--text);font-size:16px}
-        .sidebar-nav{padding:8px 0;flex:1}
-        .sidebar-nav .nav-section{
-            padding:8px 20px 4px;font-size:11px;font-weight:600;
-            color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;
-        }
-        .sidebar-nav a{
-            display:flex;align-items:center;gap:10px;
-            padding:9px 20px;font-size:14px;color:var(--text);
-            text-decoration:none;transition:all .15s;border-left:3px solid transparent;
-            cursor:pointer;
-        }
-        .sidebar-nav a:hover{background:var(--primary-bg);color:var(--primary)}
-        .sidebar-nav a.active{
-            background:var(--primary-bg);color:var(--primary);
-            border-left-color:var(--primary);font-weight:600;
-        }
-        .sidebar-nav a .count{
-            margin-left:auto;font-size:11px;color:var(--text2);
-            background:#f1f5f9;padding:1px 7px;border-radius:10px;
-        }
-        .sidebar-nav a .count.loading-count{color:transparent;background:#e2e8f0;animation:pulse 1.5s infinite}
-        @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
-        .sidebar-footer{
-            padding:14px 20px;border-top:1px solid var(--border);
+        .sb-stat{
+            flex:1;min-width:60px;text-align:center;
             font-size:11px;color:var(--text2);
         }
-
-        /* ===== 右侧主区 ===== */
-        .main{
-            margin-left:var(--sidebar-w);flex:1;min-width:0;
-            display:flex;flex-direction:column;
+        .sb-stat strong{display:block;font-size:18px;color:var(--text);font-weight:700}
+        .sb-nav{padding:6px 0;flex:1}
+        .sb-nav .nav-hd{
+            padding:10px 20px 4px;font-size:10px;font-weight:700;
+            color:#94a3b8;text-transform:uppercase;letter-spacing:.8px;
         }
-        .main-header{
+        .sb-nav a{
+            display:flex;align-items:center;gap:8px;
+            padding:8px 18px;font-size:13px;color:var(--text);
+            cursor:pointer;transition:all .15s;border-left:3px solid transparent;
+        }
+        .sb-nav a:hover{background:var(--primary3)}
+        .sb-nav a.active{
+            background:var(--primary3);color:var(--primary);
+            border-left-color:var(--primary);font-weight:600;
+        }
+        .sb-nav a .cnt{
+            margin-left:auto;font-size:10px;color:var(--text2);
+            background:#f1f5f9;padding:1px 8px;border-radius:10px;min-width:28px;text-align:center;
+        }
+        .sb-nav a.active .cnt{background:var(--primary3);color:var(--primary)}
+        .sb-nav a .cnt.zero{opacity:.35}
+        .sb-foot{
+            padding:12px 20px;border-top:1px solid var(--border);
+            font-size:10px;color:var(--text2);
+        }
+
+        /* ===== 主区 ===== */
+        .main{margin-left:var(--sw);flex:1;min-width:0;display:flex;flex-direction:column}
+        
+        /* 顶部栏 */
+        .topbar{
             background:#fff;border-bottom:1px solid var(--border);
-            padding:14px 28px;position:sticky;top:0;z-index:100;
+            padding:12px 24px;position:sticky;top:0;z-index:50;
             display:flex;align-items:center;gap:16px;flex-wrap:wrap;
         }
-        .main-header h2{font-size:20px;font-weight:700;white-space:nowrap}
-        .main-header .breadcrumb{font-size:13px;color:var(--text2)}
-        .search-box{flex:1;min-width:200px;position:relative}
-        .search-box input{
-            width:100%;padding:8px 14px 8px 36px;border:1.5px solid var(--border);
-            border-radius:8px;font-size:14px;outline:none;transition:.2s;
+        .topbar h2{font-size:19px;font-weight:700;white-space:nowrap}
+        .topbar .crumb{font-size:12px;color:var(--text2)}
+        .search-wrap{flex:1;min-width:220px;position:relative}
+        .search-wrap .sicon{
+            position:absolute;left:12px;top:50%;transform:translateY(-50%);
+            font-size:14px;color:var(--text2);pointer-events:none;
+        }
+        .search-wrap input{
+            width:100%;padding:9px 14px 9px 36px;border:1.5px solid var(--border);
+            border-radius:8px;font-size:13px;outline:none;transition:.2s;
             background:#f8fafc;
         }
-        .search-box input:focus{border-color:var(--primary);background:#fff;box-shadow:0 0 0 3px rgba(37,99,235,.08)}
-        .search-box .s-icon{
-            position:absolute;left:12px;top:50%;transform:translateY(-50%);
-            font-size:15px;color:var(--text2);pointer-events:none;
+        .search-wrap input:focus{border-color:var(--primary2);background:#fff;box-shadow:0 0 0 3px rgba(99,102,241,.08)}
+        .search-wrap .clear-btn{
+            position:absolute;right:8px;top:50%;transform:translateY(-50%);
+            background:none;border:none;font-size:16px;color:var(--text2);
+            cursor:pointer;padding:2px 6px;border-radius:4px;display:none;
         }
+        .search-wrap .clear-btn:hover{background:#f1f5f9}
+        .search-wrap .clear-btn.visible{display:block}
 
-        /* ===== 卡片区 ===== */
-        .content{padding:0 28px 32px;flex:1}
-        .list-header{
-            padding:18px 0 12px;font-size:13px;color:var(--text2);
+        /* 统计面板 */
+        .stats-panel{
+            background:var(--card);margin:20px 24px 0;border-radius:var(--r);
+            border:1px solid var(--border);padding:20px 24px;
+            display:grid;grid-template-columns:200px 1fr 1fr;gap:24px;
+            align-items:start;
+        }
+        .stats-kpi{display:flex;flex-direction:column;gap:8px}
+        .stats-kpi .kpi-num{font-size:42px;font-weight:800;color:var(--primary);line-height:1}
+        .stats-kpi .kpi-label{font-size:13px;color:var(--text2)}
+        .stats-kpi .kpi-sub{font-size:11px;color:var(--text2)}
+        .stats-chart h4,.stats-dist h4{
+            font-size:12px;font-weight:600;color:var(--text2);
+            margin-bottom:10px;text-transform:uppercase;letter-spacing:.3px;
+        }
+        .bar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+        .bar-row .bar-label{font-size:11px;width:64px;text-align:right;color:var(--text2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+        .bar-row .bar-track{flex:1;height:8px;background:#f1f5f9;border-radius:4px;overflow:hidden}
+        .bar-row .bar-fill{height:100%;border-radius:4px;background:var(--primary);transition:width .5s ease}
+        .bar-row .bar-val{font-size:10px;color:var(--text2);width:36px;text-align:right}
+        .trend-bars{display:flex;align-items:flex-end;gap:6px;height:80px;padding-top:4px}
+        .trend-bar-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px}
+        .trend-bar-item .tb-bar{width:100%;max-width:32px;background:var(--primary);border-radius:3px 3px 0 0;transition:height .5s ease;min-height:2px}
+        .trend-bar-item .tb-label{font-size:9px;color:var(--text2)}
+        .trend-bar-item .tb-val{font-size:10px;font-weight:600;color:var(--text)}
+
+        /* 内容区 */
+        .content{padding:20px 24px 40px}
+        .list-info{
             display:flex;justify-content:space-between;align-items:center;
+            padding:0 0 14px;font-size:13px;color:var(--text2);
         }
-        .report-grid{
-            display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;
+        .list-info .sort-select{
+            padding:5px 10px;border:1px solid var(--border);border-radius:6px;
+            font-size:12px;background:#fff;outline:none;cursor:pointer;
         }
+        .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
         .card{
-            background:var(--card);border-radius:var(--radius);
-            border:1px solid var(--border);padding:18px;
-            transition:all .2s;display:flex;flex-direction:column;
-            position:relative;
+            background:var(--card);border-radius:var(--r);border:1px solid var(--border);
+            padding:18px;transition:all .2s;display:flex;flex-direction:column;
+            position:relative;overflow:hidden;
         }
-        .card:hover{border-color:#cbd5e1;box-shadow:0 4px 16px rgba(0,0,0,.06);transform:translateY(-1px)}
-        .card-badge{
+        .card:hover{border-color:#cbd5e1;box-shadow:0 4px 20px rgba(0,0,0,.06);transform:translateY(-1px)}
+        .card .c-score{
             position:absolute;top:0;right:0;
-            font-size:10px;font-weight:600;padding:3px 10px;
-            border-radius:0 0 0 8px;text-transform:uppercase;
+            font-size:10px;font-weight:700;padding:4px 10px;
+            border-radius:0 0 0 var(--r);color:#fff;
         }
-        .badge-doc{background:#eff6ff;color:#2563eb}
-        .badge-sheet{background:#f0fdf4;color:#16a34a}
-        .badge-slides{background:#fef2f2;color:#dc2626}
-        .badge-bitable{background:#fefce8;color:#ca8a04}
-        .badge-mindnote{background:#f5f3ff;color:#7c3aed}
-        .badge-file{background:#f8fafc;color:#64748b}
-        .badge-folder{background:#fff7ed;color:#ea580c}
-        .card-title{
-            font-size:15px;font-weight:600;line-height:1.45;margin-bottom:6px;
+        .c-score.s90{background:var(--s1)}
+        .c-score.s80{background:var(--s2)}
+        .c-score.s70{background:var(--s3)}
+        .c-score.s60{background:var(--s5)}
+        .c-score.s50{background:var(--text2)}
+        .card .c-title{
+            font-size:14px;font-weight:600;line-height:1.5;margin-bottom:8px;
             display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
-            overflow:hidden;word-break:break-word;
+            overflow:hidden;word-break:break-word;padding-right:40px;
         }
-        .card-meta{
-            font-size:12px;color:var(--text2);margin-top:auto;padding-top:12px;
-            border-top:1px solid #f1f5f9;
+        .card .c-summary{
+            font-size:12px;color:var(--text2);line-height:1.55;
+            display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+            overflow:hidden;margin-bottom:10px;flex:1;
+        }
+        .card .c-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+        .card .c-tags span{
+            font-size:10px;padding:2px 8px;border-radius:4px;
+            background:#f1f5f9;color:var(--text2);
+        }
+        .card .c-tags span.tag-cat{
+            background:var(--primary3);color:var(--primary);font-weight:600;
+        }
+        .card .c-footer{
             display:flex;justify-content:space-between;align-items:center;
+            padding-top:10px;border-top:1px solid #f1f5f9;
         }
-        .card-link{
+        .card .c-date{font-size:11px;color:var(--text2)}
+        .card .c-link{
             display:inline-flex;align-items:center;gap:4px;
-            margin-top:10px;padding:7px 12px;background:var(--primary-bg);
-            color:var(--primary);border-radius:6px;font-size:13px;font-weight:500;
-            text-decoration:none;transition:.15s;align-self:flex-start;
+            padding:6px 12px;background:var(--primary3);color:var(--primary);
+            border-radius:6px;font-size:12px;font-weight:500;
+            transition:.15s;
         }
-        .card-link:hover{background:#dbeafe}
+        .card .c-link:hover{background:#c7d2fe}
 
-        /* ===== 分页 ===== */
+        /* 分页 */
         .pagination{
-            display:flex;justify-content:center;align-items:center;gap:6px;
+            display:flex;justify-content:center;align-items:center;gap:5px;
             margin-top:28px;padding-bottom:20px;
         }
         .pagination button{
-            padding:7px 13px;border-radius:7px;border:1px solid var(--border);
-            background:#fff;font-size:13px;cursor:pointer;transition:.15s;
+            padding:7px 14px;border-radius:7px;border:1px solid var(--border);
+            background:#fff;font-size:12px;cursor:pointer;transition:.15s;
         }
         .pagination button:hover:not(:disabled){border-color:var(--primary);color:var(--primary)}
         .pagination button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-        .pagination button:disabled{opacity:.35;cursor:default}
-        .pagination .info{font-size:13px;color:var(--text2);margin:0 8px}
+        .pagination button:disabled{opacity:.3;cursor:default}
+        .pagination .pg-info{font-size:12px;color:var(--text2);margin:0 6px}
 
-        /* ===== 状态 ===== */
-        .loading-state{text-align:center;padding:80px 20px;color:var(--text2)}
-        .loading-state .spinner{
-            width:36px;height:36px;border:3px solid var(--border);
+        /* 状态 */
+        .loading-box{text-align:center;padding:80px 20px;color:var(--text2)}
+        .spinner{
+            width:32px;height:32px;border:3px solid var(--border);
             border-top-color:var(--primary);border-radius:50%;
-            animation:spin .8s linear infinite;margin:0 auto 16px;
+            animation:spin .7s linear infinite;margin:0 auto 14px;
         }
         @keyframes spin{to{transform:rotate(360deg)}}
-        .empty-state{text-align:center;padding:80px 20px}
-        .empty-state h3{font-size:18px;color:var(--text);margin-bottom:6px}
-        .empty-state p{color:var(--text2);font-size:14px}
+        .empty-box{text-align:center;padding:80px 20px;display:none}
+        .empty-box .e-icon{font-size:48px;margin-bottom:12px}
+        .empty-box h3{font-size:17px;color:var(--text);margin-bottom:4px}
+        .empty-box p{font-size:13px;color:var(--text2)}
 
-        /* ===== 响应式 ===== */
         @media(max-width:768px){
             .sidebar{display:none}
             .main{margin-left:0}
-            .content{padding:0 12px 24px}
-            .main-header{padding:10px 12px}
-            .main-header h2{font-size:17px}
-            .report-grid{grid-template-columns:1fr;gap:10px}
+            .stats-panel{grid-template-columns:1fr;gap:16px}
+            .grid{grid-template-columns:1fr}
+            .content{padding:12px}
         }
     </style>
 </head>
 <body>
 
-<!-- ========== 左侧栏 ========== -->
+<!-- ==================== 侧栏 ==================== -->
 <aside class="sidebar">
-    <div class="sidebar-logo">📊 行业报告<span>飞书同步</span></div>
-    <div class="sidebar-stats">
-        共 <strong id="sidebarTotal">-</strong> 篇报告
-        <div style="font-size:11px;color:#94a3b8" id="sidebarSync">加载中...</div>
+    <div class="sb-logo">📊 行业报告<span>飞书同步</span></div>
+    <div class="sb-stats">
+        <div class="sb-stat"><strong id="sTotal">-</strong>总报告</div>
+        <div class="sb-stat"><strong id="sCats">15</strong>行业</div>
+        <div class="sb-stat"><strong id="sToday">-</strong>今日新增</div>
     </div>
-    <nav class="sidebar-nav">
-        <div class="nav-section">全部</div>
-        <a data-cat="" class="active" onclick="setCategory('')">
-            📋 全部报告 <span class="count loading-count" id="countAll">-</span>
+    <nav class="sb-nav">
+        <div class="nav-hd">导航</div>
+        <a data-cat="" class="active" onclick="setCat('')">
+            📋 全部报告 <span class="cnt" id="cAll">-</span>
         </a>
-        <div class="nav-section" style="margin-top:8px">行业分类</div>
+        <div class="nav-hd" style="margin-top:6px">行业分类</div>
     </nav>
-    <div class="sidebar-footer">
-        数据来源：飞书 · 托管于 GitHub Pages
-    </div>
+    <div class="sb-foot">数据来源：飞书云端硬盘 · GitHub Pages 托管</div>
 </aside>
 
-<!-- ========== 右侧主区 ========== -->
+<!-- ==================== 主区 ==================== -->
 <div class="main">
-    <div class="main-header">
+    <!-- 顶部 -->
+    <div class="topbar">
         <h2 id="pageTitle">全部报告</h2>
-        <span class="breadcrumb" id="breadcrumb"></span>
-        <div class="search-box">
-            <span class="s-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="搜索报告标题...">
+        <span class="crumb" id="crumb"></span>
+        <div class="search-wrap">
+            <span class="sicon">🔍</span>
+            <input type="text" id="searchInp" placeholder="搜索标题、摘要、标签...">
+            <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
         </div>
     </div>
 
+    <!-- 统计面板 -->
+    <div class="stats-panel" id="statsPanel">
+        <div class="stats-kpi">
+            <div class="kpi-num" id="kpiTotal">-</div>
+            <div class="kpi-label">报告总数</div>
+            <div class="kpi-sub" id="kpiUpdate">最近同步：加载中...</div>
+        </div>
+        <div class="stats-dist" id="distPanel">
+            <h4>🏷️ 行业分布 TOP 8</h4>
+            <div id="distBars"></div>
+        </div>
+        <div class="stats-chart" id="trendPanel">
+            <h4>📈 近期新增趋势（按年份）</h4>
+            <div id="trendBars" class="trend-bars"></div>
+        </div>
+    </div>
+
+    <!-- 内容 -->
     <div class="content">
-        <div class="list-header">
+        <div class="list-info">
             <span id="resultInfo">正在加载...</span>
+            <select class="sort-select" id="sortSel" onchange="onSort()">
+                <option value="score">按质量评分 ↓</option>
+                <option value="date">按日期 ↓</option>
+                <option value="title">按标题 A-Z</option>
+            </select>
         </div>
-        <div id="reportGrid" class="report-grid"></div>
-        <div id="pagination" class="pagination"></div>
-        <div id="loadingState" class="loading-state">
+        <div class="grid" id="grid"></div>
+        <div class="pagination" id="pagination"></div>
+        <div class="loading-box" id="loadingBox">
             <div class="spinner"></div>
-            <div>正在加载报告数据...</div>
+            <div>正在加载报告...</div>
         </div>
-        <div id="emptyState" class="empty-state" style="display:none">
-            <h3>📭 暂无匹配的报告</h3>
-            <p>试试调整搜索条件</p>
+        <div class="empty-box" id="emptyBox">
+            <div class="e-icon">📭</div>
+            <h3>未找到匹配的报告</h3>
+            <p>请尝试调整搜索条件或切换行业分类</p>
         </div>
     </div>
 </div>
 
 <script>
 // ==================== 配置 ====================
-const PAGE_SIZE = 20;
-const ALL_CATEGORIES = [
-    "潮流时尚","宠物","抖音","小红书","美妆",
-    "海外市场","户外与运动","家居","健康养生","快消品",
-    "母婴","其他","奢侈品","食品饮料","香相关"
-];
+const PG = 20;
+const CATS = ["潮流时尚","宠物","抖音","小红书","美妆",
+              "海外市场","户外与运动","家居","健康养生","快消品",
+              "母婴","其他","奢侈品","食品饮料","香相关"];
 
-// ==================== 状态 ====================
-let allReports = [];       // 全部报告
-let catIndex = null;       // _index.json
-let currentCat = "";       // 当前分类
-let currentPage = 1;
-let currentSearch = "";
+// ==================== 全局状态 ====================
+let allData = [];         // 全部报告（已展开）
+let catIdx = null;        // 索引
+let curCat = "";
+let curPage = 1;
+let curSearch = "";
+let curSort = "score";
 
-// ==================== 渲染导航 ====================
-function renderNav() {
-    const nav = document.querySelector(".sidebar-nav");
-    // 清除旧分类导航（保留前两个）
-    const existing = nav.querySelectorAll(".cat-link");
-    existing.forEach(e => e.remove());
-
-    let totalAll = 0;
-    ALL_CATEGORIES.forEach(cat => {
-        const count = catIndex ? (catIndex.categories.find(cc => cc.name === cat)?.count || 0) : 0;
-        totalAll += count;
-        const a = document.createElement("a");
-        a.className = "cat-link";
-        a.setAttribute("data-cat", cat);
-        a.onclick = function() { setCategory(cat); };
-        a.innerHTML = `📂 ${cat} <span class="count" id="count_${cat.replace(/\s/g,'_')}">${count || '-'}</span>`;
-        nav.appendChild(a);
-    });
-
-    // 更新全部计数
-    document.getElementById("countAll").textContent = totalAll || (allReports.length || '-');
-    document.getElementById("countAll").classList.remove("loading-count");
-    document.getElementById("sidebarTotal").textContent = totalAll || (allReports.length || '-');
-
-    ALL_CATEGORIES.forEach(cat => {
-        const el = document.getElementById("count_" + cat.replace(/\s/g, '_'));
-        if (el) el.classList.remove("loading-count");
+// ==================== 初始化 ====================
+function init() {
+    renderNav();
+    loadIdx().then(() => {
+        loadAll();
     });
 }
 
-// ==================== 数据加载 ====================
-async function loadIndex() {
+async function loadIdx() {
     try {
-        const resp = await fetch("data/categories/_index.json");
-        if (resp.ok) {
-            catIndex = await resp.json();
-            document.getElementById("sidebarSync").textContent =
-                "最近同步: " + (catIndex.last_sync || "未知");
-        }
-    } catch(e) {
-        console.log("索引文件未就绪:", e.message);
-    }
+        const r = await fetch("data/categories/_index.json");
+        if (r.ok) catIdx = await r.json();
+        document.getElementById("kpiUpdate").textContent =
+            "最近同步：" + (catIdx?.updated || "未知");
+    } catch(e) { console.warn("索引加载失败"); }
 }
 
-async function loadCategory(cat) {
-    const loading = document.getElementById("loadingState");
-    const grid = document.getElementById("reportGrid");
-    loading.style.display = "block";
-    grid.innerHTML = "";
+async function loadAll() {
+    document.getElementById("loadingBox").style.display = "block";
+    document.getElementById("grid").innerHTML = "";
+    document.getElementById("emptyBox").style.display = "none";
 
-    let reports = [];
-    let sourceLabel = "";
-
-    if (!cat) {
-        // 全部：汇总加载所有分类
-        sourceLabel = "全部";
-        for (const c of ALL_CATEGORIES) {
-            const safe = c.replace(/\//g,"_").replace(/\s/g,"_");
-            try {
-                const resp = await fetch(`data/categories/${safe}.json`);
-                if (resp.ok) {
-                    const data = await resp.json();
-                    if (data.reports) reports = reports.concat(data.reports);
-                }
-            } catch(e) {}
-        }
-    } else {
-        sourceLabel = cat;
-        const safe = cat.replace(/\//g,"_").replace(/\s/g,"_");
+    let merged = [];
+    for (const cat of CATS) {
         try {
-            const resp = await fetch(`data/categories/${safe}.json`);
-            if (resp.ok) {
-                const data = await resp.json();
-                reports = data.reports || [];
+            const r = await fetch(`data/categories/${cat}.json`);
+            if (r.ok) {
+                const d = await r.json();
+                if (Array.isArray(d.files)) {
+                    d.files.forEach(f => { f._cat = cat; merged.push(f); });
+                }
             }
-        } catch(e) {
-            console.error("加载失败:", e);
-        }
+        } catch(e) {}
     }
 
-    allReports = reports;
-    loading.style.display = "none";
+    allData = merged;
+    document.getElementById("loadingBox").style.display = "none";
+    refreshAll();
+}
 
-    // 更新计数
-    document.getElementById("countAll").textContent = allReports.length;
-    document.getElementById("sidebarTotal").textContent = allReports.length;
-    const countEl = document.getElementById("count_" + (cat || "All").replace(/\s/g,'_'));
-    if (countEl) countEl.textContent = allReports.length;
-
+function refreshAll() {
+    renderNavCounts();
+    renderStats();
     renderGrid();
 }
 
-// ==================== 过滤与分页 ====================
+// ==================== 导航 ====================
+function renderNav() {
+    const nav = document.querySelector(".sb-nav");
+    CATS.forEach(cat => {
+        const a = document.createElement("a");
+        a.setAttribute("data-cat", cat);
+        a.className = "cat-link";
+        a.onclick = () => setCat(cat);
+        const safe = cat.replace(/\s/g,"_");
+        a.innerHTML = `📂 ${cat} <span class="cnt" id="c${safe}">-</span>`;
+        nav.appendChild(a);
+    });
+}
+
+function renderNavCounts() {
+    document.getElementById("cAll").textContent = allData.length;
+    document.getElementById("sTotal").textContent = allData.length;
+
+    const catCounts = {};
+    allData.forEach(r => { catCounts[r._cat] = (catCounts[r._cat] || 0) + 1; });
+    CATS.forEach(cat => {
+        const el = document.getElementById("c" + cat.replace(/\s/g,"_"));
+        if (el) {
+            const n = catCounts[cat] || 0;
+            el.textContent = n;
+            if (n === 0) el.classList.add("zero"); else el.classList.remove("zero");
+        }
+    });
+}
+
+function setCat(cat) {
+    curCat = cat;
+    curPage = 1;
+    curSearch = "";
+    document.getElementById("searchInp").value = "";
+    document.getElementById("clearBtn").classList.remove("visible");
+
+    document.querySelectorAll(".sb-nav a").forEach(a => {
+        a.classList.toggle("active", a.getAttribute("data-cat") === cat);
+    });
+
+    document.getElementById("pageTitle").textContent = cat || "全部报告";
+    document.getElementById("crumb").textContent = cat ? "行业报告 / " + cat : "";
+
+    refreshAll();
+}
+
+// ==================== 统计面板 ====================
+function renderStats() {
+    const filtered = getFiltered();
+
+    // KPI
+    document.getElementById("kpiTotal").textContent = filtered.length;
+
+    // 行业分布
+    const catDist = {};
+    filtered.forEach(r => { catDist[r._cat] = (catDist[r._cat] || 0) + 1; });
+    const sorted = Object.entries(catDist).sort((a,b) => b[1] - a[1]).slice(0, 8);
+    const maxV = sorted.length > 0 ? sorted[0][1] : 1;
+    const colors = ["#4f46e5","#06b6d4","#10b981","#f59e0b","#ef4444","#8b5cf6","#ec4899","#14b8a6"];
+    document.getElementById("distBars").innerHTML = sorted.map(([c,v],i) => `
+        <div class="bar-row">
+            <span class="bar-label">${c}</span>
+            <span class="bar-track"><span class="bar-fill" style="width:${(v/maxV*100).toFixed(0)}%;background:${colors[i]}"></span></span>
+            <span class="bar-val">${v}</span>
+        </div>
+    `).join("") || '<div style="font-size:12px;color:var(--text2)">暂无数据</div>';
+
+    // 年份趋势
+    const yrDist = {};
+    filtered.forEach(r => {
+        const yr = r.year || "未知";
+        yrDist[yr] = (yrDist[yr] || 0) + 1;
+    });
+    const yrSorted = Object.entries(yrDist).sort((a,b) => a[0].localeCompare(b[0]));
+    const yrMax = yrSorted.length > 0 ? Math.max(...yrSorted.map(([,v]) => v)) : 1;
+    document.getElementById("trendBars").innerHTML = yrSorted.map(([yr, v]) => `
+        <div class="trend-bar-item">
+            <div class="tb-val">${v}</div>
+            <div class="tb-bar" style="height:${Math.max(4,(v/yrMax*64)).toFixed(0)}px"></div>
+            <div class="tb-label">${yr}</div>
+        </div>
+    `).join("") || '<div style="font-size:12px;color:var(--text2)padding-top:10px">暂无数据</div>';
+}
+
+// ==================== 过滤 & 排序 ====================
 function getFiltered() {
-    let result = [...allReports];
-    if (currentSearch) {
-        const q = currentSearch.toLowerCase();
+    let result = [...allData];
+    if (curCat) result = result.filter(r => r._cat === curCat);
+    if (curSearch) {
+        const q = curSearch.toLowerCase();
         result = result.filter(r =>
-            (r.title||"").toLowerCase().includes(q) ||
-            (r.summary||"").toLowerCase().includes(q)
+            (r.title || "").toLowerCase().includes(q) ||
+            (r.summary || "").toLowerCase().includes(q) ||
+            (r.tags || []).some(t => t.toLowerCase().includes(q))
         );
     }
+    // 排序
+    if (curSort === "score") result.sort((a,b) => (b.score||0) - (a.score||0));
+    else if (curSort === "date") result.sort((a,b) => (b.year||"").localeCompare(a.year||""));
+    else if (curSort === "title") result.sort((a,b) => (a.title||"").localeCompare(b.title||""));
     return result;
 }
 
-function getPageData() {
-    const filtered = getFiltered();
-    const total = filtered.length;
-    const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
-    const start = (currentPage - 1) * PAGE_SIZE;
-    const paged = filtered.slice(start, start + PAGE_SIZE);
-    return { paged, total, totalPages };
+function onSort() {
+    curSort = document.getElementById("sortSel").value;
+    curPage = 1;
+    renderGrid();
 }
 
-// ==================== 渲染 ====================
+// ==================== 渲染卡片 ====================
+function fmtDate(d) {
+    if (!d || d === "未知") return "";
+    return d;
+}
+
+function scoreClass(s) {
+    if (s >= 90) return "s90";
+    if (s >= 80) return "s80";
+    if (s >= 70) return "s70";
+    if (s >= 60) return "s60";
+    return "s50";
+}
+
 function esc(s) {
     if (!s) return "";
     const d = document.createElement("div");
@@ -355,140 +482,87 @@ function esc(s) {
     return d.innerHTML;
 }
 
-function typeIcon(t) {
-    const m = {doc:"📝",docx:"📝",sheet:"📊",bitable:"🗂️",slides:"🎞️",mindnote:"🧠",folder:"📁"};
-    return m[t] || "📎";
-}
-
-function typeBadge(t) {
-    const m = {docx:"badge-doc",doc:"badge-doc",sheet:"badge-sheet",
-               slides:"badge-slides",bitable:"badge-bitable",
-               mindnote:"badge-mindnote",folder:"badge-folder"};
-    return m[t] || "badge-file";
-}
-
-function fmtTime(ts) {
-    if (!ts) return "";
-    try {
-        const d = new Date(ts);
-        if (isNaN(d.getTime())) return ts.slice(0,10);
-        return d.toLocaleDateString("zh-CN",{month:"short",day:"numeric",year:"numeric"});
-    } catch(e) { return ts; }
-}
-
 function renderCard(r) {
-    const url = r.feishu_url || "#";
+    const url = r.url || "#";
+    const sc = r.score || 50;
+    const scls = scoreClass(sc);
+    const catTag = r._cat ? `<span class="tag-cat">${esc(r._cat)}</span>` : "";
+    const tags = (r.tags || []).slice(0, 4).map(t => `<span>${esc(t)}</span>`).join("");
+    const date = fmtDate(r.date) || fmtDate(r.year);
+
     return `
     <div class="card">
-        <span class="card-badge ${typeBadge(r.file_type)}">${esc(r.file_ext||"文件")}</span>
-        <div class="card-title" title="${esc(r.title)}">
-            ${typeIcon(r.file_type)} ${esc(r.title)}
-        </div>
-        <a class="card-link" href="${url}" target="_blank" rel="noopener">🔗 飞书查看 →</a>
-        <div class="card-meta">
-            <span>🕐 ${fmtTime(r.feishu_modified)}</span>
-            <span>👁 ${r.view_count||0}</span>
+        <span class="c-score ${scls}">${sc}</span>
+        <div class="c-title">${esc(r.title)}</div>
+        <div class="c-summary">${esc(r.summary) || "暂无摘要"}</div>
+        <div class="c-tags">${catTag}${tags}</div>
+        <div class="c-footer">
+            <span class="c-date">📅 ${date}</span>
+            <a class="c-link" href="${url}" target="_blank" rel="noopener">📄 查看原文 →</a>
         </div>
     </div>`;
 }
 
 function renderGrid() {
-    const { paged, total, totalPages } = getPageData();
-    const grid = document.getElementById("reportGrid");
+    const filtered = getFiltered();
+    const total = filtered.length;
+    const totalPages = Math.ceil(total / PG) || 1;
+    const start = (curPage - 1) * PG;
+    const paged = filtered.slice(start, start + PG);
+
+    document.getElementById("grid").innerHTML =
+        paged.length ? paged.map(renderCard).join("") : "";
+    document.getElementById("emptyBox").style.display =
+        paged.length ? "none" : "block";
+    document.getElementById("resultInfo").textContent =
+        total ? `共 ${total} 篇报告` : "暂无数据";
+
+    // 分页
     const pag = document.getElementById("pagination");
-    const empty = document.getElementById("emptyState");
-    const info = document.getElementById("resultInfo");
-
-    if (paged.length === 0) {
-        grid.innerHTML = "";
-        empty.style.display = "block";
-        pag.innerHTML = "";
-        info.textContent = "暂无数据";
-    } else {
-        empty.style.display = "none";
-        info.textContent = `共 ${total} 篇报告`;
-        grid.innerHTML = paged.map(renderCard).join("");
-
-        // 分页
-        if (totalPages <= 1) {
-            pag.innerHTML = "";
-        } else {
-            let html = `<button onclick="go(${currentPage-1})" ${currentPage<=1?"disabled":""}>‹ 上一页</button>`;
-            const s = Math.max(1, currentPage-2);
-            const e = Math.min(totalPages, currentPage+2);
-            for (let i=s; i<=e; i++) {
-                html += `<button class="${i===currentPage?'active':''}" onclick="go(${i})">${i}</button>`;
-            }
-            html += `<button onclick="go(${currentPage+1})" ${currentPage>=totalPages?"disabled":""}>下一页 ›</button>`;
-            html += `<span class="info">${currentPage}/${totalPages} 页</span>`;
-            pag.innerHTML = html;
-        }
+    if (totalPages <= 1) { pag.innerHTML = ""; return; }
+    let html = `<button onclick="go(${curPage-1})" ${curPage<=1?"disabled":""}>‹ 上一页</button>`;
+    const s = Math.max(1, curPage - 2);
+    const e = Math.min(totalPages, curPage + 2);
+    for (let i = s; i <= e; i++) {
+        html += `<button class="${i===curPage?'active':''}" onclick="go(${i})">${i}</button>`;
     }
-}
-
-// ==================== 事件 ====================
-function setCategory(cat) {
-    currentCat = cat;
-    currentPage = 1;
-    currentSearch = "";
-
-    // 更新导航选中状态
-    document.querySelectorAll(".sidebar-nav a").forEach(a => {
-        a.classList.toggle("active", a.getAttribute("data-cat") === cat);
-    });
-
-    document.getElementById("searchInput").value = "";
-
-    if (cat) {
-        document.getElementById("pageTitle").textContent = cat;
-        document.getElementById("breadcrumb").textContent = "行业报告 / " + cat;
-    } else {
-        document.getElementById("pageTitle").textContent = "全部报告";
-        document.getElementById("breadcrumb").textContent = "";
-    }
-
-    loadCategory(cat);
+    html += `<button onclick="go(${curPage+1})" ${curPage>=totalPages?"disabled":""}>下一页 ›</button>`;
+    html += `<span class="pg-info">${curPage}/${totalPages} 页</span>`;
+    pag.innerHTML = html;
 }
 
 function go(p) {
-    const { totalPages } = getPageData();
-    if (p<1 || p>totalPages) return;
-    currentPage = p;
+    const tp = Math.ceil(getFiltered().length / PG) || 1;
+    if (p < 1 || p > tp) return;
+    curPage = p;
     renderGrid();
-    window.scrollTo({top: 100, behavior: "smooth"});
+    window.scrollTo({top: 160, behavior: "smooth"});
 }
 
-// ==================== 初始化 ====================
-document.addEventListener("DOMContentLoaded", async () => {
-    // 渲染空分类导航
-    const nav = document.querySelector(".sidebar-nav");
-    ALL_CATEGORIES.forEach(cat => {
-        const a = document.createElement("a");
-        a.className = "cat-link";
-        a.setAttribute("data-cat", cat);
-        a.onclick = function() { setCategory(cat); };
-        a.innerHTML = `📂 ${cat} <span class="count loading-count" id="count_${cat.replace(/\s/g,'_')}">-</span>`;
-        nav.appendChild(a);
-    });
-
-    // 加载索引
-    await loadIndex();
-    renderNav();
-
-    // 搜索防抖
-    let timer;
-    document.getElementById("searchInput").addEventListener("input", function() {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            currentSearch = this.value.trim();
-            currentPage = 1;
+// ==================== 搜索 ====================
+let searchTimer;
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("searchInp").addEventListener("input", function() {
+        const v = this.value.trim();
+        document.getElementById("clearBtn").classList.toggle("visible", v.length > 0);
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+            curSearch = v;
+            curPage = 1;
+            renderStats();
             renderGrid();
-        }, 300);
+        }, 250);
     });
-
-    // 默认加载全部
-    loadCategory("");
+    init();
 });
+
+function clearSearch() {
+    document.getElementById("searchInp").value = "";
+    document.getElementById("clearBtn").classList.remove("visible");
+    curSearch = "";
+    curPage = 1;
+    refreshAll();
+}
 </script>
 </body>
 </html>
