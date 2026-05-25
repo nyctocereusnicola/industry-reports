@@ -1,22 +1,54 @@
 {
   "category": "其他",
-  "file_count": 1,
+  "file_count": 3,
   "files": [
     {
-      "token": "X4oGbGfZno5YQmxI6FzcHlywnUb",
-      "title": "2024 中国小宠消费者洞察MINI蓝皮书 亚宠研究院",
+      "token": "GbXhbRZRzogQoPxndx9c0Lcgnnd",
+      "title": "2019 Beauty Trends in Asia",
       "summary": "",
       "tags": [
         "其他"
       ],
       "score": 53,
       "year": "2026",
-      "date": "2026-05-20",
-      "url": "https://my.feishu.cn/file/X4oGbGfZno5YQmxI6FzcHlywnUb",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/GbXhbRZRzogQoPxndx9c0Lcgnnd",
       "type": "file",
       "size": 0,
-      "created_time": "1779261872",
-      "modified_time": "1779261874"
+      "created_time": "1779677400",
+      "modified_time": "1779677400"
+    },
+    {
+      "token": "NPm0b9FinoJFYvx5U0ac8QE3njg",
+      "title": "2019 Beauty Trends in Asia (KANTAR, 18 pages)",
+      "summary": "",
+      "tags": [
+        "其他"
+      ],
+      "score": 56,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/NPm0b9FinoJFYvx5U0ac8QE3njg",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779677399",
+      "modified_time": "1779677399"
+    },
+    {
+      "token": "Krd0bKA11oDtCzxCU8wceCArnsh",
+      "title": "2018 伊丽莎白雅顿：身体护理品类趋势研究报告（生意参谋&CBNData，56页）",
+      "summary": "",
+      "tags": [
+        "其他"
+      ],
+      "score": 55,
+      "year": "2026",
+      "date": "2026-05-25",
+      "url": "https://my.feishu.cn/file/Krd0bKA11oDtCzxCU8wceCArnsh",
+      "type": "file",
+      "size": 0,
+      "created_time": "1779677385",
+      "modified_time": "1779677386"
     }
   ]
 }
