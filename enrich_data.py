@@ -1,6 +1,9 @@
 """
 从报告文件名中提取：标题、摘要、行业标签、日期、质量评分
-重新生成 enriched JSON
++ 两层去重：
+  Level 1 - Token 去重：同一飞书 file token 只保留一份
+  Level 2 - 标题相似去重：归一化标题后同内容保留最佳版本
+重新生成 enriched JSON + _duplicates.json
 """
 import json, os, re, time, random
 
@@ -113,6 +116,63 @@ def extract_metadata(filename):
         "score": source_score,
     }
 
+# ==================== 去重 ====================
+
+def normalize_title(title):
+    """归一化标题：只去掉年份/页数等噪音，保留月份等区分信息"""
+    t = re.sub(r'\.(pdf|docx?|pptx?|xlsx?)$', '', title, flags=re.I)
+    t = re.sub(r'20\d{2}', '', t)                      # 去掉年份（2021, 2022...）
+    t = re.sub(r'\d+页', '', t)                         # 去掉页数标记
+    t = re.sub(r'[-_\s（）()\[\]【】《》""''·•,，。；;：:！!？?…/\\|@#$%^&*+=~`×]+', '', t)
+    t = t.lower().strip()
+    return t
+
+def dedup_files(files):
+    """两层去重返回 (clean_files, removed_files)"""
+    removed = []
+
+    # Level 1: Token 去重
+    seen_tokens = {}
+    token_clean = []
+    for f in files:
+        tok = f.get("token", "")
+        if tok and tok in seen_tokens:
+            exist = seen_tokens[tok]
+            if (f.get("score", 0) > exist.get("score", 0)):
+                removed.append({**exist, "_dup_reason": "token重复(被更高分替换)", "_dup_of": tok})
+                seen_tokens[tok] = f
+                for i, item in enumerate(token_clean):
+                    if item.get("token") == tok:
+                        token_clean[i] = f; break
+            else:
+                removed.append({**f, "_dup_reason": "token重复", "_dup_of": tok})
+        else:
+            seen_tokens[tok] = f
+            token_clean.append(f)
+
+    # Level 2: 标题相似去重（同归一化key + 同年 → 保留最优）
+    norm_groups = {}
+    for f in token_clean:
+        key = normalize_title(f.get("name", ""))
+        yr = f.get("year", "未知")
+        gk = (key, yr)
+        norm_groups.setdefault(gk, []).append(f)
+
+    clean = []
+    for (nkey, yr), group in norm_groups.items():
+        if len(group) == 1:
+            clean.append(group[0])
+        else:
+            group.sort(key=lambda x: (x.get("score", 0), len(x.get("name", ""))), reverse=True)
+            best = group[0]
+            clean.append(best)
+            for dup in group[1:]:
+                removed.append({**dup,
+                    "_dup_reason": f"标题相似去重(key={nkey[:30]}... 同年={yr})",
+                    "_dup_of": best.get("title", "")[:60]})
+    return clean, removed
+
+
 def main():
     os.makedirs(DST, exist_ok=True)
     categories = ["潮流时尚","宠物","抖音","小红书","美妆",
@@ -120,6 +180,8 @@ def main():
                   "母婴","其他","奢侈品","食品饮料","香相关"]
     
     total_enriched = 0
+    total_removed = 0
+    all_removed = []
     
     for cat in categories:
         fname = os.path.join(SRC, f"{cat}.json")
@@ -150,28 +212,48 @@ def main():
                     enriched["modified_date"] = mod_ts
             enriched_files.append(enriched)
         
+        # --- 去重 ---
+        clean_files, removed_files = dedup_files(enriched_files)
+        enriched_files = clean_files  # 后续输出去重后的
+        
         # 按评分降序排列
         enriched_files.sort(key=lambda x: x.get("score", 0), reverse=True)
+        removed_files.sort(key=lambda x: x.get("score", 0), reverse=True)
         
         out_data = {
             "category": cat,
             "count": len(enriched_files),
+            "dup_removed": len(removed_files),
             "files": enriched_files,
             "updated": time.strftime("%Y-%m-%d %H:%M:%S"),
         }
+        
+        # 也保留被去重的文件（供前端可切换查看）
+        if removed_files:
+            out_data["_removed"] = removed_files
         
         out_fname = os.path.join(DST, f"{cat}.json")
         with open(out_fname, "w", encoding="utf-8") as f:
             json.dump(out_data, f, ensure_ascii=False)
         
         mb = os.path.getsize(out_fname) / (1024*1024)
-        print(f"  [{cat}] {len(enriched_files)}条, {mb:.2f}MB")
+        print(f"  [{cat}] {len(enriched_files)}条 (去重{len(removed_files)}), {mb:.2f}MB")
         total_enriched += len(enriched_files)
+        total_removed += len(removed_files)
+        all_removed.extend(removed_files)
+    
+    # 输出去重详情
+    if all_removed:
+        dup_out = os.path.join(DST, "_duplicates.json")
+        with open(dup_out, "w", encoding="utf-8") as f:
+            json.dump({"count": len(all_removed), "duplicates": all_removed}, f, ensure_ascii=False, indent=2)
+        print(f"\n  去重详情: {dup_out}")
     
     # 更新索引
     index = {
         "categories": categories,
         "total_files": total_enriched,
+        "dup_removed": total_removed,
         "updated": time.strftime("%Y-%m-%d %H:%M:%S"),
         "counts": {}
     }
@@ -185,7 +267,7 @@ def main():
     with open(os.path.join(DST, "_index.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
     
-    print(f"\n总计: {total_enriched} 条")
+    print(f"\n总计: {total_enriched} 条 (已去重 {total_removed} 条)")
     
     # 打印几条示例
     print("\n--- 示例（宠物前3条）---")

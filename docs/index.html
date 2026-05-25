@@ -96,6 +96,26 @@
         .search-wrap .clear-btn:hover{background:#f1f5f9}
         .search-wrap .clear-btn.visible{display:block}
 
+        /* 去重开关 */
+        .dedup-toggle{
+            display:flex;align-items:center;gap:6px;cursor:pointer;
+            font-size:12px;color:var(--text2);white-space:nowrap;
+            padding:6px 12px;border-radius:7px;transition:.15s;
+            background:#f8fafc;border:1px solid var(--border);
+            user-select:none;
+        }
+        .dedup-toggle:hover{background:var(--primary3);border-color:var(--primary2)}
+        .dedup-toggle input{width:14px;height:14px;accent-color:var(--primary);cursor:pointer}
+        .dedup-toggle .dt-label{font-weight:500}
+
+        /* 重复标记 */
+        .card.dup-card{border-left:3px solid #f59e0b;opacity:.85}
+        .card.dup-card .c-dup-tag{
+            position:absolute;top:6px;left:6px;
+            font-size:9px;font-weight:600;padding:2px 7px;
+            border-radius:3px;background:#fef3c7;color:#b45309;
+        }
+
         /* 统计面板 */
         .stats-panel{
             background:var(--card);margin:20px 24px 0;border-radius:var(--r);
@@ -224,7 +244,7 @@
     <div class="sb-stats">
         <div class="sb-stat"><strong id="sTotal">-</strong>总报告</div>
         <div class="sb-stat"><strong id="sCats">15</strong>行业</div>
-        <div class="sb-stat"><strong id="sToday">-</strong>今日新增</div>
+        <div class="sb-stat"><strong id="sDups">-</strong>已去重</div>
     </div>
     <nav class="sb-nav">
         <div class="nav-hd">导航</div>
@@ -247,6 +267,10 @@
             <input type="text" id="searchInp" placeholder="搜索标题、摘要、标签...">
             <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
         </div>
+        <label class="dedup-toggle" title="开启后隐藏重复报告">
+            <input type="checkbox" id="dedupChk" checked onchange="onDedup()">
+            <span class="dt-label">去重</span>
+        </label>
     </div>
 
     <!-- 统计面板 -->
@@ -299,11 +323,13 @@ const CATS = ["潮流时尚","宠物","抖音","小红书","美妆",
 
 // ==================== 全局状态 ====================
 let allData = [];         // 全部报告（已展开）
+let allRemoved = [];      // 被去重的报告
 let catIdx = null;        // 索引
 let curCat = "";
 let curPage = 1;
 let curSearch = "";
 let curSort = "score";
+let curDedup = true;      // 默认开启去重
 
 // ==================== 初始化 ====================
 function init() {
@@ -328,6 +354,7 @@ async function loadAll() {
     document.getElementById("emptyBox").style.display = "none";
 
     let merged = [];
+    let removedAll = [];
     for (const cat of CATS) {
         try {
             const r = await fetch(`data/categories/${cat}.json`);
@@ -336,12 +363,23 @@ async function loadAll() {
                 if (Array.isArray(d.files)) {
                     d.files.forEach(f => { f._cat = cat; merged.push(f); });
                 }
+                // 合并被去重的文件（标记 _dup=true）
+                if (Array.isArray(d._removed)) {
+                    d._removed.forEach(f => {
+                        f._cat = cat; f._dup = true; removedAll.push(f);
+                    });
+                }
             }
         } catch(e) {}
     }
 
     allData = merged;
+    allRemoved = removedAll;
     document.getElementById("loadingBox").style.display = "none";
+    
+    // 更新去重统计
+    document.getElementById("sDups").textContent = removedAll.length;
+    
     refreshAll();
 }
 
@@ -366,11 +404,13 @@ function renderNav() {
 }
 
 function renderNavCounts() {
-    document.getElementById("cAll").textContent = allData.length;
-    document.getElementById("sTotal").textContent = allData.length;
+    const total = curDedup ? allData.length : (allData.length + allRemoved.length);
+    document.getElementById("cAll").textContent = total;
+    document.getElementById("sTotal").textContent = total;
 
     const catCounts = {};
-    allData.forEach(r => { catCounts[r._cat] = (catCounts[r._cat] || 0) + 1; });
+    const source = curDedup ? allData : [...allData, ...allRemoved];
+    source.forEach(r => { catCounts[r._cat] = (catCounts[r._cat] || 0) + 1; });
     CATS.forEach(cat => {
         const el = document.getElementById("c" + cat.replace(/\s/g,"_"));
         if (el) {
@@ -438,7 +478,7 @@ function renderStats() {
 
 // ==================== 过滤 & 排序 ====================
 function getFiltered() {
-    let result = [...allData];
+    let result = curDedup ? [...allData] : [...allData, ...allRemoved];
     if (curCat) result = result.filter(r => r._cat === curCat);
     if (curSearch) {
         const q = curSearch.toLowerCase();
@@ -453,6 +493,13 @@ function getFiltered() {
     else if (curSort === "date") result.sort((a,b) => (b.year||"").localeCompare(a.year||""));
     else if (curSort === "title") result.sort((a,b) => (a.title||"").localeCompare(b.title||""));
     return result;
+}
+
+function onDedup() {
+    curDedup = document.getElementById("dedupChk").checked;
+    curPage = 1;
+    renderStats();
+    renderGrid();
 }
 
 function onSort() {
@@ -489,10 +536,13 @@ function renderCard(r) {
     const catTag = r._cat ? `<span class="tag-cat">${esc(r._cat)}</span>` : "";
     const tags = (r.tags || []).slice(0, 4).map(t => `<span>${esc(t)}</span>`).join("");
     const date = fmtDate(r.date) || fmtDate(r.year);
+    const dupCls = r._dup ? " dup-card" : "";
+    const dupTag = r._dup ? `<span class="c-dup-tag">⚡ 重复</span>` : "";
 
     return `
-    <div class="card">
+    <div class="card${dupCls}">
         <span class="c-score ${scls}">${sc}</span>
+        ${dupTag}
         <div class="c-title">${esc(r.title)}</div>
         <div class="c-summary">${esc(r.summary) || "暂无摘要"}</div>
         <div class="c-tags">${catTag}${tags}</div>
@@ -514,8 +564,9 @@ function renderGrid() {
         paged.length ? paged.map(renderCard).join("") : "";
     document.getElementById("emptyBox").style.display =
         paged.length ? "none" : "block";
+    const dupInfo = (!curDedup && allRemoved.length) ? ` · 含 ${allRemoved.length} 篇重复` : "";
     document.getElementById("resultInfo").textContent =
-        total ? `共 ${total} 篇报告` : "暂无数据";
+        total ? `共 ${total} 篇报告${dupInfo}` : "暂无数据";
 
     // 分页
     const pag = document.getElementById("pagination");
