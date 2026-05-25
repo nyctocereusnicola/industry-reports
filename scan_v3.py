@@ -1,10 +1,12 @@
 """
-飞书扫描 v3.1 — 修复版
+飞书扫描 v3.2 — 修复版
 - 修复时间戳解析（Unix秒 → 日期）
 - 过滤文件夹不统计
 - 补充关键词覆盖
+- 从文件名提取报告真实年份
+- 递归扫描子文件夹
 """
-import httpx, json, time, os, traceback
+import httpx, json, time, os, traceback, re
 
 # --- 配置 ---
 APP_ID     = os.getenv("FEISHU_APP_ID",     "cli_aa9bf80b5678dbee")
@@ -58,6 +60,16 @@ def to_date(ts):
         return ""
 
 
+def extract_year_from_title(title):
+    """从文件名中提取报告的真实年份，如 '2022 珀莱雅报告' → '2022'"""
+    years = re.findall(r'\b((?:19|20)\d{2})\b', title)
+    for y in years:
+        yi = int(y)
+        if 2000 <= yi <= 2030:
+            return y
+    return None
+
+
 def classify(filename: str):
     text = filename.lower()
     for cat_name, keywords in COMPILED:
@@ -98,8 +110,16 @@ def process_file(f: dict):
 
     mtime = f.get("modified_time", "")
     ctime = f.get("created_time", "")
-    date = to_date(mtime)
-    year = date[:4] if date else "未知"
+
+    # 从标题提取报告真实年份，优先于飞书时间戳
+    title_year = extract_year_from_title(name)
+    if title_year:
+        year = title_year
+        date = f"{title_year}-01-01"
+    else:
+        date = to_date(mtime)
+        year = date[:4] if date else "未知"
+
     score = min(100, 50 + len(keywords) * 5 + min(len(name) // 8, 20))
 
     return {
@@ -118,11 +138,17 @@ def process_file(f: dict):
     }
 
 
-def list_all_files(token: str, folder_token: str):
+def list_all_files(token: str, folder_token: str, depth: int = 0):
+    """递归列出文件夹下的所有文件（包括子文件夹）"""
     all_files = []
     page_token = None
     seen = set()
     skipped_folders = 0
+
+    if depth > 10:  # 安全保护：最多10层
+        return all_files
+
+    indent = "  " * depth + "→ "
 
     for page_num in range(1, 200):
         params = {"folder_token": folder_token, "page_size": 50}
@@ -137,19 +163,25 @@ def list_all_files(token: str, folder_token: str):
         )
         d = r.json()
         if d.get("code") != 0:
-            raise Exception(f"列表失败 (page {page_num}): {d}")
+            raise Exception(f"列表失败 (page {page_num}, depth {depth}): {d}")
 
         data = d.get("data", {})
         for f in data.get("files", []):
             tid = f.get("token", "")
-            if tid and tid not in seen:
-                seen.add(tid)
-                result = process_file(f)
-                if result is None:
-                    skipped_folders += 1
-                    print(f"   ⏭️  跳过文件夹: {f.get('name')}")
-                else:
-                    all_files.append(result)
+            ftype = f.get("type", "")
+
+            if ftype == "folder":
+                fname = f.get("name", "子文件夹")
+                print(f"   {indent}📁 进入子文件夹: {fname}")
+                sub_files = list_all_files(token, tid, depth + 1)
+                all_files.extend(sub_files)
+                skipped_folders += 1
+            else:
+                if tid and tid not in seen:
+                    seen.add(tid)
+                    result = process_file(f)
+                    if result is not None:
+                        all_files.append(result)
 
         if not data.get("has_more"):
             break
@@ -159,12 +191,13 @@ def list_all_files(token: str, folder_token: str):
         page_token = new_token
         time.sleep(DELAY)
 
-    print(f"   跳过 {skipped_folders} 个文件夹")
+    if depth == 0:
+        print(f"   跳过 {skipped_folders} 个文件夹")
     return all_files
 
 
 def scan():
-    print("=== scan_v3.1 开始 ===")
+    print("=== scan_v3.2 开始 ===")
     token = get_token()
     print("  → Token OK")
     files = list_all_files(token, ROOT)

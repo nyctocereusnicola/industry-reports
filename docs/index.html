@@ -606,6 +606,8 @@ function onSort() {
 // ==================== 渲染卡片 ====================
 function fmtDate(d) {
     if (!d || d === "未知") return "";
+    // 如 2022-01-01 → 2022年（仅知年份的情况）
+    if (/^\d{4}-01-01$/.test(d)) return d.substring(0, 4) + "年";
     return d;
 }
 
