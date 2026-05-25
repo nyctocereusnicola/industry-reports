@@ -62,13 +62,21 @@ def list_folder(token, folder_token, page_token=None):
     params = {"page_size": 50}
     if page_token:
         params["page_token"] = page_token
+    url = f"{BASE}/drive/v1/files/{folder_token}/children"
+    print(f"      [API] GET {url}  params={params}")
     r = httpx.get(
-        f"{BASE}/drive/v1/files/{folder_token}/children",
+        url,
         headers={"Authorization": f"Bearer {token}"},
         params=params,
         timeout=30,
     )
-    d = r.json()
+    print(f"      [API] status={r.status_code} content-type={r.headers.get('content-type','?')}")
+    try:
+        d = r.json()
+    except Exception:
+        # 打印原始响应用于调试
+        text = r.text[:500]
+        raise Exception(f"API 返回非 JSON (status={r.status_code}): {text}")
     if d.get("code") != 0:
         raise Exception(f"获取文件列表失败: {d}")
     return d.get("data", {})
