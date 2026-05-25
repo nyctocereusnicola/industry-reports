@@ -63,7 +63,7 @@ def list_folder(token, folder_token, page_token=None):
     if page_token:
         params["page_token"] = page_token
     r = httpx.get(
-        f"{BASE}/drive/v1/folders/{folder_token}/files",
+        f"{BASE}/drive/v1/files/{folder_token}/children",
         headers={"Authorization": f"Bearer {token}"},
         params=params,
         timeout=30,
