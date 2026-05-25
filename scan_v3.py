@@ -66,19 +66,36 @@ def get_token() -> str:
 
 
 def process_file(f: dict) -> dict:
+    """飞书原始数据 → 前端卡片格式，跳过文件夹"""
     name = f.get("name", "未命名")
+    ftype = f.get("type", "")
+
+    # 跳过文件夹和快捷方式
+    if ftype in ("folder", "shortcut"):
+        return None
+
+    # 分类
     cat, keywords = classify(name)
 
+    # 标题：去扩展名
     title = name
     for ext in [".pdf",".docx",".doc",".pptx",".ppt",".xlsx",".xls",".txt",".md",".csv"]:
         if title.lower().endswith(ext):
             title = title[:-len(ext)]
             break
 
+    # 日期：飞书返回的是 Unix 时间戳（秒），需转换为日期字符串
     mtime = f.get("modified_time", "")
     ctime = f.get("created_time", "")
-    year = mtime[:4] if mtime else (ctime[:4] if ctime else "")
-    date = mtime[:10] if mtime else ""
+    def ts_to_date(ts):
+        try:
+            return time.strftime("%Y-%m-%d", time.gmtime(int(ts)))
+        except:
+            return ""
+    date = ts_to_date(mtime)
+    year = date[:4] if date else "未知"
+
+    # 质量评分
     score = min(100, 50 + len(keywords) * 5 + min(len(name) // 8, 20))
 
     return {
@@ -87,15 +104,14 @@ def process_file(f: dict) -> dict:
         "summary":        "",
         "tags":           [cat] + keywords,
         "score":          score,
-        "year":           year or "未知",
+        "year":           year,
         "date":           date,
         "url":            f.get("url", ""),
-        "type":           f.get("type", ""),
+        "type":           ftype,
         "size":           f.get("size", 0),
         "created_time":   ctime,
         "modified_time":  mtime,
     }
-
 
 def list_all_files(token: str, folder_token: str) -> list:
     all_files = []
@@ -123,7 +139,9 @@ def list_all_files(token: str, folder_token: str) -> list:
             tid = f.get("token", "")
             if tid and tid not in seen:
                 seen.add(tid)
-                all_files.append(process_file(f))
+                result = process_file(f)
+                if result is not None:
+                    all_files.append(result)
 
         if not data.get("has_more"):
             break
