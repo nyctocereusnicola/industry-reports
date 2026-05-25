@@ -172,7 +172,7 @@ def list_all_files(token: str, folder_token: str, depth: int = 0):
 
             if ftype == "folder":
                 fname = f.get("name", "子文件夹")
-                print(f"   {indent}📁 进入子文件夹: {fname}")
+                print(f"   {indent}[DIR] 进入子文件夹: {fname}")
                 sub_files = list_all_files(token, tid, depth + 1)
                 all_files.extend(sub_files)
                 skipped_folders += 1
@@ -221,7 +221,7 @@ def scan():
                 "files": items,
             }, fh, ensure_ascii=False, indent=2)
         if items:
-            print(f"  💾 {cat_name}: {len(items)} 篇")
+            print(f"  [SAVE] {cat_name}: {len(items)} 篇")
 
     with open(os.path.join(OUT_DIR, "_index.json"), "w", encoding="utf-8") as fh:
         json.dump({
@@ -231,13 +231,13 @@ def scan():
         }, fh, ensure_ascii=False, indent=2)
 
     active = sum(1 for c in CATEGORY_LIST if cats[c])
-    print(f"✅ 完成! {total} 个文件 → {active} 个分类")
+    print(f"[OK] 完成! {total} 个文件 -> {active} 个分类")
 
 
 if __name__ == "__main__":
     try:
         scan()
     except Exception as e:
-        print(f"❌ 失败: {e}")
+        print(f"[ERR] 失败: {e}")
         traceback.print_exc()
         exit(1)
