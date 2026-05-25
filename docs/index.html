@@ -140,16 +140,6 @@
         .ss-dot.old{background:#f59e0b;box-shadow:0 0 4px rgba(245,158,11,.4)}
         .ss-dot.err{background:#ef4444;box-shadow:0 0 4px rgba(239,68,68,.4)}
 
-        /* Actions 链接 */
-        .actions-link{
-            display:inline-flex;align-items:center;gap:3px;
-            font-size:10px;color:var(--text2);padding:3px 8px;
-            border-radius:4px;border:1px solid var(--border);
-            background:#f8fafc;text-decoration:none;white-space:nowrap;
-            transition:.15s;
-        }
-        .actions-link:hover{background:var(--primary3);color:var(--primary);border-color:var(--primary2)}
-
         /* 重复标记 */
         .card.dup-card{border-left:3px solid #f59e0b;opacity:.85}
         .card.dup-card .c-dup-tag{
@@ -318,9 +308,8 @@
             <span class="dt-label">去重</span>
         </label>
         <button class="refresh-btn" id="refreshBtn" onclick="refreshData()" title="重新拉取最新数据">
-            <span class="rf-icon">🔄</span> 刷新数据
+            <span class="rf-icon">🔄</span> 刷新
         </button>
-        <a class="actions-link" href="https://github.com/nyctocereusnicola/industry-reports/actions/workflows/sync.yml" target="_blank" rel="noopener" title="前往 GitHub Actions 触发同步">⚡ 同步</a>
     </div>
 
     <!-- 统计面板 -->
@@ -441,7 +430,7 @@ async function refreshData() {
         btn.childNodes[1].textContent = " 已刷新";
         setTimeout(() => {
             btn.querySelector(".rf-icon").textContent = "🔄";
-            btn.childNodes[1].textContent = " 刷新数据";
+            btn.childNodes[1].textContent = " 刷新";
         }, 2000);
     } catch(e) {
         btn.classList.remove("loading");
@@ -449,7 +438,7 @@ async function refreshData() {
         btn.childNodes[1].textContent = " 失败重试";
         setTimeout(() => {
             btn.querySelector(".rf-icon").textContent = "🔄";
-            btn.childNodes[1].textContent = " 刷新数据";
+            btn.childNodes[1].textContent = " 刷新";
         }, 3000);
     }
 }
