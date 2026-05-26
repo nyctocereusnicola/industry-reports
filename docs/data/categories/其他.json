@@ -1,5 +1,23 @@
 {
   "category": "其他",
-  "file_count": 0,
-  "files": []
+  "file_count": 1,
+  "files": [
+    {
+      "token": "d5b46f6d1e9644be82679818ff6c9123",
+      "title": "Also文化商业综合体招商手册",
+      "summary": "",
+      "tags": [
+        "其他"
+      ],
+      "score": 52,
+      "year": "2026",
+      "date": "2026-05-26",
+      "url": "",
+      "type": 1,
+      "size": 54018377,
+      "size_display": "51.5 MB",
+      "created_time": "2026-05-26",
+      "modified_time": "2026-05-26"
+    }
+  ]
 }
