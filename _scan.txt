@@ -1,0 +1,19 @@
+Token OK
+
+[潮流时尚] scanning... -> 0 files, 0 subdirs, 0.0MB
+[宠物] scanning... -> 94 files, 4 subdirs, 0.0MB
+[抖音] scanning... -> 0 files, 0 subdirs, 0.0MB
+[小红书] scanning... -> 4 files, 2 subdirs, 0.0MB
+[美妆] scanning... -> 0 files, 0 subdirs, 0.0MB
+[海外市场] scanning... -> 0 files, 0 subdirs, 0.0MB
+[户外与运动] scanning... -> 0 files, 0 subdirs, 0.0MB
+[家居] scanning... -> 0 files, 0 subdirs, 0.0MB
+[健康养生] scanning... -> 0 files, 0 subdirs, 0.0MB
+[快消品] scanning... -> 0 files, 0 subdirs, 0.0MB
+[母婴] scanning... -> 0 files, 0 subdirs, 0.0MB
+[其他] scanning... -> 0 files, 0 subdirs, 0.0MB
+[奢侈品] scanning... -> 0 files, 0 subdirs, 0.0MB
+[食品饮料] scanning... -> 0 files, 0 subdirs, 0.0MB
+[香相关] scanning... -> 0 files, 0 subdirs, 0.0MB
+
+=== Total: 98 ===
