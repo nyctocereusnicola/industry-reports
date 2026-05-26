@@ -33,6 +33,9 @@ jobs:
           FEISHU_FOLDER_TOKEN: ${{ secrets.FEISHU_FOLDER_TOKEN }}
         run: python scan_v3.py
 
+      - name: 数据增强（来源识别 + 去重）
+        run: python enrich_data.py
+
       - name: 提交更新到仓库
         run: |
           git config user.name "github-actions[bot]"

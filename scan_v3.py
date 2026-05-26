@@ -1,17 +1,19 @@
 """
-飞书扫描 v3.2 — 修复版
+飞书扫描 v3.3 — 修复版
 - 修复时间戳解析（Unix秒 → 日期）
 - 过滤文件夹不统计
 - 补充关键词覆盖
 - 从文件名提取报告真实年份
 - 递归扫描子文件夹
+- 自动清理旧分类文件
+- 修复 os.getenv 空字符串不回退问题
 """
 import httpx, json, time, os, traceback, re
 
 # --- 配置 ---
-APP_ID     = os.getenv("FEISHU_APP_ID",     "cli_aa9bf80b5678dbee")
-APP_SECRET = os.getenv("FEISHU_APP_SECRET", "BSrMFRLJSEOv9cngkERqEcg83IRbj2oi")
-ROOT       = os.getenv("FEISHU_FOLDER_TOKEN","YYLHfvuCylpAQVdzTRxcdDpgnyc")
+APP_ID     = os.getenv("FEISHU_APP_ID")     or "cli_aa9bf80b5678dbee"
+APP_SECRET = os.getenv("FEISHU_APP_SECRET") or "BSrMFRLJSEOv9cngkERqEcg83IRbj2oi"
+ROOT       = os.getenv("FEISHU_FOLDER_TOKEN") or "YYLHfvuCylpAQVdzTRxcdDpgnyc"
 BASE       = "https://open.feishu.cn/open-apis"
 OUT_DIR    = "docs/data/categories"
 DELAY      = 0.2
@@ -223,6 +225,18 @@ def scan():
         cats[cat].append(f)
 
     os.makedirs(OUT_DIR, exist_ok=True)
+
+    # 清理旧分类文件（不在当前 CATEGORY_LIST 中的）
+    import glob
+    for old_f in glob.glob(os.path.join(OUT_DIR, "*.json")):
+        name = os.path.basename(old_f)
+        if name in ("_index.json", "_duplicates.json"):
+            continue
+        cat_name = name.replace(".json", "")
+        if cat_name not in CATEGORY_LIST:
+            os.remove(old_f)
+            print(f"  [CLEAN] 删除旧分类文件: {name}")
+
     total = 0
     for cat_name in CATEGORY_LIST:
         items = cats[cat_name]

@@ -153,7 +153,7 @@ def dedup_files(files):
     # Level 2: 标题相似去重（同归一化key + 同年 → 保留最优）
     norm_groups = {}
     for f in token_clean:
-        key = normalize_title(f.get("name", ""))
+        key = normalize_title(f.get("title", "") or f.get("name", ""))
         yr = f.get("year", "未知")
         gk = (key, yr)
         norm_groups.setdefault(gk, []).append(f)
@@ -163,7 +163,7 @@ def dedup_files(files):
         if len(group) == 1:
             clean.append(group[0])
         else:
-            group.sort(key=lambda x: (x.get("score", 0), len(x.get("name", ""))), reverse=True)
+            group.sort(key=lambda x: (x.get("score", 0), len(x.get("title", "") or x.get("name", ""))), reverse=True)
             best = group[0]
             clean.append(best)
             for dup in group[1:]:
@@ -175,9 +175,15 @@ def dedup_files(files):
 
 def main():
     os.makedirs(DST, exist_ok=True)
-    categories = ["潮流时尚","宠物","抖音","小红书","美妆",
-                  "海外市场","户外与运动","家居","健康养生","快消品",
-                  "母婴","其他","奢侈品","食品饮料","香相关"]
+    # 动态从 scan_v3 获取分类列表，避免硬编码不一致
+    try:
+        from scan_v3 import CATEGORY_LIST
+        categories = CATEGORY_LIST
+    except ImportError:
+        categories = ["小红书","抖音","TikTok","营销方案","品牌手册",
+                      "美妆个护","宠物经济","服饰时尚","食品饮料","母婴亲子",
+                      "家居生活","大健康","快消零售","奢侈品","香氛","户外运动",
+                      "跨境电商","其他"]
     
     total_enriched = 0
     total_removed = 0
@@ -196,8 +202,11 @@ def main():
         enriched_files = []
         
         for f_item in files:
-            original_name = f_item.get("name", "")
+            original_name = f_item.get("title", "") or f_item.get("name", "")
             meta = extract_metadata(original_name)
+            # 防止空的 meta.title 覆盖原始标题
+            if not meta.get("title"):
+                meta["title"] = original_name[:120]
             enriched = {
                 **f_item,
                 **meta,
@@ -269,18 +278,20 @@ def main():
     
     print(f"\n总计: {total_enriched} 条 (已去重 {total_removed} 条)")
     
-    # 打印几条示例
-    print("\n--- 示例（宠物前3条）---")
-    fname = os.path.join(DST, "宠物.json")
-    if os.path.exists(fname):
-        with open(fname, "r", encoding="utf-8") as f:
-            d = json.load(f)
-        for item in d["files"][:3]:
-            print(f"  标题: {item['title'][:60]}")
-            print(f"  摘要: {item['summary'][:80]}")
-            print(f"  标签: {item['tags']}")
-            print(f"  来源: {item['source']} | 评分: {item['score']} | 年份: {item['year']}")
-            print()
+    # 打印几条示例（取第一个有数据的分类）
+    sample_cat = next((c for c in categories if index.get("counts", {}).get(c, 0) > 0), None)
+    if sample_cat:
+        print(f"\n--- 示例（{sample_cat}前3条）---")
+        fname = os.path.join(DST, f"{sample_cat}.json")
+        if os.path.exists(fname):
+            with open(fname, "r", encoding="utf-8") as f:
+                d = json.load(f)
+            for item in d["files"][:3]:
+                print(f"  标题: {item['title'][:60]}")
+                print(f"  摘要: {item['summary'][:80]}")
+                print(f"  标签: {item['tags']}")
+                print(f"  来源: {item['source']} | 评分: {item['score']} | 年份: {item['year']}")
+                print()
 
 if __name__ == "__main__":
     main()
