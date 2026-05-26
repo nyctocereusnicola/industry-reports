@@ -1,7 +1,1287 @@
 {
   "category": "宠物经济",
-  "count": 0,
+  "count": 69,
   "dup_removed": 0,
-  "files": [],
-  "updated": "2026-05-26 15:28:02"
+  "files": [
+    {
+      "token": "bff0fe23cb0f4a45ac2170fe085332e2",
+      "title": "2021 宠物经济发展趋势研究报告-苏宁金融",
+      "summary": "2021 宠物经济发展趋势研究报告-苏宁金融",
+      "tags": [
+        "趋势分析",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/6e8e37aaaa77",
+      "type": "file",
+      "size": 1751914,
+      "created_time": 1741660518949,
+      "modified_time": 1741660518949,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "39b7d37c53b848d687ffc03bb07c6c9a",
+      "title": "2021 宠物清洁市场趋势报告-天猫新品创新中心黑马工厂&HCR慧辰",
+      "summary": "2021 宠物清洁市场趋势报告-天猫新品创新中心黑马工厂&HCR慧辰",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/448960deb5ab",
+      "type": "file",
+      "size": 1094402,
+      "created_time": 1741660525725,
+      "modified_time": 1741660525725,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b8c08b5727164066869ae8fefdd51fca",
+      "title": "2021 中国宠物食品行业研究报告-艾瑞咨询",
+      "summary": "2021 中国宠物食品行业研究报告-艾瑞咨询（数据来源：艾瑞）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/8dfaa785a13a",
+      "type": "file",
+      "size": 3675870,
+      "created_time": 1741660536447,
+      "modified_time": 1741660536447,
+      "month": "",
+      "source": "艾瑞"
+    },
+    {
+      "token": "bca0bce7ded848daa0f749f1366ef44a",
+      "title": "2022 宠物品牌调研：网易严选、阿飞和巴弟、鲜朗 解数咨询",
+      "summary": "2022 宠物品牌调研：网易严选、阿飞和巴弟、鲜朗 解数咨询",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/e4302179bc7e",
+      "type": "file",
+      "size": 7586104,
+      "created_time": 1741660551718,
+      "modified_time": 1741660551718,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7fdff57894444997adbfba544d0959d2",
+      "title": "2022 宠物食品消费者洞察报告-如何虏获猫狗爸妈的心-Ipsos",
+      "summary": "2022 宠物食品消费者洞察报告-如何虏获猫狗爸妈的心-Ipsos",
+      "tags": [
+        "消费洞察",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/e3a61058da52",
+      "type": "file",
+      "size": 2676667,
+      "created_time": 1741660526150,
+      "modified_time": 1741660526150,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "414878047a3b46098aefb511eb3a90ba",
+      "title": "2022 宠物行业人群分析、阿飞和巴弟营销玩法拆解",
+      "summary": "2022 宠物行业人群分析、阿飞和巴弟营销玩法拆解",
+      "tags": [
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/ef0b8c2a20ef",
+      "type": "file",
+      "size": 4799850,
+      "created_time": 1741660520429,
+      "modified_time": 1741660520429,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "44faa719e02441818751b2b7e1ce269c",
+      "title": "2022 中国宠物食品市场及消费行为检测报告（简版）2021-2022-艾瑞咨询",
+      "summary": "2022 中国宠物食品市场及消费行为检测报告（简版）2021-2022-艾瑞咨询（数据来源：艾瑞）",
+      "tags": [
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/dc8bd3e29c7c",
+      "type": "file",
+      "size": 8715934,
+      "created_time": 1751249758000,
+      "modified_time": 1751249758000,
+      "month": "",
+      "source": "艾瑞"
+    },
+    {
+      "token": "54a2b0d352624ceb81b4432de8b4c8b0",
+      "title": "2022 中国宠物食品行业食品白皮书-德勤",
+      "summary": "2022 中国宠物食品行业食品白皮书-德勤（数据来源：德勤）",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/674c949661c3",
+      "type": "file",
+      "size": 4127947,
+      "created_time": 1741660527210,
+      "modified_time": 1741660527210,
+      "month": "",
+      "source": "德勤"
+    },
+    {
+      "token": "a821e2ca4eb0482c9dd756f583701bfb",
+      "title": "2023 从品牌商角度看中国宠物食品市场：群雄逐鹿，谁与争锋？-东方证券 202308",
+      "summary": "2023 从品牌商角度看中国宠物食品市场：群雄逐鹿，谁与争锋？-东方证券 202308",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/601a57c353e5",
+      "type": "file",
+      "size": 1700703,
+      "created_time": 1741660528837,
+      "modified_time": 1741660528837,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0ef498a5d5444856b40dd1d1e6c99738",
+      "title": "2023 宠物NFC定位项圈计划书",
+      "summary": "2023 宠物NFC定位项圈计划书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/98c3f03cf721",
+      "type": "file",
+      "size": 2515420,
+      "created_time": 1741660541723,
+      "modified_time": 1741660541723,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "dafdf7956fd0422cb5776846c083cc3f",
+      "title": "2023 宠物深度洞察系列（一）：品牌、产品视角：国产宠食替代路在何方？-国金证券202307(1)",
+      "summary": "2023 宠物深度洞察系列（一）：品牌、产品视角：国产宠食替代路在何方？-国金证券202307(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/ea99618cb051",
+      "type": "file",
+      "size": 3385499,
+      "created_time": 1751248708000,
+      "modified_time": 1751248708000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "da4901a4f49947bab18be2129a478cf1",
+      "title": "2023 宠物深度洞察系列（一）：品牌、产品视角：国产宠食替代路在何方？-国金证券202307",
+      "summary": "2023 宠物深度洞察系列（一）：品牌、产品视角：国产宠食替代路在何方？-国金证券202307",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/58897692733b",
+      "type": "file",
+      "size": 3385499,
+      "created_time": 1741660532263,
+      "modified_time": 1741660532263,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ff3df7180f9f45038abb97060e1e1295",
+      "title": "2023 宠物食品行业洞察-尼尔森NIQ",
+      "summary": "2023 宠物食品行业洞察-尼尔森NIQ（数据来源：尼尔森）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/65e84470f5f0",
+      "type": "file",
+      "size": 3463799,
+      "created_time": 1741660527375,
+      "modified_time": 1741660527375,
+      "month": "",
+      "source": "尼尔森"
+    },
+    {
+      "token": "4c4a08840bfb40579be0a57c389dc913",
+      "title": "2023 宠物食品行业分析报告-炼丹炉(1)",
+      "summary": "2023 宠物食品行业分析报告-炼丹炉(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/70225053cde3",
+      "type": "file",
+      "size": 9642157,
+      "created_time": 1751249114000,
+      "modified_time": 1751249114000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "d2d9585c91fd42ebab56e5f40412dd95",
+      "title": "2023 宠物食品行业分析报告-炼丹炉",
+      "summary": "2023 宠物食品行业分析报告-炼丹炉",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/1190ea8db7b4",
+      "type": "file",
+      "size": 9642157,
+      "created_time": 1741660525672,
+      "modified_time": 1741660525672,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "8c363b8b32554ccc989432b216843a2b",
+      "title": "2023 宠物箱包出海趋势洞察报告 西窗科技",
+      "summary": "2023 宠物箱包出海趋势洞察报告 西窗科技",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/a2e928e84502",
+      "type": "file",
+      "size": 4352866,
+      "created_time": 1741660557823,
+      "modified_time": 1741660557823,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9a12610d499e42d1bc530231367a59f9",
+      "title": "2023 宠物行业发展报告 亚宠研究院",
+      "summary": "2023 宠物行业发展报告 亚宠研究院",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/3d2b7e84c8ad",
+      "type": "file",
+      "size": 15957529,
+      "created_time": 1751247488000,
+      "modified_time": 1751247488000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0407e93342984811a3a55519c324eb70",
+      "title": "2023 宠物行业深度研究报告",
+      "summary": "2023 宠物行业深度研究报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/52d2a2034619",
+      "type": "file",
+      "size": 4879966,
+      "created_time": 1741660528792,
+      "modified_time": 1741660528792,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "46ef544c3a4c46149e3c43c0737d083e",
+      "title": "2023 探究日本宠物食品发展，看中国未来趋势 202311",
+      "summary": "2023 探究日本宠物食品发展，看中国未来趋势 202311",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3266117,
+      "created_time": 1741660530295,
+      "modified_time": 1741660530295,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "71af8c1a84a540f2a988d869a622d8ee",
+      "title": "2023 中国宠物行业趋势洞察白皮书 京东",
+      "summary": "2023 中国宠物行业趋势洞察白皮书 京东",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1150605,
+      "created_time": 1741660555863,
+      "modified_time": 1741660555863,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ead65631d82b4b35ab63ec75db4d156a",
+      "title": "2023 中国宠物行业新趋势洞察报告-亿欧智库",
+      "summary": "2023 中国宠物行业新趋势洞察报告-亿欧智库（数据来源：亿欧）",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 4811069,
+      "created_time": 1741660531956,
+      "modified_time": 1741660531956,
+      "month": "",
+      "source": "亿欧"
+    },
+    {
+      "token": "7c4818b21f644b2ea9027c71d4ad4caa",
+      "title": "2024 宠物经济核心七问，趋势渠道RTB营销研发-618战绩-天风证券202406(1)",
+      "summary": "2024 宠物经济核心七问，趋势渠道RTB营销研发-618战绩-天风证券202406(1)",
+      "tags": [
+        "趋势分析",
+        "营销策略",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3144792,
+      "created_time": 1751248568000,
+      "modified_time": 1751248568000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3261ad17f29944a582d35b6559fba8e8",
+      "title": "2024 宠物经济核心七问，趋势渠道RTB营销研发-618战绩-天风证券202406",
+      "summary": "2024 宠物经济核心七问，趋势渠道RTB营销研发-618战绩-天风证券202406",
+      "tags": [
+        "趋势分析",
+        "营销策略",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3144792,
+      "created_time": 1741660531773,
+      "modified_time": 1741660531773,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a0519af35e5341f78833177ca0971b4f",
+      "title": "2024 宠物空气净化器趋势白皮书 TMIC&有谋",
+      "summary": "2024 宠物空气净化器趋势白皮书 TMIC&有谋",
+      "tags": [
+        "趋势分析",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3237365,
+      "created_time": 1741660524133,
+      "modified_time": 1741660524133,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "63303c27f7c64fb18ddb9678f22a5fab",
+      "title": "2024 宠物行业全球贸易趋势分析报告 阿里巴巴国际站",
+      "summary": "2024 宠物行业全球贸易趋势分析报告 阿里巴巴国际站",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 7709571,
+      "created_time": 1741660553378,
+      "modified_time": 1741660553378,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "bcb85148298d4f8c870e7c31e3f5a4aa",
+      "title": "2024 宠物行业细分赛道解析 万联证券 20241216",
+      "summary": "2024 宠物行业细分赛道解析 万联证券 20241216",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2495021,
+      "created_time": 1751248092000,
+      "modified_time": 1751248092000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1c019d24d88e48b48e0d62cc556f61e3",
+      "title": "2024 宠物行业研究报告：萌宠经济盛行，没有谁是一座孤岛-洞见研报",
+      "summary": "2024 宠物行业研究报告：萌宠经济盛行，没有谁是一座孤岛-洞见研报",
+      "tags": [
+        "行业报告",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 8826858,
+      "created_time": 1741660533916,
+      "modified_time": 1741660533916,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2d6db1c01cfe4d8ca6e1a5a998d7672a",
+      "title": "2024 海外宠物市场白皮书-魔镜洞察-202411",
+      "summary": "2024 海外宠物市场白皮书-魔镜洞察-202411",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 9027472,
+      "created_time": 1741660535066,
+      "modified_time": 1741660535066,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "46ab02a5f29f4d51882fcdc3aebb4a45",
+      "title": "2024 年度复盘宠物行业报告 解数咨询",
+      "summary": "2024 年度复盘宠物行业报告 解数咨询",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4443308,
+      "created_time": 1741769877000,
+      "modified_time": 1741769877000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c4d19e5de5a243e3b7d0e79a9c073230",
+      "title": "2024 全球宠物食品行业报告 维卓",
+      "summary": "2024 全球宠物食品行业报告 维卓",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 18099091,
+      "created_time": 1779778632878,
+      "modified_time": 1779778632878,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "cc4eb7514b4e4ae6b3eb34f860855757",
+      "title": "2024 全球宠物食品行业报告-维卓",
+      "summary": "2024 全球宠物食品行业报告-维卓",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 18099084,
+      "created_time": 1741660545551,
+      "modified_time": 1741660545551,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "d1061f3cbabb446688c053f1588705c8",
+      "title": "2024 我国宠物食品赛道梳理-东方证券 202401",
+      "summary": "2024 我国宠物食品赛道梳理-东方证券 202401",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 1764203,
+      "created_time": 1741660536686,
+      "modified_time": 1741660536686,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "db1a9c0b29f84a8da075419fc2a0e7ff",
+      "title": "2024 中国宠物服务行业新趋势洞察报告-亿欧智库",
+      "summary": "2024 中国宠物服务行业新趋势洞察报告-亿欧智库（数据来源：亿欧）",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 9174670,
+      "created_time": 1741660539815,
+      "modified_time": 1741660539815,
+      "month": "",
+      "source": "亿欧"
+    },
+    {
+      "token": "5e7571667e574ba4b819b997d42337f6",
+      "title": "2024 中国宠物管理行业白皮书-重庆西部宠物生命科学研究院-2024.12-179页(1)",
+      "summary": "2024 中国宠物管理行业白皮书-重庆西部宠物生命科学研究院-2024.12-179页(1)",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6523149,
+      "created_time": 1779778632813,
+      "modified_time": 1779778632813,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "75ed760e0e224a2d85f6c0e30987a673",
+      "title": "2024 中国宠物管理行业白皮书-重庆西部宠物生命科学研究院-2024.12-179页(2)",
+      "summary": "2024 中国宠物管理行业白皮书-重庆西部宠物生命科学研究院-2024.12-179页(2)",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6523149,
+      "created_time": 1751104778000,
+      "modified_time": 1751104778000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "782c1c9250bf42c6b55b1dff58978fb7",
+      "title": "2024 中国宠物管理行业白皮书-重庆西部宠物生命科学研究院-2024.12-179页",
+      "summary": "2024 中国宠物管理行业白皮书-重庆西部宠物生命科学研究院-2024.12-179页",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6523149,
+      "created_time": 1751104778000,
+      "modified_time": 1751104778000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ef666d90277e4dfb88a0af0db8bb169c",
+      "title": "2024 中国宠物食品行业研究框架：长坡厚雪，国产崛起",
+      "summary": "2024 中国宠物食品行业研究框架：长坡厚雪，国产崛起",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2368166,
+      "created_time": 1751248146000,
+      "modified_time": 1751248146000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f4697ae964ec47b8bf7d6ea9bdb521f4",
+      "title": "2024 中国宠物用品消费趋势报告 中国宠物行业绿皮书 沙利文 2023-2024",
+      "summary": "2024 中国宠物用品消费趋势报告 中国宠物行业绿皮书 沙利文 2023-2024",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4877052,
+      "created_time": 1751104370000,
+      "modified_time": 1751104370000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "afb0382465b3464f841b1612a30724ba",
+      "title": "2025 宠物动保行业深度报告：动保行业中的蓝海领域",
+      "summary": "2025 宠物动保行业深度报告：动保行业中的蓝海领域",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 2739835,
+      "created_time": 1755673698000,
+      "modified_time": 1755673698000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "498d0700bbaa4ddca9a998926bb1fca6",
+      "title": "2025 宠物科技用品发展研究白皮书-艾瑞咨询-2025-36页",
+      "summary": "2025 宠物科技用品发展研究白皮书-艾瑞咨询-2025-36页（数据来源：艾瑞）",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 4440089,
+      "created_time": 1762827086000,
+      "modified_time": 1762827086000,
+      "month": "",
+      "source": "艾瑞"
+    },
+    {
+      "token": "a6d59edcc0b64949bd0fcce448b4150a",
+      "title": "2025 宠物食品趋势洞察报告 艺恩 202506(1)",
+      "summary": "2025 宠物食品趋势洞察报告 艺恩 202506(1)（数据来源：艺恩）",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 6190441,
+      "created_time": 1751253668000,
+      "modified_time": 1751253668000,
+      "month": "",
+      "source": "艺恩"
+    },
+    {
+      "token": "5d329f9da09c4812b851b8316e4e9908",
+      "title": "2025 宠物食品趋势洞察报告 艺恩 202506",
+      "summary": "2025 宠物食品趋势洞察报告 艺恩 202506（数据来源：艺恩）",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 6190441,
+      "created_time": 1751253668000,
+      "modified_time": 1751253668000,
+      "month": "",
+      "source": "艺恩"
+    },
+    {
+      "token": "3a0dd2dc50b54e8d96b09d6869845bbd",
+      "title": "2025 宠物食品市场线上消费趋势洞察 炼丹炉",
+      "summary": "2025 宠物食品市场线上消费趋势洞察 炼丹炉",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 3469715,
+      "created_time": 1750822488000,
+      "modified_time": 1750822488000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "737bfb6dd4e4464981335f187e9005db",
+      "title": "2025 宠物食品行业系列深度之六：从历年“618”购物节看宠物食品行业变化 申万宏源研究20250625",
+      "summary": "2025 宠物食品行业系列深度之六：从历年“618”购物节看宠物食品行业变化 申万宏源研究20250625",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 2227430,
+      "created_time": 1751250856000,
+      "modified_time": 1751250856000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "839360baa8c34ec5af1693ca8234f69b",
+      "title": "2025 宠物消费报告 京东消费及产业研究院 202504 ",
+      "summary": "2025 宠物消费报告 京东消费及产业研究院 202504 ",
+      "tags": [
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 1260494,
+      "created_time": 1751248186000,
+      "modified_time": 1751248186000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "e34d3c7dcfeb48ec9b44946c5997bb29",
+      "title": "2025 宠物行业消费趋势洞察 MobTech研究院 202503",
+      "summary": "2025 宠物行业消费趋势洞察 MobTech研究院 202503（数据来源：MobTech）",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 3263529,
+      "created_time": 1751104296000,
+      "modified_time": 1751104296000,
+      "month": "",
+      "source": "MobTech"
+    },
+    {
+      "token": "84bfec499b9a4bd3aa15dd6e4601a007",
+      "title": "2025 宠物用品行业研究-炼丹炉-2025.7-35页",
+      "summary": "2025 宠物用品行业研究-炼丹炉-2025.7-35页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 5135613,
+      "created_time": 1753864974000,
+      "modified_time": 1753864974000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "02614ccfdc024086a5d9e4f496b0efa8",
+      "title": "2025 全球宠物行业趋势与中国增长机遇报告-NIQ-2025.8-25页",
+      "summary": "2025 全球宠物行业趋势与中国增长机遇报告-NIQ-2025.8-25页",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 5792495,
+      "created_time": 1755756412000,
+      "modified_time": 1755756412000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "adff80bb5a60469a9b675127452f0166",
+      "title": "2025 Shopee：宠物食品-狗粮选品指南报告（2025年）",
+      "summary": "2025 Shopee：宠物食品-狗粮选品指南报告（2025年）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 1779525,
+      "created_time": 1751248488000,
+      "modified_time": 1751248488000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a284214213f44a3dbffce53cfa3136a6",
+      "title": "2025 新兴宠物用品市场洞察报告 大数跨境",
+      "summary": "2025 新兴宠物用品市场洞察报告 大数跨境",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 8133621,
+      "created_time": 1753326194000,
+      "modified_time": 1753326194000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "97915a5a85cd43eaa9c45dcab24189b6",
+      "title": "2025 中国宠物行业白皮书",
+      "summary": "2025 中国宠物行业白皮书",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 1338149,
+      "created_time": 1765766922000,
+      "modified_time": 1765766922000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2e351afaf81747319aebfec503714ef4",
+      "title": "2025 中国宠物行业市场报告：“它经济”的消费升级与市场洞察-毕马威-2025.6-82页",
+      "summary": "2025 中国宠物行业市场报告：“它经济”的消费升级与市场洞察-毕马威-2025.6-82页",
+      "tags": [
+        "行业报告",
+        "经济分析",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 11891864,
+      "created_time": 1750754112000,
+      "modified_time": 1750754112000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5ba0226dc864431cbdf5c061d0dfc708",
+      "title": "2025宠物行业的五大变化",
+      "summary": "2025宠物行业的五大变化",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 2736159,
+      "created_time": 1760632000720,
+      "modified_time": 1760632000720,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f484b40788184d3e83f861821ec5886c",
+      "title": "2026 宠物食品行业深度报告：从集团层面看，宠物行业头部品牌的发展情况梳理",
+      "summary": "2026 宠物食品行业深度报告：从集团层面看，宠物行业头部品牌的发展情况梳理",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 1757698,
+      "created_time": 1769753958000,
+      "modified_time": 1769753958000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "59e4bb10d90f4646a9bf4938614ba60e",
+      "title": "2026 宠物行业白皮书-炼丹炉-2026.1-65页",
+      "summary": "2026 宠物行业白皮书-炼丹炉-2026.1-65页",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 5162312,
+      "created_time": 1770789718000,
+      "modified_time": 1770789718000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f16b6e90a3824a458d5adb5aaff754df",
+      "title": "宝路×京东5月宠物品类专场创意方案(1)",
+      "summary": "宝路×京东5月宠物品类专场创意方案(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3056751,
+      "created_time": 1741660543387,
+      "modified_time": 1741660543387,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "75737a9433aa439bb78ddcb9ed4cb37a",
+      "title": "诚实一口×B站宠物品牌整合营销案例",
+      "summary": "诚实一口×B站宠物品牌整合营销案例",
+      "tags": [
+        "品牌研究",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 10190635,
+      "created_time": 1741660555429,
+      "modified_time": 1741660555429,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f3dbae58439f4629968885598fa29805",
+      "title": "宠物NFC定位项圈计划书",
+      "summary": "宠物NFC定位项圈计划书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 10337706,
+      "created_time": 1779764162215,
+      "modified_time": 1779764162215,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "43b4847b2f904d8f9bc23215515c63e2",
+      "title": "宠物洗护品牌再三SOCIAL事件规划(2)",
+      "summary": "宠物洗护品牌再三SOCIAL事件规划(2)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3715752,
+      "created_time": 1741665703093,
+      "modified_time": 1741665703093,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "35fc543afdff4ec2a7c893592304cd54",
+      "title": "宠物鲜粮先驱者——Freshpet企业案例研究（亿欧智库研究报告）",
+      "summary": "宠物鲜粮先驱者——Freshpet企业案例研究（亿欧智库研究报告）（数据来源：亿欧）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1768936,
+      "created_time": 1741660530838,
+      "modified_time": 1741660530838,
+      "month": "",
+      "source": "亿欧"
+    },
+    {
+      "token": "0b28d58a883a4213ae430fee808e8e3a",
+      "title": "宠物行业SHOPEE市场概况-2025.7.18-陈蔓华xlsx",
+      "summary": "宠物行业SHOPEE市场概况-2025.7.18-陈蔓华xlsx",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 132410,
+      "created_time": 1779778632904,
+      "modified_time": 1779778632904,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6456edac6303460fb9cc3c36bad0409f",
+      "title": "宠物用品互联网服务平台商业计划书",
+      "summary": "宠物用品互联网服务平台商业计划书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2366963,
+      "created_time": 1779778602950,
+      "modified_time": 1779778602950,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2331677a14054355bdf2562273dc774b",
+      "title": "第26届亚洲宠物展 展商",
+      "summary": "第26届亚洲宠物展 展商",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 30174099,
+      "created_time": 1779778602249,
+      "modified_time": 1779778602249,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9147082f7fcd49e897a39f0b3fb5deef",
+      "title": "電力宠物公司 品牌介绍",
+      "summary": "電力宠物公司 品牌介绍",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 37032862,
+      "created_time": 1751248928000,
+      "modified_time": 1751248928000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7aa959e84a484038afdaddc79c26e544",
+      "title": "多尼斯宠物11.12品牌策划案",
+      "summary": "多尼斯宠物11.12品牌策划案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 15509992,
+      "created_time": 1779778602772,
+      "modified_time": 1779778602772,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3bc7a81c8392460fa7abfc5d216bdc3a",
+      "title": "猫粮行业—凯锐思品牌拆解(1)",
+      "summary": "猫粮行业—凯锐思品牌拆解(1)",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5183544,
+      "created_time": 1741673187642,
+      "modified_time": 1741673187642,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0fb2164785cb4190995569cea5a3d335",
+      "title": "NATURA 意大利宠物品牌 ",
+      "summary": "NATURA 意大利宠物品牌 ",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4878360,
+      "created_time": 1724460918000,
+      "modified_time": 1724460918000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "896820f536714d358c1d9f285aa51809",
+      "title": "头豹研究院：2023年中国宠物主粮行业概览",
+      "summary": "头豹研究院：2023年中国宠物主粮行业概览",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 4577509,
+      "created_time": 1741665784502,
+      "modified_time": 1741665784502,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "eb82d7e8c87144ecadaef414bf52a6ef",
+      "title": "行业标准 全价宠物食品-犬粮",
+      "summary": "行业标准 全价宠物食品-犬粮",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4276487,
+      "created_time": 1741660529110,
+      "modified_time": 1741660529110,
+      "month": "",
+      "source": ""
+    }
+  ],
+  "updated": "2026-05-26 18:03:10"
 }

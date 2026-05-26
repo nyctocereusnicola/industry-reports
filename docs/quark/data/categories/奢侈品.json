@@ -1,7 +1,433 @@
 {
   "category": "奢侈品",
-  "count": 0,
+  "count": 23,
   "dup_removed": 0,
-  "files": [],
-  "updated": "2026-05-26 15:28:02"
+  "files": [
+    {
+      "token": "77a3e86d94954c07ad0852f7edaa3885",
+      "title": "2019 进博会蓝皮书 透析中国底线市场奢侈品消费 德勤-寺库",
+      "summary": "2019 进博会蓝皮书 透析中国底线市场奢侈品消费 德勤-寺库（数据来源：德勤）",
+      "tags": [
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2019",
+      "date": "2019",
+      "url": "https://pan.quark.cn/s/52a6921725d0",
+      "type": "file",
+      "size": 7294955,
+      "created_time": 1751503558000,
+      "modified_time": 1751503558000,
+      "month": "",
+      "source": "德勤"
+    },
+    {
+      "token": "13f62ef7f0cd4a7b84f2705e0b8fd140",
+      "title": "2019 奢侈品行业洞察报告（巨量引擎&头条指数，49页）",
+      "summary": "2019 奢侈品行业洞察报告（巨量引擎&头条指数，49页）（数据来源：巨量）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2019",
+      "date": "2019",
+      "url": "https://pan.quark.cn/s/882bd779687e",
+      "type": "file",
+      "size": 11312588,
+      "created_time": 1741660005041,
+      "modified_time": 1741660005041,
+      "month": "",
+      "source": "巨量"
+    },
+    {
+      "token": "1338a1218837467b832e9ba14e56ead6",
+      "title": "2019 奢侈品行业洞察（Mob研究院，34页）",
+      "summary": "2019 奢侈品行业洞察（Mob研究院，34页）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2019",
+      "date": "2019",
+      "url": "https://pan.quark.cn/s/dbf18b79cdd3",
+      "type": "file",
+      "size": 9268370,
+      "created_time": 1741660005567,
+      "modified_time": 1741660005567,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "8231f682d6aa4fb5b170a183a71f97a3",
+      "title": "2023 90后奢侈品消费人群洞察-Mob研究院-202311",
+      "summary": "2023 90后奢侈品消费人群洞察-Mob研究院-202311",
+      "tags": [
+        "消费洞察",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/34d3bbdbee85",
+      "type": "file",
+      "size": 2404206,
+      "created_time": 1741660132571,
+      "modified_time": 1741660132571,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "369f3de42b9644ec94e62c3d527daa01",
+      "title": "2023年奢侈品行业网络营销监测报告-艾瑞咨询(1)",
+      "summary": "2023年奢侈品行业网络营销监测报告-艾瑞咨询(1)（数据来源：艾瑞）",
+      "tags": [
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 5660469,
+      "created_time": 1741665817912,
+      "modified_time": 1741665817912,
+      "month": "",
+      "source": "艾瑞"
+    },
+    {
+      "token": "2ce6e477b210445e880dff5965921dc3",
+      "title": "2024 B站 奢侈品行业营销指南",
+      "summary": "2024 B站 奢侈品行业营销指南",
+      "tags": [
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 17595394,
+      "created_time": 1741660009812,
+      "modified_time": 1741660009812,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6becf1eb5326406ca733b52fb39a3d74",
+      "title": "2024 上半年度奢侈品牌中国活力榜",
+      "summary": "2024 上半年度奢侈品牌中国活力榜",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6646189,
+      "created_time": 1741659998772,
+      "modified_time": 1741659998772,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fe9249cd66a04b1ab51038f88b742006",
+      "title": "2024 奢侈品行业报告-洞悉未来 Publicis Luxe",
+      "summary": "2024 奢侈品行业报告-洞悉未来 Publicis Luxe",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 9473388,
+      "created_time": 1741660010219,
+      "modified_time": 1741660010219,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b9353297fa124f10889ad1e1d39cd70c",
+      "title": "2024 奢侈品行业明星与社媒营销数据洞察报告 艺恩数据(1)",
+      "summary": "2024 奢侈品行业明星与社媒营销数据洞察报告 艺恩数据(1)（数据来源：艺恩）",
+      "tags": [
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5857346,
+      "created_time": 1779776596128,
+      "modified_time": 1779776596128,
+      "month": "",
+      "source": "艺恩"
+    },
+    {
+      "token": "98732877df844d35869614dc920b98ee",
+      "title": "2024 有色金属行业-如何看待金价对金饰消费以及珠宝公司业绩影响？海通国际",
+      "summary": "2024 有色金属行业-如何看待金价对金饰消费以及珠宝公司业绩影响？海通国际",
+      "tags": [
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 11409095,
+      "created_time": 1751264444000,
+      "modified_time": 1751264444000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9fceae6a14fd4bb0a444c16b780dc805",
+      "title": "2024 中国奢侈品市场报告(中英)-贝恩-2025-27页",
+      "summary": "2024 中国奢侈品市场报告(中英)-贝恩-2025-27页（数据来源：贝恩）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4350832,
+      "created_time": 1779777097469,
+      "modified_time": 1779777097469,
+      "month": "",
+      "source": "贝恩"
+    },
+    {
+      "token": "f0c02995e91a4ae883464910f512d59f",
+      "title": "2024年奢侈品行业网络营销监测报告(1)",
+      "summary": "2024年奢侈品行业网络营销监测报告(1)",
+      "tags": [
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2972297,
+      "created_time": 1741665897637,
+      "modified_time": 1741665897637,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b90d591a45534ee59d7b149177b8b7d0",
+      "title": "2025 奢侈品市场最新动态 202506",
+      "summary": "2025 奢侈品市场最新动态 202506",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 10624188,
+      "created_time": 1754285604000,
+      "modified_time": 1754285604000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "569f1bdac76144df84dc62d2b2fdaafc",
+      "title": "2025 奢侈品行业深度报告：从符号走向传承",
+      "summary": "2025 奢侈品行业深度报告：从符号走向传承",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 3616397,
+      "created_time": 1759041424000,
+      "modified_time": 1759041424000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9e6f2332787d45d0aea29d4fb1ca143b",
+      "title": "2026 奢侈品行业十字路口：2026年消费者与增长指南",
+      "summary": "2026 奢侈品行业十字路口：2026年消费者与增长指南",
+      "tags": [
+        "消费洞察",
+        "行业报告",
+        "消费趋势",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 2574253,
+      "created_time": 1779171798000,
+      "modified_time": 1779171798000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fa81fe2c7b22489c8a26249693e05079",
+      "title": "2026 中国奢侈品市场： 迈向审慎复苏之路-科尔尼-2026-26页",
+      "summary": "2026 中国奢侈品市场： 迈向审慎复苏之路-科尔尼-2026-26页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 6185096,
+      "created_time": 1770791094000,
+      "modified_time": 1770791094000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9e6c5776572f45079f57db56d815eaf5",
+      "title": "二手奢侈品回收行业运营指南-腾讯广告",
+      "summary": "二手奢侈品回收行业运营指南-腾讯广告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3040007,
+      "created_time": 1779764165350,
+      "modified_time": 1779764165350,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "99cd5cb08bfc456284e02e9a66697d02",
+      "title": "果集行研：2023年珠宝行业社媒发展洞察(1)",
+      "summary": "果集行研：2023年珠宝行业社媒发展洞察(1)（数据来源：果集）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 8047683,
+      "created_time": 1741665236784,
+      "modified_time": 1741665236784,
+      "month": "",
+      "source": "果集"
+    },
+    {
+      "token": "487978cc02b349a18c346bcd78535176",
+      "title": "美国 2024 美国奢侈品大繁荣研究报告",
+      "summary": "美国 2024 美国奢侈品大繁荣研究报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 12337982,
+      "created_time": 1751267322000,
+      "modified_time": 1751267322000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5cda94ef5b734789ac71d6d46c2201a0",
+      "title": "美国 2025 春夏美国站珠宝首饰趋势洞察",
+      "summary": "美国 2025 春夏美国站珠宝首饰趋势洞察",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 4263256,
+      "created_time": 1755064786000,
+      "modified_time": 1755064786000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "439dbcc67b8c4b4d8f7b13c91207f75f",
+      "title": "汽车品牌豪华车型车主私享会“阔境人生”主题活动策划方案",
+      "summary": "汽车品牌豪华车型车主私享会“阔境人生”主题活动策划方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 16978916,
+      "created_time": 1779764161869,
+      "modified_time": 1779764161869,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1bf4bc0aef7d42118fb1aa0b99ef4e6a",
+      "title": "尧舜禹珠宝品牌战略定位策划创意案",
+      "summary": "尧舜禹珠宝品牌战略定位策划创意案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 171829081,
+      "created_time": 1741672001864,
+      "modified_time": 1741672001864,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "bb6fe0f852624bf3b59cf4bd17bf7f98",
+      "title": "珠宝品牌定位及传播策略规划更新(1)",
+      "summary": "珠宝品牌定位及传播策略规划更新(1)",
+      "tags": [
+        "品牌研究",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 57534469,
+      "created_time": 1741664512937,
+      "modified_time": 1741664512937,
+      "month": "",
+      "source": ""
+    }
+  ],
+  "updated": "2026-05-26 18:03:10"
 }

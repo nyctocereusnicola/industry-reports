@@ -1,7 +1,2964 @@
 {
   "category": "食品饮料",
-  "count": 0,
+  "count": 162,
   "dup_removed": 0,
-  "files": [],
-  "updated": "2026-05-26 15:28:02"
+  "files": [
+    {
+      "token": "fd00be45c4b3474090b44eec54ae5144",
+      "title": "2020 食品饮料行业：农夫山泉，包装饮用水及饮料龙头-20200624-海通证券-17页",
+      "summary": "2020 食品饮料行业：农夫山泉，包装饮用水及饮料龙头-20200624-海通证券-17页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2020",
+      "date": "2020",
+      "url": "https://pan.quark.cn/s/2a17594ec6d2",
+      "type": "file",
+      "size": 1613645,
+      "created_time": 1741660201399,
+      "modified_time": 1741660201399,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9472725d3ea94ae6a04fd30a6f85ee21",
+      "title": "2020太古可口可乐饮料公司30周年庆典（爱浙⾥· 畅此刻主题）活动策划方案",
+      "summary": "2020太古可口可乐饮料公司30周年庆典（爱浙⾥· 畅此刻主题）活动策划方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2020",
+      "date": "2020",
+      "url": "https://pan.quark.cn/s/e3a0519dbf58",
+      "type": "file",
+      "size": 33811027,
+      "created_time": 1779764162197,
+      "modified_time": 1779764162197,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0a6b8ba736df48c495806057bb01389f",
+      "title": "2020天雨参鸡汤餐饮品牌简介",
+      "summary": "2020天雨参鸡汤餐饮品牌简介",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2020",
+      "date": "2020",
+      "url": "https://pan.quark.cn/s/08536f348adb",
+      "type": "file",
+      "size": 4700018,
+      "created_time": 1779764161744,
+      "modified_time": 1779764161744,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "54b31b1ac5cc48cc802c59c98ed99268",
+      "title": "2021 中国新锐品牌发展研究：食品饮料行业报告 巨量算数&36氪研究院",
+      "summary": "2021 中国新锐品牌发展研究：食品饮料行业报告 巨量算数&36氪研究院（数据来源：巨量）",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/62549a6308a5",
+      "type": "file",
+      "size": 3000363,
+      "created_time": 1741660221992,
+      "modified_time": 1741660221992,
+      "month": "",
+      "source": "巨量"
+    },
+    {
+      "token": "1cd7fbb442fe45948f63c45760435b00",
+      "title": "2021隅田川咖啡品牌分析方案",
+      "summary": "2021隅田川咖啡品牌分析方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/bddd6aa620d6",
+      "type": "file",
+      "size": 20601352,
+      "created_time": 1779778602621,
+      "modified_time": 1779778602621,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1dc9e950b6884eb1a7f45cfd6b9e7528",
+      "title": "2022 食品饮料行业2022年度策略报告：从困境走向新生 华创证券",
+      "summary": "2022 食品饮料行业2022年度策略报告：从困境走向新生 华创证券",
+      "tags": [
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/b119d1aefaf8",
+      "type": "file",
+      "size": 3355406,
+      "created_time": 1741660221272,
+      "modified_time": 1741660221272,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4bcbbe07c6d447e589d998cbe0904265",
+      "title": "2022 中国新茶饮供应链白皮书,2022--沙利文-2022-130页",
+      "summary": "2022 中国新茶饮供应链白皮书,2022--沙利文-2022-130页",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/1d984d43657f",
+      "type": "file",
+      "size": 6233074,
+      "created_time": 1741660203434,
+      "modified_time": 1741660203434,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a06694c66a47412cac9f696b4ebff73d",
+      "title": "2023 茶饮行业新消费研究之咖啡系列报告：瑞幸咖啡核心十四问-民生证券",
+      "summary": "2023 茶饮行业新消费研究之咖啡系列报告：瑞幸咖啡核心十四问-民生证券",
+      "tags": [
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/a5f63eecfb80",
+      "type": "file",
+      "size": 4429408,
+      "created_time": 1741660231956,
+      "modified_time": 1741660231956,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "382f3ac120734656a23dcb583b306f78",
+      "title": "2023 弘则研究-无糖茶饮料行业深度报告：无糖茶饮料风起，强文化根基孕育广阔天地",
+      "summary": "2023 弘则研究-无糖茶饮料行业深度报告：无糖茶饮料风起，强文化根基孕育广阔天地",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/d94827d0a6d2",
+      "type": "file",
+      "size": 1645423,
+      "created_time": 1741660198346,
+      "modified_time": 1741660198346,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1b381332b7dc4bb5888686cc44dc1b56",
+      "title": "2023 解数第190期-咖啡行业调研—瑞幸、SINLOY、G7coffe-103页",
+      "summary": "2023 解数第190期-咖啡行业调研—瑞幸、SINLOY、G7coffe-103页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/7276f0f8d758",
+      "type": "file",
+      "size": 13300418,
+      "created_time": 1741660237871,
+      "modified_time": 1741660237871,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "79c97f11a09442f7baa63fe746f7fd6d",
+      "title": "2023 Q1-Q3酒类行业及重点品牌投放分析-2023.11-40页-WN11",
+      "summary": "2023 Q1-Q3酒类行业及重点品牌投放分析-2023.11-40页-WN11",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1439444,
+      "created_time": 1741660189569,
+      "modified_time": 1741660189569,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0667986bc634401b8a242ebf7a74ca14",
+      "title": "2023 Q1-Q3食品行业投放分析-2023.11-31页-WN11",
+      "summary": "2023 Q1-Q3食品行业投放分析-2023.11-31页-WN11",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1399037,
+      "created_time": 1741660192487,
+      "modified_time": 1741660192487,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "561d99d591c04461aab6155c9b3b2ea6",
+      "title": "2023 食品与餐饮连锁企业资本化指引参考手册第三册-网聚资本-2023-WN11",
+      "summary": "2023 食品与餐饮连锁企业资本化指引参考手册第三册-网聚资本-2023-WN11",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3017821,
+      "created_time": 1741660195294,
+      "modified_time": 1741660195294,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ba8797d0c76b47a9a4ae3cc178874c65",
+      "title": "2023 食品饮料品类大剧内容营销指南报告2023年版-腾讯",
+      "summary": "2023 食品饮料品类大剧内容营销指南报告2023年版-腾讯",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 11655836,
+      "created_time": 1741660249439,
+      "modified_time": 1741660249439,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6a7bf44a5fbc45d793dd6d1dbeaa0837",
+      "title": "2023 食品饮料行业报告：春糖反馈：信心持续恢复，分化继续扩大-中邮证券 听光Vic",
+      "summary": "2023 食品饮料行业报告：春糖反馈：信心持续恢复，分化继续扩大-中邮证券 听光Vic",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1537103,
+      "created_time": 1741660203940,
+      "modified_time": 1741660203940,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ba5719c6921d4ba69b453eb26742cda5",
+      "title": "2023 食品饮料行业深度研究-从河南市场看名酒全国化与地产酒崛起 国联证券",
+      "summary": "2023 食品饮料行业深度研究-从河南市场看名酒全国化与地产酒崛起 国联证券",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1949387,
+      "created_time": 1741660231041,
+      "modified_time": 1741660231041,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a134c08efc5d4a36a8ea07126e6d9351",
+      "title": "2023 食品饮料行业专题研究报告：暑期调研反馈，大众品需求改善，景气回升-20230816-国金证券-16页",
+      "summary": "2023 食品饮料行业专题研究报告：暑期调研反馈，大众品需求改善，景气回升-20230816-国金证券-16页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2700003,
+      "created_time": 1741660208042,
+      "modified_time": 1741660208042,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a55524de8b9141e08df835bd53cadb40",
+      "title": "2023 未来食品饮料成分观察2023-英敏特-202312(1)",
+      "summary": "2023 未来食品饮料成分观察2023-英敏特-202312(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 12533657,
+      "created_time": 1741660243210,
+      "modified_time": 1741660243210,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "13befeb53dbc42729ccd16059804e1b4",
+      "title": "2023 新茶饮研究报告-中国连锁经营协会&美团-2023-65页",
+      "summary": "2023 新茶饮研究报告-中国连锁经营协会&美团-2023-65页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 4684728,
+      "created_time": 1741660196731,
+      "modified_time": 1741660196731,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9307a48e2bc1424fafcb2c3b7763f78d",
+      "title": "2023 现制茶饮行业发展趋势报告-勤策消费研究",
+      "summary": "2023 现制茶饮行业发展趋势报告-勤策消费研究",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1296547,
+      "created_time": 1741660194120,
+      "modified_time": 1741660194120,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6882f7e7ce2946e6b7ba0e55698263cd",
+      "title": "2023 婴幼儿食品行业分析报告-炼丹炉(1)",
+      "summary": "2023 婴幼儿食品行业分析报告-炼丹炉(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 5352775,
+      "created_time": 1741660275442,
+      "modified_time": 1741660275442,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4387036cef3c427b80e80c08ee35bfc9",
+      "title": "2023 亚洲趋势报告：茶饮与现制咖啡篇-雀巢-2023-47页(1)",
+      "summary": "2023 亚洲趋势报告：茶饮与现制咖啡篇-雀巢-2023-47页(1)",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3781613,
+      "created_time": 1741660226247,
+      "modified_time": 1741660226247,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "63a2351c6a2149dbb50e2a68f9c58dd9",
+      "title": "2023 中国茶饮料行业市场规模测算逻辑模型-2023.10-16页-WN11",
+      "summary": "2023 中国茶饮料行业市场规模测算逻辑模型-2023.10-16页-WN11",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1416353,
+      "created_time": 1741660246828,
+      "modified_time": 1741660246828,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "229b12c5b3664f96ada0bfea9fa2d23b",
+      "title": "2023 中国茶饮品类发展报告2023-红餐大数据-2023-29页",
+      "summary": "2023 中国茶饮品类发展报告2023-红餐大数据-2023-29页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3725671,
+      "created_time": 1741660219461,
+      "modified_time": 1741660219461,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "49f65fd8d4604e3aa06d0b1734012655",
+      "title": "2023 中国餐饮业年度报告-2023.11-160页-WN11",
+      "summary": "2023 中国餐饮业年度报告-2023.11-160页-WN11",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 12639224,
+      "created_time": 1741660212892,
+      "modified_time": 1741660212892,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f2f14649205f4e7cac409a250f1e4215",
+      "title": "2023 【猫在家的咖啡馆】雀巢2023年度传播策略方案",
+      "summary": "2023 【猫在家的咖啡馆】雀巢2023年度传播策略方案",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 11759145,
+      "created_time": 1741660296116,
+      "modified_time": 1741660296116,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "65b9e70316d2488dbb5db8b268a2095e",
+      "title": "2023李雷与韩梅梅果蔬零食优选品牌IP整合设计方案(1)",
+      "summary": "2023李雷与韩梅梅果蔬零食优选品牌IP整合设计方案(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 19069450,
+      "created_time": 1741664593108,
+      "modified_time": 1741664593108,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ccdee69730a24c6aa76995cfb59a575e",
+      "title": "2023年包装即饮茶和植物饮料的市场和消费者洞察分析_益普索(1)",
+      "summary": "2023年包装即饮茶和植物饮料的市场和消费者洞察分析_益普索(1)（数据来源：益普索）",
+      "tags": [
+        "消费洞察",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2703197,
+      "created_time": 1741665800533,
+      "modified_time": 1741665800533,
+      "month": "",
+      "source": "益普索"
+    },
+    {
+      "token": "1e96d9022f3c456194a3b08842f733d9",
+      "title": "2023年中国茶饮料",
+      "summary": "2023年中国茶饮料",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 4970179,
+      "created_time": 1779764161742,
+      "modified_time": 1779764161742,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fa6205514afb49d0b9a84c23692b2c4d",
+      "title": "2023人民大食堂餐饮品牌视觉形象构思策划案",
+      "summary": "2023人民大食堂餐饮品牌视觉形象构思策划案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 17454045,
+      "created_time": 1779778602703,
+      "modified_time": 1779778602703,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0741f859fd8749ea9377d9797e236e09",
+      "title": "2023世界500强食品工厂开业典礼活动方案(1)",
+      "summary": "2023世界500强食品工厂开业典礼活动方案(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 43956775,
+      "created_time": 1741664320311,
+      "modified_time": 1741664320311,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4b06d59c3210470daa1fc833b98644bf",
+      "title": "2023西贝餐饮：品质提升与高质量发展培训课件(1)",
+      "summary": "2023西贝餐饮：品质提升与高质量发展培训课件(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 12445270,
+      "created_time": 1741664335076,
+      "modified_time": 1741664335076,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "e294275f4ed34005b7bd954f3909f676",
+      "title": "2024 2季度茶饮观察季报 凯爱瑞",
+      "summary": "2024 2季度茶饮观察季报 凯爱瑞",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2480403,
+      "created_time": 1741660229479,
+      "modified_time": 1741660229479,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c37c3e510d744a7d81bc62054b83bc3b",
+      "title": "2024 餐饮出海专题之一：中式餐饮出海机遇-华福证券 听光Vic",
+      "summary": "2024 餐饮出海专题之一：中式餐饮出海机遇-华福证券 听光Vic",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2244008,
+      "created_time": 1751271728000,
+      "modified_time": 1751271728000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "efa39a7093954592bd53bd494fc7f302",
+      "title": "2024 第一季度连锁餐饮品牌门店发展趋势蓝皮书 GeoQ智图",
+      "summary": "2024 第一季度连锁餐饮品牌门店发展趋势蓝皮书 GeoQ智图",
+      "tags": [
+        "趋势分析",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 14058809,
+      "created_time": 1741659163219,
+      "modified_time": 1741659163219,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "90a037f222824a4786a44a932c5ec6ff",
+      "title": "2024 H1食品行业趋势分析报告 击壤科技",
+      "summary": "2024 H1食品行业趋势分析报告 击壤科技",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 8859943,
+      "created_time": 1741660271174,
+      "modified_time": 1741660271174,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0d3997010b4a45ee922b62abfcfc9f08",
+      "title": "2024 精品咖啡发展趋势研究报告",
+      "summary": "2024 精品咖啡发展趋势研究报告",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6806636,
+      "created_time": 1741660213162,
+      "modified_time": 1741660213162,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "54020ea22a7c40c7978d0a15d13249e2",
+      "title": "2024 酒水饮料行业 红书618高质量增长攻略",
+      "summary": "2024 酒水饮料行业 红书618高质量增长攻略",
+      "tags": [
+        "行业报告",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 20245037,
+      "created_time": 1741660227995,
+      "modified_time": 1741660227995,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3738f0c675fa45e1ad5c32041c2c2cf1",
+      "title": "2024 可持续消费-食品饮料行业洞察报告 Impact Hub Shanghai & Makeable",
+      "summary": "2024 可持续消费-食品饮料行业洞察报告 Impact Hub Shanghai & Makeable",
+      "tags": [
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 17674659,
+      "created_time": 1741660270729,
+      "modified_time": 1741660270729,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "38e6e577335d405994f4b1bf45c31fb3",
+      "title": "2024 连锁新茶饮门店发展蓝皮书",
+      "summary": "2024 连锁新茶饮门店发展蓝皮书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 10824028,
+      "created_time": 1741660239723,
+      "modified_time": 1741660239723,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6a9eace2bd224f1eb11dbbb2c4da3abd",
+      "title": "2024 Q1酒类线上消费趋势洞察报告 飞瓜数据&飞瓜品策",
+      "summary": "2024 Q1酒类线上消费趋势洞察报告 飞瓜数据&飞瓜品策（数据来源：飞瓜）",
+      "tags": [
+        "趋势分析",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6505208,
+      "created_time": 1741660244374,
+      "modified_time": 1741660244374,
+      "month": "",
+      "source": "飞瓜"
+    },
+    {
+      "token": "61ae9b30c8fc43d1aa5997ae2fe23f63",
+      "title": "2024 如何破解中国食品饮料流行密码研究报告-寻找下一个“柠檬” 益普索",
+      "summary": "2024 如何破解中国食品饮料流行密码研究报告-寻找下一个“柠檬” 益普索（数据来源：益普索）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3965351,
+      "created_time": 1741660228632,
+      "modified_time": 1741660228632,
+      "month": "",
+      "source": "益普索"
+    },
+    {
+      "token": "0201b274748b414e9b30e38a60a29dce",
+      "title": "2024 上半年连锁餐饮品牌门店发展趋势蓝皮书 GeoQ智图",
+      "summary": "2024 上半年连锁餐饮品牌门店发展趋势蓝皮书 GeoQ智图",
+      "tags": [
+        "趋势分析",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4773043,
+      "created_time": 1741659174471,
+      "modified_time": 1741659174471,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6a7b8afd705644bb8c39f6ef8f0a844d",
+      "title": "2024 Shopee下半年食品与饮料选品参考指南报告(1)",
+      "summary": "2024 Shopee下半年食品与饮料选品参考指南报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2100133,
+      "created_time": 1741660226958,
+      "modified_time": 1741660226958,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3edaa3eff10941f1915dcab456f1b618",
+      "title": "2024 食品与餐饮连锁企业采购行情月度参考报告(2024年8月) 网聚资本",
+      "summary": "2024 食品与餐饮连锁企业采购行情月度参考报告(2024年8月) 网聚资本",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 11007455,
+      "created_time": 1741660277342,
+      "modified_time": 1741660277342,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "d54c6198a98d4fc2affe8cbf361762c8",
+      "title": "2024 食品饮料行业报告-整体板块情绪持续改善-茅台公告未来三年高分红方案 中邮证券",
+      "summary": "2024 食品饮料行业报告-整体板块情绪持续改善-茅台公告未来三年高分红方案 中邮证券",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 1502150,
+      "created_time": 1741660232388,
+      "modified_time": 1741660232388,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4fd583b020654847bf0018f62e395451",
+      "title": "2024 食品饮料行业ESG白皮书 荣续ESG智库研究中心",
+      "summary": "2024 食品饮料行业ESG白皮书 荣续ESG智库研究中心",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 11499241,
+      "created_time": 1741660234360,
+      "modified_time": 1741660234360,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "02cad82aa7e54746b2bc92d8a5405e32",
+      "title": "2024 新消费研究之咖啡系列报告：蜜雪古茗招股，咖啡和现制茶饮的对比研究",
+      "summary": "2024 新消费研究之咖啡系列报告：蜜雪古茗招股，咖啡和现制茶饮的对比研究",
+      "tags": [
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2248937,
+      "created_time": 1741660248315,
+      "modified_time": 1741660248315,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ed7f7d5be63f4d07893d53e9fab05d05",
+      "title": "2024 休闲零食市场趋势洞察报告 魔镜洞察",
+      "summary": "2024 休闲零食市场趋势洞察报告 魔镜洞察",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3768816,
+      "created_time": 1741660205501,
+      "modified_time": 1741660205501,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "d21f51309438427b9fd2096840e4a317",
+      "title": "2024 休闲食品POSM白皮书-新罐头工厂 听光Vic",
+      "summary": "2024 休闲食品POSM白皮书-新罐头工厂 听光Vic",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6046134,
+      "created_time": 1741660204865,
+      "modified_time": 1741660204865,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0f80c690f8894c2888fd1ceb01fce025",
+      "title": "2024 现制茶饮报告 MobTech研究院",
+      "summary": "2024 现制茶饮报告 MobTech研究院（数据来源：MobTech）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3595787,
+      "created_time": 1741660209776,
+      "modified_time": 1741660209776,
+      "month": "",
+      "source": "MobTech"
+    },
+    {
+      "token": "8e1adee2911a4c3d971ca0fb79ce365d",
+      "title": "2024 中国咖啡进出口贸易数据分析简报-农小蜂",
+      "summary": "2024 中国咖啡进出口贸易数据分析简报-农小蜂",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2930971,
+      "created_time": 1741660233742,
+      "modified_time": 1741660233742,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0fc5d8205d1b40cbbeb95ea31418930c",
+      "title": "2024 中国青年咖啡消费洞察报告-应帆科技×CBNData",
+      "summary": "2024 中国青年咖啡消费洞察报告-应帆科技×CBNData（数据来源：CBNData）",
+      "tags": [
+        "消费洞察",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 11662142,
+      "created_time": 1741660231709,
+      "modified_time": 1741660231709,
+      "month": "",
+      "source": "CBNData"
+    },
+    {
+      "token": "f4c37f3b18544bcf99b075639cb85d9d",
+      "title": "2024 中国乳制品行业趋势与展望-NIQ-2024-24页",
+      "summary": "2024 中国乳制品行业趋势与展望-NIQ-2024-24页",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2398812,
+      "created_time": 1741660238433,
+      "modified_time": 1741660238433,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "eaade9e010b54eba8cd183f9978ccfc0",
+      "title": "2024 中国新茶饮品牌门店分布及好店特征洞察报告",
+      "summary": "2024 中国新茶饮品牌门店分布及好店特征洞察报告",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 7054411,
+      "created_time": 1741660210293,
+      "modified_time": 1741660210293,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7d7ccb6005354ca28840c17491199ae9",
+      "title": "2024-2025食品饮料创新报告-CH FBIF",
+      "summary": "2024-2025食品饮料创新报告-CH FBIF",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 14593567,
+      "created_time": 1741660273094,
+      "modified_time": 1741660273094,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b950ec8b4c6347ee9853e02e35175226",
+      "title": "2024年现制茶饮报告(1)",
+      "summary": "2024年现制茶饮报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2414826,
+      "created_time": 1741664714167,
+      "modified_time": 1741664714167,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "50da4d1df4cb4f4c849a7b06b1422d7d",
+      "title": "2024年中国餐饮产业生态白皮书(1)",
+      "summary": "2024年中国餐饮产业生态白皮书(1)",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6353313,
+      "created_time": 1741666095426,
+      "modified_time": 1741666095426,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9ed70f92f9c64f84bbdb9f922f8fa9ce",
+      "title": "2024新茶饮供应链白皮书(1)",
+      "summary": "2024新茶饮供应链白皮书(1)",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4878741,
+      "created_time": 1741665947523,
+      "modified_time": 1741665947523,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "906b1d6903774a37b0a0f202c2c76a4c",
+      "title": "2024中国餐饮加盟行业白皮书(1)",
+      "summary": "2024中国餐饮加盟行业白皮书(1)",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 953583,
+      "created_time": 1741666088592,
+      "modified_time": 1741666088592,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "14d32d921a164671846b9e5233e41589",
+      "title": "2025 餐饮行业“漂亮饭”研究报告",
+      "summary": "2025 餐饮行业“漂亮饭”研究报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 4773278,
+      "created_time": 1765962728000,
+      "modified_time": 1765962728000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a292102429b14cfcaba7aa6be4fc24c7",
+      "title": "2025 东南亚零食电商行业市场洞察（2025年7月版）-TMOgroup-2025.7-45页",
+      "summary": "2025 东南亚零食电商行业市场洞察（2025年7月版）-TMOgroup-2025.7-45页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 26326810,
+      "created_time": 1753864878000,
+      "modified_time": 1753864878000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5e3325de9fa6451eac0ad22727fd5e8e",
+      "title": "2025 功能性食品产品创新解码-益普索-2025.6-52页",
+      "summary": "2025 功能性食品产品创新解码-益普索-2025.6-52页（数据来源：益普索）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 5460073,
+      "created_time": 1753782212000,
+      "modified_time": 1753782212000,
+      "month": "",
+      "source": "益普索"
+    },
+    {
+      "token": "ae374f4125744fd08d5dd4e290aeed2c",
+      "title": "2025 口服抗衰消费者趋势洞察报告-最终版-库润数据&功能食品圈-2025-35页",
+      "summary": "2025 口服抗衰消费者趋势洞察报告-最终版-库润数据&功能食品圈-2025-35页（数据来源：库润）",
+      "tags": [
+        "消费洞察",
+        "趋势分析",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 5182714,
+      "created_time": 1753782374000,
+      "modified_time": 1753782374000,
+      "month": "",
+      "source": "库润"
+    },
+    {
+      "token": "485c08ea79bc4852835013c81eaf01f2",
+      "title": "2025 连锁咖啡门店发展蓝皮书",
+      "summary": "2025 连锁咖啡门店发展蓝皮书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 16056194,
+      "created_time": 1770083370000,
+      "modified_time": 1770083370000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "e534e787df9547a1b088a8252c5fdfad",
+      "title": "2025 连锁零食门店发展蓝皮书",
+      "summary": "2025 连锁零食门店发展蓝皮书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 13523761,
+      "created_time": 1774843602000,
+      "modified_time": 1774843602000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "cff782400000457a89cf6dd7895c686b",
+      "title": "2025 天猫国际食品趋势白皮书",
+      "summary": "2025 天猫国际食品趋势白皮书",
+      "tags": [
+        "趋势分析",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 4791302,
+      "created_time": 1763520570000,
+      "modified_time": 1763520570000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1d8a7fb184b540139ffb0fbf10614be3",
+      "title": "2025 休闲零食专题系列报告（一）：量贩模式发展：渠道渗透与品类拓展机遇，行业双超对比思考",
+      "summary": "2025 休闲零食专题系列报告（一）：量贩模式发展：渠道渗透与品类拓展机遇，行业双超对比思考",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 6125789,
+      "created_time": 1755497054000,
+      "modified_time": 1755497054000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1b61df7a4742407aaaef612a271ac49b",
+      "title": "2025食品行业发展趋势报告-探迹-2025-30页",
+      "summary": "2025食品行业发展趋势报告-探迹-2025-30页",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 6789794,
+      "created_time": 1760631753133,
+      "modified_time": 1760631753133,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b503148e0d6448789e1ede74cadd207e",
+      "title": "2026 冻干食品行业深度报告：内需释放新动能，供应链创新驱动未来",
+      "summary": "2026 冻干食品行业深度报告：内需释放新动能，供应链创新驱动未来",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 1766034,
+      "created_time": 1769753942000,
+      "modified_time": 1769753942000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "8a69f279c6ac4cae827963686acc9cec",
+      "title": "2026 辅食零食类目电商消费趋势报告",
+      "summary": "2026 辅食零食类目电商消费趋势报告",
+      "tags": [
+        "趋势分析",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 4284496,
+      "created_time": 1779075445237,
+      "modified_time": 1779075445237,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c3f3c70399c949d3ac2732bfd1701dbb",
+      "title": "2026 连锁茶饮行业研究：市场扩容持续，供应链铸就头部壁垒-国金证券-2026.1.24-24页",
+      "summary": "2026 连锁茶饮行业研究：市场扩容持续，供应链铸就头部壁垒-国金证券-2026.1.24-24页",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 3893607,
+      "created_time": 1769753966000,
+      "modified_time": 1769753966000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "41761176dcb84b7dae07837e18311c48",
+      "title": "amble sheep精品咖啡",
+      "summary": "amble sheep精品咖啡",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 56635806,
+      "created_time": 1779778602676,
+      "modified_time": 1779778602676,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5d492bc440c14920997dafeadf8d42c1",
+      "title": "艾普思咨询：2024年4月餐饮行业舆情监测报告(1)",
+      "summary": "艾普思咨询：2024年4月餐饮行业舆情监测报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3849959,
+      "created_time": 1741665927094,
+      "modified_time": 1741665927094,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b395317e98e2460e8f85f90d8c893490",
+      "title": "安永：2024年新茶饮增长洞察白皮书(1)",
+      "summary": "安永：2024年新茶饮增长洞察白皮书(1)",
+      "tags": [
+        "行业白皮书",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5062455,
+      "created_time": 1741666118952,
+      "modified_time": 1741666118952,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "022a83fdac87441cb9e68dbebf13e048",
+      "title": "澳洲 2024 澳洲食品行业消费者行为洞察-库润数据-2024-49页",
+      "summary": "澳洲 2024 澳洲食品行业消费者行为洞察-库润数据-2024-49页（数据来源：库润）",
+      "tags": [
+        "消费洞察",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 9651583,
+      "created_time": 1751344554000,
+      "modified_time": 1751344554000,
+      "month": "",
+      "source": "库润"
+    },
+    {
+      "token": "a592542870b442b7878fa1a92b1b2276",
+      "title": "backslash：2023食品的未来报告(1)",
+      "summary": "backslash：2023食品的未来报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 23712157,
+      "created_time": 1741665830730,
+      "modified_time": 1741665830730,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "05440b095120404fada5ce806a008967",
+      "title": "八幡日料餐饮品牌招商加盟手册",
+      "summary": "八幡日料餐饮品牌招商加盟手册",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3990138,
+      "created_time": 1779764162248,
+      "modified_time": 1779764162248,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "69fa798b51ac46e1b5cad236360cfc00",
+      "title": "川财证券：休闲食品行业深度报告-休闲食品行业竞争白热化-产品品质和渠道优势为支撑点(1)",
+      "summary": "川财证券：休闲食品行业深度报告-休闲食品行业竞争白热化-产品品质和渠道优势为支撑点(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2014877,
+      "created_time": 1741665234474,
+      "modified_time": 1741665234474,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9de21ac71859462c8e208a8c2861d643",
+      "title": "CT-咖啡梦想家计划（外发0105）",
+      "summary": "CT-咖啡梦想家计划（外发0105）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 9325595,
+      "created_time": 1779778602662,
+      "modified_time": 1779778602662,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1ab3ff328a0d42299ad626b94540244c",
+      "title": "陈香贵牛肉面餐饮品牌简介",
+      "summary": "陈香贵牛肉面餐饮品牌简介",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 21541793,
+      "created_time": 1779764163063,
+      "modified_time": 1779764163063,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fbab7b53371f4d80b31036a983af070d",
+      "title": "川湘融合菜餐饮可实施整体方案",
+      "summary": "川湘融合菜餐饮可实施整体方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 12762760,
+      "created_time": 1779764161849,
+      "modified_time": 1779764161849,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "09eaeea9e71143df9c75cc6105211976",
+      "title": "餐饮店-桂味米屋运营方案",
+      "summary": "餐饮店-桂味米屋运营方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 22615531,
+      "created_time": 1779764161840,
+      "modified_time": 1779764161840,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b8481f8b8fb44f08b2d89ea1c0aa5d48",
+      "title": "餐饮设计就找意想国际(1)",
+      "summary": "餐饮设计就找意想国际(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 47426563,
+      "created_time": 1741665693442,
+      "modified_time": 1741665693442,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "e78b3fa7e2ed46d5827c55b87c253ae4",
+      "title": "餐饮行业指标体系",
+      "summary": "餐饮行业指标体系",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 183411,
+      "created_time": 1779764162235,
+      "modified_time": 1779764162235,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7e57b4a6ea2f49cbae7bc21bae9af7f6",
+      "title": "餐饮营销-劳姨牛杂品牌升级(1)",
+      "summary": "餐饮营销-劳姨牛杂品牌升级(1)",
+      "tags": [
+        "品牌研究",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5363601,
+      "created_time": 1741665185289,
+      "modified_time": 1741665185289,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "11f2795cc0e24860accdf15f7ae7ea44",
+      "title": "馋嘴猴食品CNY营销汇报案",
+      "summary": "馋嘴猴食品CNY营销汇报案",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 29528471,
+      "created_time": 1779764161759,
+      "modified_time": 1779764161759,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "93317704c5394df0b76f4b6445c6d57a",
+      "title": "厨子下山餐饮品牌年度策划方案",
+      "summary": "厨子下山餐饮品牌年度策划方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 231101624,
+      "created_time": 1779764162282,
+      "modified_time": 1779764162282,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a72b39616517434691be28241936e97a",
+      "title": "东南亚零食电商行业市场洞察",
+      "summary": "东南亚零食电商行业市场洞察",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 23837039,
+      "created_time": 1760425752000,
+      "modified_time": 1760425752000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9f55fda30c5b478cbd106487810b6456",
+      "title": "点蹄餐饮小吃品牌加盟手册",
+      "summary": "点蹄餐饮小吃品牌加盟手册",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 57161010,
+      "created_time": 1779764162012,
+      "modified_time": 1779764162012,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "450fc214312d43149814f47c9e675407",
+      "title": "二三线城市咖啡饮品通用活动提案 (1)",
+      "summary": "二三线城市咖啡饮品通用活动提案 (1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 8480175,
+      "created_time": 1779764162112,
+      "modified_time": 1779764162112,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b03cde2e66cb49ada90527df70543a22",
+      "title": "GeoQ智图：2023上半年连锁餐饮品牌门店发展趋势蓝皮书(1)",
+      "summary": "GeoQ智图：2023上半年连锁餐饮品牌门店发展趋势蓝皮书(1)",
+      "tags": [
+        "趋势分析",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 13566751,
+      "created_time": 1741665391408,
+      "modified_time": 1741665391408,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f3d5c630f3b0460d985ab19f839e8ec7",
+      "title": "红餐：餐饮行业月度观察报告(2024年3月)(1)",
+      "summary": "红餐：餐饮行业月度观察报告(2024年3月)(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 1359447,
+      "created_time": 1741666066503,
+      "modified_time": 1741666066503,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f9ef9d5db6444d34bf52d04acf6105aa",
+      "title": "红餐：中国餐饮品牌力白皮书2023(1)",
+      "summary": "红餐：中国餐饮品牌力白皮书2023(1)",
+      "tags": [
+        "行业白皮书",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 9432395,
+      "created_time": 1741665364369,
+      "modified_time": 1741665364369,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "130ff44a77ce48519466de14d3603d15",
+      "title": "红餐：中国餐饮食材发展报告2024(1)",
+      "summary": "红餐：中国餐饮食材发展报告2024(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 10677599,
+      "created_time": 1741666156724,
+      "modified_time": 1741666156724,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "39bf2e5f6339402182a1bbf8df2bee2b",
+      "title": "精典泰迪茶饮品牌宣传手册",
+      "summary": "精典泰迪茶饮品牌宣传手册",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4970116,
+      "created_time": 1779764163262,
+      "modified_time": 1779764163262,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2ace42fc2d0048c8a95bf0887e2c6350",
+      "title": "佳洁士请你白喝咖啡campagin(1)",
+      "summary": "佳洁士请你白喝咖啡campagin(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 19747356,
+      "created_time": 1741666054747,
+      "modified_time": 1741666054747,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b17624e6a6b14ea7b856650c817915f8",
+      "title": "击壤科技：2024年Q1食品行业趋势分析报告(1)",
+      "summary": "击壤科技：2024年Q1食品行业趋势分析报告(1)",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 335576,
+      "created_time": 1741665882899,
+      "modified_time": 1741665882899,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "28c3411596f047f3ade972b7def58ed8",
+      "title": "解数咨询：2023饮料行业调研报告(1)",
+      "summary": "解数咨询：2023饮料行业调研报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 21400042,
+      "created_time": 1741665363821,
+      "modified_time": 1741665363821,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a695907f41ca4e62a04aea92a7413040",
+      "title": "解数咨询：肉类&卤味零食行业调研(1)",
+      "summary": "解数咨询：肉类&卤味零食行业调研(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 10131728,
+      "created_time": 1741665260881,
+      "modified_time": 1741665260881,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3a034263f5dd4737a34294c99859da50",
+      "title": "凯爱瑞&饿了么：2024咖啡风味的地域之韵报告(1)",
+      "summary": "凯爱瑞&饿了么：2024咖啡风味的地域之韵报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4767409,
+      "created_time": 1741665867320,
+      "modified_time": 1741665867320,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "bead0f8e83b943e4aaa81292e89be2df",
+      "title": "凯爱瑞&饿了么：2024中国现制咖啡风味图谱报告(1)",
+      "summary": "凯爱瑞&饿了么：2024中国现制咖啡风味图谱报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5414398,
+      "created_time": 1741665931698,
+      "modified_time": 1741665931698,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1158950d791f47179ba9087e7f205ad6",
+      "title": "凯爱瑞：2024年1季度-茶饮观察季报(1)",
+      "summary": "凯爱瑞：2024年1季度-茶饮观察季报(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2628717,
+      "created_time": 1741665933754,
+      "modified_time": 1741665933754,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a13eea4c43e944e7acdd78f42a844d52",
+      "title": "咖啡店新媒体营销活动方案",
+      "summary": "咖啡店新媒体营销活动方案",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7687390,
+      "created_time": 1779764163392,
+      "modified_time": 1779764163392,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "01c97467915847caa4b5b7aa6c637bad",
+      "title": "咖啡店新媒体营销活动方案",
+      "summary": "咖啡店新媒体营销活动方案",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 38005977,
+      "created_time": 1779764161692,
+      "modified_time": 1779764161692,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a87ef6c6af504509bb942dfe8a65e7cf",
+      "title": "咖啡品牌双十一传播方案",
+      "summary": "咖啡品牌双十一传播方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 10890884,
+      "created_time": 1779764162187,
+      "modified_time": 1779764162187,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "51c612d7bfc140a49df02b76105723b9",
+      "title": "科思创&FoodTalks：2023可持续包装创新趋势白皮书-食品饮料企业如何实现“全面循环”",
+      "summary": "科思创&FoodTalks：2023可持续包装创新趋势白皮书-食品饮料企业如何实现“全面循环”",
+      "tags": [
+        "趋势分析",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 5374844,
+      "created_time": 1779764165239,
+      "modified_time": 1779764165239,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3343d7394b034a079ce970ec174dc072",
+      "title": "量贩零食行业专题报告：进入下半场，效率为王",
+      "summary": "量贩零食行业专题报告：进入下半场，效率为王",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3825475,
+      "created_time": 1779764161761,
+      "modified_time": 1779764161761,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "e29605e83fbc4e5a88330a1ea6077285",
+      "title": "LioLio婴儿食品市场部全年规划方案",
+      "summary": "LioLio婴儿食品市场部全年规划方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3392986,
+      "created_time": 1779778602517,
+      "modified_time": 1779778602517,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "dcc7694ed7ab4244b532b4fb740c743c",
+      "title": "六角售功能饮料品牌焕新方案",
+      "summary": "六角售功能饮料品牌焕新方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 9304346,
+      "created_time": 1779764161724,
+      "modified_time": 1779764161724,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "41a75c1edaf6447eb6cca4335f05347f",
+      "title": "蓝瓶咖啡Blue Bottle Coffee品牌资料全收录-品牌方案库独家出品-会员私享严禁外传",
+      "summary": "蓝瓶咖啡Blue Bottle Coffee品牌资料全收录-品牌方案库独家出品-会员私享严禁外传",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 85073342,
+      "created_time": 1779778602944,
+      "modified_time": 1779778602944,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "cbcbf124edc841708d66e1249ba6d0c2",
+      "title": "零食茶行业双11商家大会",
+      "summary": "零食茶行业双11商家大会",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5673648,
+      "created_time": 1779764162036,
+      "modified_time": 1779764162036,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5a85d8b19bce4991b0055393152f4c2c",
+      "title": "驴鲜生餐饮商业计划书",
+      "summary": "驴鲜生餐饮商业计划书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1972299,
+      "created_time": 1779778602414,
+      "modified_time": 1779778602414,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7d62f9c391b141859493761f3c7b43f3",
+      "title": "咪咕咖啡5月竞品报告",
+      "summary": "咪咕咖啡5月竞品报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4224431,
+      "created_time": 1779764162212,
+      "modified_time": 1779764162212,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "661ca78a06c84133b40f19ecf3762154",
+      "title": "猫屎咖啡品牌资料",
+      "summary": "猫屎咖啡品牌资料",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 29647291,
+      "created_time": 1779764162077,
+      "modified_time": 1779764162077,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5e05b95fc6e043f78ae1a5f55790fea5",
+      "title": "美团轻食品类运营指导手册",
+      "summary": "美团轻食品类运营指导手册",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1893401,
+      "created_time": 1779764215890,
+      "modified_time": 1779764215890,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "75f0dc74131c43e3b0b4e455d4688fc2",
+      "title": "漫崖咖啡商业计划书",
+      "summary": "漫崖咖啡商业计划书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1437548,
+      "created_time": 1779778602853,
+      "modified_time": 1779778602853,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4fc772cfdf9d4c49a80601b86b470be4",
+      "title": "猫在家的咖啡馆雀巢2023年度传播策略方案",
+      "summary": "猫在家的咖啡馆雀巢2023年度传播策略方案",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 10967249,
+      "created_time": 1779764162109,
+      "modified_time": 1779764162109,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6de48ac3d7f94dcfa04dd6b2863a599f",
+      "title": "尼尔森IQ：2024中国饮料行业趋势与展望报告(1)",
+      "summary": "尼尔森IQ：2024中国饮料行业趋势与展望报告(1)（数据来源：尼尔森）",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4448186,
+      "created_time": 1741666159778,
+      "modified_time": 1741666159778,
+      "month": "",
+      "source": "尼尔森"
+    },
+    {
+      "token": "1a07c85b0d0f4044b2002df104624e1f",
+      "title": "NICO女仆咖啡店商业计划书",
+      "summary": "NICO女仆咖啡店商业计划书",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2081569,
+      "created_time": 1779778602437,
+      "modified_time": 1779778602437,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "d230fc19177c487a81bc2f0b4400057d",
+      "title": "牛new寿喜烧日式餐饮品牌介绍",
+      "summary": "牛new寿喜烧日式餐饮品牌介绍",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 27207613,
+      "created_time": 1779764161685,
+      "modified_time": 1779764161685,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "bcf75ae2f64343a5b184d59305d99b08",
+      "title": "普华永道&CCFA：中国连锁餐饮企业资本之路系列报告2023(1)",
+      "summary": "普华永道&CCFA：中国连锁餐饮企业资本之路系列报告2023(1)（数据来源：普华永道）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 10067523,
+      "created_time": 1741665492829,
+      "modified_time": 1741665492829,
+      "month": "",
+      "source": "普华永道"
+    },
+    {
+      "token": "7b3714b4480f4e68a1a52c6260c8770f",
+      "title": "普华永道-中国连锁餐饮企业资本之路系列报告2023(1)",
+      "summary": "普华永道-中国连锁餐饮企业资本之路系列报告2023(1)（数据来源：普华永道）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 5384240,
+      "created_time": 1741665477631,
+      "modified_time": 1741665477631,
+      "month": "",
+      "source": "普华永道"
+    },
+    {
+      "token": "5d7e6772e1354595962810bcabf3f152",
+      "title": "雀巢胶囊咖啡机展会推广活动策划方案",
+      "summary": "雀巢胶囊咖啡机展会推广活动策划方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 10832467,
+      "created_time": 1779764161611,
+      "modified_time": 1779764161611,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f80c1f8698064fad96330d2da02cb7c9",
+      "title": "雀巢咖啡NDG樱花季传播方案",
+      "summary": "雀巢咖啡NDG樱花季传播方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7583848,
+      "created_time": 1779764162047,
+      "modified_time": 1779764162047,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "63b894dc03b5458c82e2b98ac9c4d203",
+      "title": "雀巢专业餐饮&辰智：2023中国中式餐饮白皮书(1)",
+      "summary": "雀巢专业餐饮&辰智：2023中国中式餐饮白皮书(1)",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 12716170,
+      "created_time": 1741665437491,
+      "modified_time": 1741665437491,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9f75ee1b0fa54436a46c9ebead128383",
+      "title": "雀巢专业餐饮：2023餐饮市场热点洞察报告(1)",
+      "summary": "雀巢专业餐饮：2023餐饮市场热点洞察报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 11919674,
+      "created_time": 1741665431126,
+      "modified_time": 1741665431126,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "23921777a9eb43f1bcbd1a5e30348a8d",
+      "title": "钱大妈餐饮线上+线下介绍",
+      "summary": "钱大妈餐饮线上+线下介绍",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4189319,
+      "created_time": 1779764162252,
+      "modified_time": 1779764162252,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c83b66d107ca4b35ad73c9d0e38c3453",
+      "title": "全球绿色联盟：中国植物性食品产业发展报告2022(1)",
+      "summary": "全球绿色联盟：中国植物性食品产业发展报告2022(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "",
+      "type": "file",
+      "size": 1748793,
+      "created_time": 1741665397701,
+      "modified_time": 1741665397701,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "867c743eedbb44858e48151a1326d779",
+      "title": "QuestMobile：2023年夏日经济之现制咖啡&茶饮市场洞察报告(1)",
+      "summary": "QuestMobile：2023年夏日经济之现制咖啡&茶饮市场洞察报告(1)（数据来源：QuestMobile）",
+      "tags": [
+        "行业报告",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2898693,
+      "created_time": 1741665285597,
+      "modified_time": 1741665285597,
+      "month": "",
+      "source": "QuestMobile"
+    },
+    {
+      "token": "2f4555ba5df14a1aafc965b374fa587e",
+      "title": "人民大食堂餐饮品牌视觉形象构思策划案(1)",
+      "summary": "人民大食堂餐饮品牌视觉形象构思策划案(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 17854118,
+      "created_time": 1741664413037,
+      "modified_time": 1741664413037,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9bcc94c909544395bb602f3bf01c6323",
+      "title": "瑞幸咖啡拿铁妇女节炒作规划",
+      "summary": "瑞幸咖啡拿铁妇女节炒作规划",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 28969256,
+      "created_time": 1779764162187,
+      "modified_time": 1779764162187,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1d5918391af94920b9bf491d0a446ada",
+      "title": "瑞幸咖啡新零售品牌招商手册PDF",
+      "summary": "瑞幸咖啡新零售品牌招商手册PDF",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 11597616,
+      "created_time": 1779778602509,
+      "modified_time": 1779778602509,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "083de39f75c04cbb9a701f00a1fb9f5f",
+      "title": "石基信息：2024酒店餐饮对客服务正在变革技术如何弥合差距报告(1)",
+      "summary": "石基信息：2024酒店餐饮对客服务正在变革技术如何弥合差距报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 3800494,
+      "created_time": 1741665930749,
+      "modified_time": 1741665930749,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "dffa7e4a5fae4cbab05d331b0630c6cd",
+      "title": "沙利文：2024中国食品饮料行业白皮书(1)",
+      "summary": "沙利文：2024中国食品饮料行业白皮书(1)",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5640649,
+      "created_time": 1741664653156,
+      "modified_time": 1741664653156,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "329c0b1eeb0c4247b2b2de02138c3873",
+      "title": "食品冷链行业物流与供应链数字化转型白皮书(1)",
+      "summary": "食品冷链行业物流与供应链数字化转型白皮书(1)",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4398097,
+      "created_time": 1741665911112,
+      "modified_time": 1741665911112,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "eba2e754417a44739557798add4484a9",
+      "title": "Tims 咖啡中国品牌介绍(1)",
+      "summary": "Tims 咖啡中国品牌介绍(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 29168603,
+      "created_time": 1741664921566,
+      "modified_time": 1741664921566,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "97ae0c3b8b344b7c9ccf6ea0144c9962",
+      "title": "台湾农业文创食品案例-掌声谷粒(1)",
+      "summary": "台湾农业文创食品案例-掌声谷粒(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5015875,
+      "created_time": 1741665187171,
+      "modified_time": 1741665187171,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fdd7c0471b324b9d89f327d46d7c6e25",
+      "title": "网聚资本：食品与餐饮连锁企业采购行情月度参考（2023.8)(1)",
+      "summary": "网聚资本：食品与餐饮连锁企业采购行情月度参考（2023.8)(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 10358013,
+      "created_time": 1741665761966,
+      "modified_time": 1741665761966,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b18d99dd3c09444da0677cb0263c3c2f",
+      "title": "网聚资本：食品与餐饮连锁企业来购行情月度参考 (2023.9)(1)",
+      "summary": "网聚资本：食品与餐饮连锁企业来购行情月度参考 (2023.9)(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 10534910,
+      "created_time": 1741665233119,
+      "modified_time": 1741665233119,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3d74ab2c7e35468a8cde1ea655216831",
+      "title": "万利吃饭公司黄金大茶饭广东港式奶茶餐饮品牌设计方案(1)",
+      "summary": "万利吃饭公司黄金大茶饭广东港式奶茶餐饮品牌设计方案(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7063713,
+      "created_time": 1779778602684,
+      "modified_time": 1779778602684,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "292c323ff1964a89a62c21e235207bb6",
+      "title": "万利吃饭公司黄金大茶饭广东港式奶茶餐饮品牌设计方案",
+      "summary": "万利吃饭公司黄金大茶饭广东港式奶茶餐饮品牌设计方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7063713,
+      "created_time": 1779764161772,
+      "modified_time": 1779764161772,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6ffa4c850a52447690f0cdbfa60b81ea",
+      "title": "网易易见咖啡",
+      "summary": "网易易见咖啡",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 55160823,
+      "created_time": 1779764161754,
+      "modified_time": 1779764161754,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f45b2612fc7f46bea84624410ec5eb90",
+      "title": "香菇酱食品线上传播推广策划方案",
+      "summary": "香菇酱食品线上传播推广策划方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 14648061,
+      "created_time": 1779764161729,
+      "modified_time": 1779764161729,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0e7f1a3e9a814808bf703fb7a7212d59",
+      "title": "休闲零食行业深度报告：解码小零食的大单品之路——从奥利奥说起",
+      "summary": "休闲零食行业深度报告：解码小零食的大单品之路——从奥利奥说起",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2259332,
+      "created_time": 1741660225852,
+      "modified_time": 1741660225852,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "194752a01fe44abc8847c5cfedccbfb6",
+      "title": "源达信息：休闲食品专题研究系列一-休闲食品市场发展潜力可期-新渠道、新品类成行业突破口(1)",
+      "summary": "源达信息：休闲食品专题研究系列一-休闲食品市场发展潜力可期-新渠道、新品类成行业突破口(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1114944,
+      "created_time": 1741665363881,
+      "modified_time": 1741665363881,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "828ccb79616b41c7b3f8a28b1be3293b",
+      "title": "扬帆逐浪，开启零食行业的全渠道战略-尼尔森IQ-202308(1)",
+      "summary": "扬帆逐浪，开启零食行业的全渠道战略-尼尔森IQ-202308(1)（数据来源：尼尔森）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 9395349,
+      "created_time": 1741665757520,
+      "modified_time": 1741665757520,
+      "month": "",
+      "source": "尼尔森"
+    },
+    {
+      "token": "22953fac98e443478d78c30d844a2f1e",
+      "title": "怡泉蜜水柠檬饮料新品线下活动执行方案",
+      "summary": "怡泉蜜水柠檬饮料新品线下活动执行方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2437366,
+      "created_time": 1779764162288,
+      "modified_time": 1779764162288,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c184f305bc824a378c649d97d78a289c",
+      "title": "艺术料理餐饮品牌标准化网红店策划案(1)",
+      "summary": "艺术料理餐饮品牌标准化网红店策划案(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 22002414,
+      "created_time": 1741664493027,
+      "modified_time": 1741664493027,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "dc609189691545f38f190a11760321d5",
+      "title": "中国餐饮品牌力白皮书",
+      "summary": "中国餐饮品牌力白皮书",
+      "tags": [
+        "行业白皮书",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5941634,
+      "created_time": 1779764161734,
+      "modified_time": 1779764161734,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c42114b68ad54e7e969e4418f2743274",
+      "title": "中国餐饮食材发展报告2024(1)",
+      "summary": "中国餐饮食材发展报告2024(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 4375820,
+      "created_time": 1741666110295,
+      "modified_time": 1741666110295,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c55827ee42434f49af8e6cda1d4d8ead",
+      "title": "中国连锁咖啡行业研究报告(1)",
+      "summary": "中国连锁咖啡行业研究报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 14436637,
+      "created_time": 1741665300544,
+      "modified_time": 1741665300544,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b06bfdc41f0b460697033671b222c601",
+      "title": "中国银河：软饮料行业深度报告（系列三）-如何理解当前包装水行业竞争格局？",
+      "summary": "中国银河：软饮料行业深度报告（系列三）-如何理解当前包装水行业竞争格局？",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7213526,
+      "created_time": 1741660193952,
+      "modified_time": 1741660193952,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "48d365cbe4bf480a8dc4ed949eb71f2c",
+      "title": "中国饮料功能化趋势及发展机遇——新常态下的“变与不变”",
+      "summary": "中国饮料功能化趋势及发展机遇——新常态下的“变与不变”",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3981847,
+      "created_time": 1754362894000,
+      "modified_time": 1754362894000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "36c11c399b394929b442b13644b80859",
+      "title": "知家DTC：2023食品饮料行业DTC营销白皮书(1)",
+      "summary": "知家DTC：2023食品饮料行业DTC营销白皮书(1)",
+      "tags": [
+        "行业报告",
+        "行业白皮书",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 6668873,
+      "created_time": 1741665433817,
+      "modified_time": 1741665433817,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "11d9d77edbc44121800bee3820dd98b1",
+      "title": "中泰证券：休闲零食行业深度报告-解码小零食的大单品之路——从奥利奥说起",
+      "summary": "中泰证券：休闲零食行业深度报告-解码小零食的大单品之路——从奥利奥说起",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2186458,
+      "created_time": 1741660284728,
+      "modified_time": 1741660284728,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "975f48303b0b4cb0928dabf117c73f02",
+      "title": "致同：2023农业与食品行业的创新科技发展报告(1)",
+      "summary": "致同：2023农业与食品行业的创新科技发展报告(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 815462,
+      "created_time": 1741665250943,
+      "modified_time": 1741665250943,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f4439a9572af40008f8cf60346f78d42",
+      "title": "中信证券-咖啡机入坑指南",
+      "summary": "中信证券-咖啡机入坑指南",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1914536,
+      "created_time": 1741660287637,
+      "modified_time": 1741660287637,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "23d9c45260b849dea6a7d1c427df43a7",
+      "title": "中邮证券：咖啡赛道方兴未艾-探讨瑞幸品牌竞争力(1)",
+      "summary": "中邮证券：咖啡赛道方兴未艾-探讨瑞幸品牌竞争力(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 3283982,
+      "created_time": 1741665840849,
+      "modified_time": 1741665840849,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "001d1db3400645b9abcb5001f959925b",
+      "title": "【餐饮】李先生 品牌升级战略方案",
+      "summary": "【餐饮】李先生 品牌升级战略方案",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 6861450,
+      "created_time": 1741660188360,
+      "modified_time": 1741660188360,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "445cd097c2c3427d9aa54535f0793d85",
+      "title": "【快消品】2023馋嘴猴食品CNY营销汇报案",
+      "summary": "【快消品】2023馋嘴猴食品CNY营销汇报案",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 29902517,
+      "created_time": 1741660291094,
+      "modified_time": 1741660291094,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "cb629d25a1374e599ffe18b4f47cd629",
+      "title": "【品牌拆解】宝宝食品行业-七小七 解数咨询",
+      "summary": "【品牌拆解】宝宝食品行业-七小七 解数咨询",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 9350062,
+      "created_time": 1741660285993,
+      "modified_time": 1741660285993,
+      "month": "",
+      "source": ""
+    }
+  ],
+  "updated": "2026-05-26 18:03:10"
 }

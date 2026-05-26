@@ -1,6 +1,6 @@
 {
   "category": "服饰时尚",
-  "count": 4,
+  "count": 66,
   "dup_removed": 0,
   "files": [
     {
@@ -13,7 +13,7 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "https://pan.quark.cn/s/7acf2a6a6ad7",
+      "url": "https://pan.quark.cn/s/7d6f8384f97c",
       "type": "file",
       "size": 238095,
       "created_time": 1779778602501,
@@ -31,7 +31,7 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "https://pan.quark.cn/s/b56cc0646ac4",
+      "url": "https://pan.quark.cn/s/4a3e9d8fb9c4",
       "type": "file",
       "size": 243667,
       "created_time": 1779778602340,
@@ -49,7 +49,7 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "https://pan.quark.cn/s/a35d6688476c",
+      "url": "https://pan.quark.cn/s/bacb24e5e03b",
       "type": "file",
       "size": 302509,
       "created_time": 1779778602674,
@@ -67,14 +67,1156 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "https://pan.quark.cn/s/29492f0bc48e",
+      "url": "https://pan.quark.cn/s/dc5f5bc708c8",
       "type": "file",
       "size": 296996,
       "created_time": 1779778602662,
       "modified_time": 1779778602662,
       "month": "",
       "source": ""
+    },
+    {
+      "token": "caa39dfe007a45dea06080576b4f5007",
+      "title": "2019 全球时尚IP白皮书 CBNData&尚交所 ",
+      "summary": "2019 全球时尚IP白皮书 CBNData&尚交所 （数据来源：CBNData）",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2019",
+      "date": "2019",
+      "url": "https://pan.quark.cn/s/f5c2adfd513e",
+      "type": "file",
+      "size": 15696581,
+      "created_time": 1751342436000,
+      "modified_time": 1751342436000,
+      "month": "",
+      "source": "CBNData"
+    },
+    {
+      "token": "030e8dae22dd4871a692710dc7ed65d3",
+      "title": "2021 华福证券-朗姿股份-002612-医美业务稳健扩张，泛时尚业务方阵发展向好 1208",
+      "summary": "2021 华福证券-朗姿股份-002612-医美业务稳健扩张，泛时尚业务方阵发展向好 1208",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/8581ebfb26e9",
+      "type": "file",
+      "size": 2609587,
+      "created_time": 1751429770000,
+      "modified_time": 1751429770000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b3924f88429c4e718b02b03f962c2485",
+      "title": "2021 童颜少女针陆续获批上市，开启2021再生医美元年 20210818-东方证券-纺织服装",
+      "summary": "2021 童颜少女针陆续获批上市，开启2021再生医美元年 20210818-东方证券-纺织服装",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2021",
+      "date": "2021",
+      "url": "https://pan.quark.cn/s/61ced9ba7c86",
+      "type": "file",
+      "size": 858866,
+      "created_time": 1751423506000,
+      "modified_time": 1751423506000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "86248e213839471d9705ce2aa9204559",
+      "title": "20220429-东方证券-纺织服装行业深度报告：胶原蛋白应用前景广阔，技术进步推动行业快速增长",
+      "summary": "20220429-东方证券-纺织服装行业深度报告：胶原蛋白应用前景广阔，技术进步推动行业快速增长",
+      "tags": [
+        "行业报告",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2022",
+      "date": "2022",
+      "url": "https://pan.quark.cn/s/4fa9962f6d21",
+      "type": "file",
+      "size": 1776778,
+      "created_time": 1741660003357,
+      "modified_time": 1741660003357,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "86eb3b7baf04441683dbdab0f09c0968",
+      "title": "2023 年服饰鞋靴行业发展趋势报告——腕表箱包篇-19页",
+      "summary": "2023 年服饰鞋靴行业发展趋势报告——腕表箱包篇-19页",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 1419129,
+      "created_time": 1741659994803,
+      "modified_time": 1741659994803,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fbd8950e484844049d6ff58408c069d5",
+      "title": "2023 Q2运动服饰机会洞察报告-鲨鱼裤瑜伽裤19页 听光Vic 知衣科技",
+      "summary": "2023 Q2运动服饰机会洞察报告-鲨鱼裤瑜伽裤19页 听光Vic 知衣科技",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2994832,
+      "created_time": 1741660001778,
+      "modified_time": 1741660001778,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "df4f677f16e24032bbe0bf69cb821c5f",
+      "title": "2023 天猫服饰行业春夏趋势白皮书",
+      "summary": "2023 天猫服饰行业春夏趋势白皮书",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 7917105,
+      "created_time": 1741660021973,
+      "modified_time": 1741660021973,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4343882154fd4902bbd65ab8405adf44",
+      "title": "2023 Y2K服装设计的场景化趋势研究",
+      "summary": "2023 Y2K服装设计的场景化趋势研究",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 5137338,
+      "created_time": 1741660037198,
+      "modified_time": 1741660037198,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2bc52df7ad5846f58a5b962de6a70b1c",
+      "title": "2023 运动鞋服市场洞察报告 魔镜洞察",
+      "summary": "2023 运动鞋服市场洞察报告 魔镜洞察",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 4623980,
+      "created_time": 1741659452967,
+      "modified_time": 1741659452967,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "66dd832c9f8b474985b7d44c5be0fb04",
+      "title": "2023时尚入侵&时尚白皮书-用Z世代的时尚需求预知非时尚领域的可能性 TBWA",
+      "summary": "2023时尚入侵&时尚白皮书-用Z世代的时尚需求预知非时尚领域的可能性 TBWA",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 9860551,
+      "created_time": 1741660171858,
+      "modified_time": 1741660171858,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7e958648611c4f3488a6848488c4fa19",
+      "title": "2023淘宝服饰行业春夏趋势白皮书",
+      "summary": "2023淘宝服饰行业春夏趋势白皮书",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 53572539,
+      "created_time": 1741660040303,
+      "modified_time": 1741660040303,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fcd2a89250374296ae4617381092ca62",
+      "title": "2024 阿里妈妈经营科学-行业白皮书 I 快消、食品、消费电子、服饰四大垂直行业经营科学解决方案",
+      "summary": "2024 阿里妈妈经营科学-行业白皮书 I 快消、食品、消费电子、服饰四大垂直行业经营科学解决方案",
+      "tags": [
+        "行业报告",
+        "行业白皮书",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 48722712,
+      "created_time": 1741660026804,
+      "modified_time": 1741660026804,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "60cd94511b2a403ebe4c74b435221b19",
+      "title": "2024 东莞服装产业带供应链物流洞察白皮书 运满满&引航咨询",
+      "summary": "2024 东莞服装产业带供应链物流洞察白皮书 运满满&引航咨询",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 1486995,
+      "created_time": 1741659995557,
+      "modified_time": 1741659995557,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "c78368adcc5b42ffb1d6669f73540d70",
+      "title": "2024 服饰行业Z世代人群洞察趋势报告 哔哩哔哩",
+      "summary": "2024 服饰行业Z世代人群洞察趋势报告 哔哩哔哩",
+      "tags": [
+        "消费洞察",
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 11799156,
+      "created_time": 1751263246000,
+      "modified_time": 1751263246000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "43f7ecdd8a164a69b99b41c7ae46da6b",
+      "title": "2024 品质内衣白皮书-网易新闻&MIOW&中国服装协会-2024-28页",
+      "summary": "2024 品质内衣白皮书-网易新闻&MIOW&中国服装协会-2024-28页",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 9675710,
+      "created_time": 1741660000967,
+      "modified_time": 1741660000967,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1d41c031aec84e31b201755b2825ed50",
+      "title": "2024 秋冬服饰潮流趋势白皮书 京东&魔镜洞察",
+      "summary": "2024 秋冬服饰潮流趋势白皮书 京东&魔镜洞察",
+      "tags": [
+        "趋势分析",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5176041,
+      "created_time": 1741659997386,
+      "modified_time": 1741659997386,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "6a852990d0c84d0db317b0a0f5219b23",
+      "title": "2024 全球服装潮流趋势洞察报告 飞书 ",
+      "summary": "2024 全球服装潮流趋势洞察报告 飞书 ",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 16395521,
+      "created_time": 1741660023423,
+      "modified_time": 1741660023423,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ec07cf108bc14c969ac52a50db2851a7",
+      "title": "2024 时尚潮流营销趋势洞察报告-艺恩-202403",
+      "summary": "2024 时尚潮流营销趋势洞察报告-艺恩-202403（数据来源：艺恩）",
+      "tags": [
+        "趋势分析",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 7534546,
+      "created_time": 1741660003645,
+      "modified_time": 1741660003645,
+      "month": "",
+      "source": "艺恩"
+    },
+    {
+      "token": "c9986884dc7a4d1892b94e983f1bd5ff",
+      "title": "2024 天风证券-朗姿股份-002612-服装为基、医美为翼，看好区域龙头全国化布局 0822",
+      "summary": "2024 天风证券-朗姿股份-002612-服装为基、医美为翼，看好区域龙头全国化布局 0822",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 1809497,
+      "created_time": 1741660471629,
+      "modified_time": 1741660471629,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "074bb87ec6cb4deebbd1b709b75f323a",
+      "title": "2024年秋冬服饰行业潮流趋势白皮书(1)",
+      "summary": "2024年秋冬服饰行业潮流趋势白皮书(1)",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5059615,
+      "created_time": 1741664722504,
+      "modified_time": 1741664722504,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9e5c3f5e6a294159a02a21e05dde37f3",
+      "title": "2024运动鞋服行业达人营销趋势洞察",
+      "summary": "2024运动鞋服行业达人营销趋势洞察",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 5765001,
+      "created_time": 1741660018120,
+      "modified_time": 1741660018120,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "94a795afc2b643748ce776cab1db485d",
+      "title": "2025 大码服装市场洞察报告-大数跨境-202501.pdf",
+      "summary": "2025 大码服装市场洞察报告-大数跨境-202501.pdf",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 9545970,
+      "created_time": 1751332700000,
+      "modified_time": 1751332700000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1d70cd45e8634f24834b6c9729ca6105",
+      "title": "2025 服饰品类白皮书",
+      "summary": "2025 服饰品类白皮书",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 5063464,
+      "created_time": 1755741836000,
+      "modified_time": 1755741836000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "14fd7dc11ebe47668eaa47a2034e7fdd",
+      "title": "2025 时尚消费力洞察报告 潮流新时 消费新世",
+      "summary": "2025 时尚消费力洞察报告 潮流新时 消费新世",
+      "tags": [
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 2385562,
+      "created_time": 1754383668000,
+      "modified_time": 1754383668000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "78ad569f68954793947cdfdb8b86a0a0",
+      "title": "2025 中国湿巾·柔巾行业趋势洞察-中国产业用纺织品&赛得利&河南逸祥-2025.9-49页",
+      "summary": "2025 中国湿巾·柔巾行业趋势洞察-中国产业用纺织品&赛得利&河南逸祥-2025.9-49页",
+      "tags": [
+        "趋势分析",
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 10659640,
+      "created_time": 1757928176000,
+      "modified_time": 1757928176000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4859cdb290944cb18d0e0af245fdc8a5",
+      "title": "2026 春上新时尚&妆容趋势-「粉彩风」春上新",
+      "summary": "2026 春上新时尚&妆容趋势-「粉彩风」春上新",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 2330248,
+      "created_time": 1769740386000,
+      "modified_time": 1769740386000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ff053b4c6ed548ea8b6ee6b6b6b0b7ec",
+      "title": "2026 Z世代和Alpha世代重塑时尚产业",
+      "summary": "2026 Z世代和Alpha世代重塑时尚产业",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 5396744,
+      "created_time": 1769755874000,
+      "modified_time": 1769755874000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "8598897485be421f9ef99dc719529153",
+      "title": "播美时尚女装品牌简介",
+      "summary": "播美时尚女装品牌简介",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 8310681,
+      "created_time": 1779764161795,
+      "modified_time": 1779764161795,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9face8f19c14413a9650aedb330dfa9e",
+      "title": "波士顿咨询：中国时尚行业的下一个十年：细分赛道的演进与机会(1)",
+      "summary": "波士顿咨询：中国时尚行业的下一个十年：细分赛道的演进与机会(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 4948557,
+      "created_time": 1741665219870,
+      "modified_time": 1741665219870,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "24c80539402e403791580f3d522cb11e",
+      "title": "ciboo童装时尚品牌 定位设计-181P",
+      "summary": "ciboo童装时尚品牌 定位设计-181P",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 47133952,
+      "created_time": 1741658893403,
+      "modified_time": 1741658893403,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "bbdb11b9bcb3454f8de8431c61cb190d",
+      "title": "Ciboo童装时尚品牌定位设计",
+      "summary": "Ciboo童装时尚品牌定位设计",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 46646135,
+      "created_time": 1779778602293,
+      "modified_time": 1779778602293,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4bbbb8f0b3ac4748b2de33a835838488",
+      "title": "蝉妈妈：中国雅事报告-电商掀起中国雅事的时尚狂潮(1)",
+      "summary": "蝉妈妈：中国雅事报告-电商掀起中国雅事的时尚狂潮(1)（数据来源：蝉妈妈）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 14602211,
+      "created_time": 1741665373605,
+      "modified_time": 1741665373605,
+      "month": "",
+      "source": "蝉妈妈"
+    },
+    {
+      "token": "18e44a4133884e85886ff8fa77bc3270",
+      "title": "菜鸟&中国服装科创研究院-RFID在大快消行业的应用报告 听光Vic",
+      "summary": "菜鸟&中国服装科创研究院-RFID在大快消行业的应用报告 听光Vic",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 18129010,
+      "created_time": 1741660024147,
+      "modified_time": 1741660024147,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "89a60ff36550449a8b7d5cb814cc8cba",
+      "title": "D-BOWLING潮流运动服饰品牌简介",
+      "summary": "D-BOWLING潮流运动服饰品牌简介",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 12665606,
+      "created_time": 1779764162271,
+      "modified_time": 1779764162271,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "12695926e78548be8b9fee52262a2acb",
+      "title": "飞书深诺：2024全球服装潮流趋势洞察报告-预见时尚(1)",
+      "summary": "飞书深诺：2024全球服装潮流趋势洞察报告-预见时尚(1)",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 16236187,
+      "created_time": 1741666068137,
+      "modified_time": 1741666068137,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b285e845928340a4b6c2195d4a595c84",
+      "title": "服装产品开发流程(1)",
+      "summary": "服装产品开发流程(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 9356481,
+      "created_time": 1741665602872,
+      "modified_time": 1741665602872,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "865a338d837647248ca748fddfaac178",
+      "title": "服装品牌传播策略(1)",
+      "summary": "服装品牌传播策略(1)",
+      "tags": [
+        "品牌研究",
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5122629,
+      "created_time": 1741665585086,
+      "modified_time": 1741665585086,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "584696e3721e4bb6bfc4de7bc7f5ae60",
+      "title": "服装品牌商品企划案例(1)",
+      "summary": "服装品牌商品企划案例(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 17460468,
+      "created_time": 1741665601369,
+      "modified_time": 1741665601369,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fc7a0df0ca6e4adbbbdec0ef1a96f7d1",
+      "title": "服装市场细分和品牌定位(1)",
+      "summary": "服装市场细分和品牌定位(1)",
+      "tags": [
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 9417707,
+      "created_time": 1741665603659,
+      "modified_time": 1741665603659,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4a1f6f1b3ac041098c7c39f322305fd7",
+      "title": "服装商品企划基础知识(1)",
+      "summary": "服装商品企划基础知识(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5286384,
+      "created_time": 1741665705094,
+      "modified_time": 1741665705094,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "98f3ef305bba499ab4626a7623610af0",
+      "title": "服装商品企划要素(1)",
+      "summary": "服装商品企划要素(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 16478091,
+      "created_time": 1741665602338,
+      "modified_time": 1741665602338,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "72e0278e452b4a22b84dbef667f26c0c",
+      "title": "服装商品组合策划(1)",
+      "summary": "服装商品组合策划(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7503317,
+      "created_time": 1741665589574,
+      "modified_time": 1741665589574,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "62a3b8799c214f0c8ad5bb1ad5e62443",
+      "title": "服装行业品牌种草白皮书",
+      "summary": "服装行业品牌种草白皮书",
+      "tags": [
+        "行业报告",
+        "行业白皮书",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 7956524,
+      "created_time": 1741659997191,
+      "modified_time": 1741659997191,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "efefa7c49bfc4fc684c995e68417db77",
+      "title": "G2000服装-SUMMER19新品发布会方案",
+      "summary": "G2000服装-SUMMER19新品发布会方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2000",
+      "date": "2000",
+      "url": "",
+      "type": "file",
+      "size": 13281315,
+      "created_time": 1779764161633,
+      "modified_time": 1779764161633,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ac26f7cbd0cf4c328a2e76956217a188",
+      "title": "果集行研：2023年H1服饰行业连衣裙品类市场趋势&热门品牌社媒分析报告(1)",
+      "summary": "果集行研：2023年H1服饰行业连衣裙品类市场趋势&热门品牌社媒分析报告(1)（数据来源：果集）",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 9539021,
+      "created_time": 1741665313839,
+      "modified_time": 1741665313839,
+      "month": "",
+      "source": "果集"
+    },
+    {
+      "token": "a847d13fb0ce4016be2808870ce4faac",
+      "title": "果集：2023年H1服饰行业防晒衣品类市场趋势&热门品牌社媒分析报告(1)",
+      "summary": "果集：2023年H1服饰行业防晒衣品类市场趋势&热门品牌社媒分析报告(1)（数据来源：果集）",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 15733036,
+      "created_time": 1741665793664,
+      "modified_time": 1741665793664,
+      "month": "",
+      "source": "果集"
+    },
+    {
+      "token": "059d4c3b1fdb4d10b31226f224b54143",
+      "title": "韩国电商与服装市场洞察",
+      "summary": "韩国电商与服装市场洞察",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2016633,
+      "created_time": 1749456058000,
+      "modified_time": 1749456058000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2c39cf299bc7413185e44a769a252f09",
+      "title": "Jeep服饰非汽车_Brand_Identity_Manual",
+      "summary": "Jeep服饰非汽车_Brand_Identity_Manual",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 13822868,
+      "created_time": 1779778602378,
+      "modified_time": 1779778602378,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fadc07969fd34a90bf37e5021af2add7",
+      "title": "基于O2O模式的个性服装大众化定制平台",
+      "summary": "基于O2O模式的个性服装大众化定制平台",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 6568258,
+      "created_time": 1779778602354,
+      "modified_time": 1779778602354,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "dda8e182fb9d4e188a803ecc09611625",
+      "title": "狼爪服饰618站内口碑种草规划",
+      "summary": "狼爪服饰618站内口碑种草规划",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 5993392,
+      "created_time": 1779778602209,
+      "modified_time": 1779778602209,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4fe5f47b429e41fca652ad9718ef0882",
+      "title": "MAIA ACTIVE_运动服饰品牌介绍",
+      "summary": "MAIA ACTIVE_运动服饰品牌介绍",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 14040753,
+      "created_time": 1779764161734,
+      "modified_time": 1779764161734,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ab097f75b8534ec5a4d9777b484063ad",
+      "title": "Mumu Family快时尚百货品牌画册",
+      "summary": "Mumu Family快时尚百货品牌画册",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 29571521,
+      "created_time": 1779764161835,
+      "modified_time": 1779764161835,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "bee201ba98114e02a16475ba5f0df1d5",
+      "title": "女性时尚研究（唯品会&腾讯，32页）",
+      "summary": "女性时尚研究（唯品会&腾讯，32页）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 2531242,
+      "created_time": 1741659102572,
+      "modified_time": 1741659102572,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "101e941c0b794362a3198b3027b026c8",
+      "title": "PPT模板（红色 时尚）",
+      "summary": "PPT模板（红色 时尚）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 17653393,
+      "created_time": 1779778602413,
+      "modified_time": 1779778602413,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "e805439916bc4b0eada4718d9cb0ca90",
+      "title": "首创证券：纺织服饰行业深度报告-毛纺行业集中度逐步提升-龙头盈利能力优势显著(1)",
+      "summary": "首创证券：纺织服饰行业深度报告-毛纺行业集中度逐步提升-龙头盈利能力优势显著(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 1607971,
+      "created_time": 1741665443270,
+      "modified_time": 1741665443270,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "85f6a312a2554cccb35d313879fe3141",
+      "title": "搜狐时尚100个有品位的人招商方案",
+      "summary": "搜狐时尚100个有品位的人招商方案",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 27326421,
+      "created_time": 1779764161744,
+      "modified_time": 1779764161744,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0d5eb0304ac044de83058ea95872f9ec",
+      "title": "时尚先生x腾讯x一汽奥迪FineLIVE翻浪四季歌会项目结案(1)",
+      "summary": "时尚先生x腾讯x一汽奥迪FineLIVE翻浪四季歌会项目结案(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 34088475,
+      "created_time": 1741664833976,
+      "modified_time": 1741664833976,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "db005915c6084d90b3f71ebb9153356a",
+      "title": "天猫服饰：2024天猫服饰多元场景科学保暖趋势白皮书(1)",
+      "summary": "天猫服饰：2024天猫服饰多元场景科学保暖趋势白皮书(1)",
+      "tags": [
+        "趋势分析",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 17493824,
+      "created_time": 1741665910968,
+      "modified_time": 1741665910968,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7d04270b082c4be0bb903c9f422b0820",
+      "title": "微博2016微博快时尚行业洞察报告-2017.3.15-44页",
+      "summary": "微博2016微博快时尚行业洞察报告-2017.3.15-44页（数据来源：微博）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2016",
+      "date": "2016",
+      "url": "",
+      "type": "file",
+      "size": 4008056,
+      "created_time": 1489988779795,
+      "modified_time": 1489988779795,
+      "month": "",
+      "source": "微博"
+    },
+    {
+      "token": "6834194710a44184976a2bc657fa1255",
+      "title": "微博数据中心-2016微博快时尚行业洞察报告-2017.3-44页",
+      "summary": "微博数据中心-2016微博快时尚行业洞察报告-2017.3-44页（数据来源：微博）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2016",
+      "date": "2016",
+      "url": "",
+      "type": "file",
+      "size": 3851315,
+      "created_time": 1490939580727,
+      "modified_time": 1490939580727,
+      "month": "",
+      "source": "微博"
+    },
+    {
+      "token": "d2a362f34d8f47cc85ee2e039bc96800",
+      "title": "艺恩数据：2023年8月服饰行业洞察报告(1)",
+      "summary": "艺恩数据：2023年8月服饰行业洞察报告(1)（数据来源：艺恩）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2304143,
+      "created_time": 1741665255983,
+      "modified_time": 1741665255983,
+      "month": "",
+      "source": "艺恩"
+    },
+    {
+      "token": "a53d447ca8b045cd941f7adc8cefc0e4",
+      "title": "遇见时尚：2024全球服装潮流趋势洞察(1)",
+      "summary": "遇见时尚：2024全球服装潮流趋势洞察(1)",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 8826531,
+      "created_time": 1741666060994,
+      "modified_time": 1741666060994,
+      "month": "",
+      "source": ""
     }
   ],
-  "updated": "2026-05-26 15:28:02"
+  "updated": "2026-05-26 18:03:10"
 }

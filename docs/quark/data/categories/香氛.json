@@ -1,7 +1,576 @@
 {
   "category": "香氛",
-  "count": 0,
+  "count": 30,
   "dup_removed": 0,
-  "files": [],
-  "updated": "2026-05-26 15:28:02"
+  "files": [
+    {
+      "token": "515fd0aa08c54afeb6e8371269a57564",
+      "title": "2019 中国香氛型洗发产品用户洞察白皮书-艾瑞咨询(1)",
+      "summary": "2019 中国香氛型洗发产品用户洞察白皮书-艾瑞咨询(1)（数据来源：艾瑞）",
+      "tags": [
+        "消费洞察",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2019",
+      "date": "2019",
+      "url": "https://pan.quark.cn/s/39a4f30c218a",
+      "type": "file",
+      "size": 4397469,
+      "created_time": 1751255796000,
+      "modified_time": 1751255796000,
+      "month": "",
+      "source": "艾瑞"
+    },
+    {
+      "token": "fea8b219778a49e994d21b50a537421c",
+      "title": "2023 解码中国Z世代的香氛经济白皮书-Vogue Business(1)",
+      "summary": "2023 解码中国Z世代的香氛经济白皮书-Vogue Business(1)",
+      "tags": [
+        "行业白皮书",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/17c594ed5b01",
+      "type": "file",
+      "size": 18292004,
+      "created_time": 1751262880000,
+      "modified_time": 1751262880000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "989d859831cb403a9929075da71dc177",
+      "title": "2023 解码中国Z世代的香氛经济白皮书-Vogue Business(2)",
+      "summary": "2023 解码中国Z世代的香氛经济白皮书-Vogue Business(2)",
+      "tags": [
+        "行业白皮书",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/1e5816ffd540",
+      "type": "file",
+      "size": 18292004,
+      "created_time": 1751262880000,
+      "modified_time": 1751262880000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "14f86bfd3ce4472e9b0eaa913d3ab152",
+      "title": "2023 解码中国Z世代的香氛经济白皮书-Vogue Business",
+      "summary": "2023 解码中国Z世代的香氛经济白皮书-Vogue Business",
+      "tags": [
+        "行业白皮书",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "https://pan.quark.cn/s/bff2d1a82fee",
+      "type": "file",
+      "size": 18292004,
+      "created_time": 1779778633021,
+      "modified_time": 1779778633021,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7dcc29015d2b4700a68514a31f8f5fc4",
+      "title": "2023 香水香氛消费者洞察白皮书-第一财经商业数据中心&天猫(1)",
+      "summary": "2023 香水香氛消费者洞察白皮书-第一财经商业数据中心&天猫(1)（数据来源：第一财经）",
+      "tags": [
+        "消费洞察",
+        "行业白皮书",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2627427,
+      "created_time": 1779778632953,
+      "modified_time": 1779778632953,
+      "month": "",
+      "source": "第一财经"
+    },
+    {
+      "token": "2011adcd96c94f5e82fe816716b48833",
+      "title": "2023 香水香氛消费者洞察白皮书-第一财经商业数据中心&天猫(2)",
+      "summary": "2023 香水香氛消费者洞察白皮书-第一财经商业数据中心&天猫(2)（数据来源：第一财经）",
+      "tags": [
+        "消费洞察",
+        "行业白皮书",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2627427,
+      "created_time": 1751424234000,
+      "modified_time": 1751424234000,
+      "month": "",
+      "source": "第一财经"
+    },
+    {
+      "token": "d873f20ac77b4c40ba2186619490e375",
+      "title": "2023 香水香氛消费者洞察白皮书-第一财经商业数据中心&天猫",
+      "summary": "2023 香水香氛消费者洞察白皮书-第一财经商业数据中心&天猫（数据来源：第一财经）",
+      "tags": [
+        "消费洞察",
+        "行业白皮书",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 2627427,
+      "created_time": 1741658763665,
+      "modified_time": 1741658763665,
+      "month": "",
+      "source": "第一财经"
+    },
+    {
+      "token": "a2c6712749004254b4d09b4dedce9079",
+      "title": "2023 香水行业消费趋势洞察报告-灰豚数据(1)",
+      "summary": "2023 香水行业消费趋势洞察报告-灰豚数据(1)",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3244645,
+      "created_time": 1779778633038,
+      "modified_time": 1779778633038,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "a1314c3998164384b5e0837425565829",
+      "title": "2023 香水行业消费趋势洞察报告-灰豚数据(2)",
+      "summary": "2023 香水行业消费趋势洞察报告-灰豚数据(2)",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3244645,
+      "created_time": 1751424330000,
+      "modified_time": 1751424330000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0e8eff4fc89e42459772f017af7319b6",
+      "title": "2023 香水行业消费趋势洞察报告-灰豚数据",
+      "summary": "2023 香水行业消费趋势洞察报告-灰豚数据",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 3244645,
+      "created_time": 1741658767470,
+      "modified_time": 1741658767470,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1317f2ae51f741508e76a33c44b22c11",
+      "title": "2023 中国香水行业研究白皮书-颖通中国",
+      "summary": "2023 中国香水行业研究白皮书-颖通中国",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 11312254,
+      "created_time": 1741658771360,
+      "modified_time": 1741658771360,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "0dac7e5063784df6aea3eb394f5d2194",
+      "title": "2023解码中国Z世代的香氛经济白皮书-Vogue Business",
+      "summary": "2023解码中国Z世代的香氛经济白皮书-Vogue Business",
+      "tags": [
+        "行业白皮书",
+        "经济分析"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 18292004,
+      "created_time": 1741660176748,
+      "modified_time": 1741660176748,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "340ae19ffd724d4ba7b09967984734ce",
+      "title": "2023香氛品牌宋朝品牌介绍手册",
+      "summary": "2023香氛品牌宋朝品牌介绍手册",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 16010401,
+      "created_time": 1751355320000,
+      "modified_time": 1751355320000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ce7dbe0d648e4172907a5ebf8e564346",
+      "title": "2024 香水消费市场趋势报告",
+      "summary": "2024 香水消费市场趋势报告",
+      "tags": [
+        "趋势分析",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2263542,
+      "created_time": 1741658769006,
+      "modified_time": 1741658769006,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "56f896ba34174f3c9326af9d613e78a5",
+      "title": "2024 中国香水香氛行业白皮书-益普索-2024-24页",
+      "summary": "2024 中国香水香氛行业白皮书-益普索-2024-24页（数据来源：益普索）",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 2404134,
+      "created_time": 1741658763554,
+      "modified_time": 1741658763554,
+      "month": "",
+      "source": "益普索"
+    },
+    {
+      "token": "caf5c09df9d54baa8a10cd8462ea43f0",
+      "title": "2024MEMO-法国艺术高奢香水品牌(1)",
+      "summary": "2024MEMO-法国艺术高奢香水品牌(1)",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 11669464,
+      "created_time": 1741664872579,
+      "modified_time": 1741664872579,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "cc34d53900c94354bdc0623cd4148d2e",
+      "title": "2025 香氛未来趋势The Future of ragrance 2025 CN Mintel",
+      "summary": "2025 香氛未来趋势The Future of ragrance 2025 CN Mintel",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 2789214,
+      "created_time": 1749629634000,
+      "modified_time": 1749629634000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9ce77735b6e24eadab1c4c648f5f9474",
+      "title": "2025 香水趋势报告（草稿）",
+      "summary": "2025 香水趋势报告（草稿）",
+      "tags": [
+        "趋势分析"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 7173208,
+      "created_time": 1751349136000,
+      "modified_time": 1751349136000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "407d9802299a46eb9345325f53c07460",
+      "title": "2025 香水消费者洞察报告-青眼情报-2025.6.25-47页",
+      "summary": "2025 香水消费者洞察报告-青眼情报-2025.6.25-47页",
+      "tags": [
+        "消费洞察",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 4507764,
+      "created_time": 1751265994000,
+      "modified_time": 1751265994000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b663b1b69ada4a5e93a03e13aea574b6",
+      "title": "2025 线上香水香氛消费趋势洞察 【用户说】精华版",
+      "summary": "2025 线上香水香氛消费趋势洞察 【用户说】精华版",
+      "tags": [
+        "趋势分析",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "",
+      "type": "file",
+      "size": 4128797,
+      "created_time": 1755941156000,
+      "modified_time": 1755941156000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "ed2c9d81439e4a52af58e90652d2eaf8",
+      "title": "2026 中国香水行业研究及消费者洞察报告(2)",
+      "summary": "2026 中国香水行业研究及消费者洞察报告(2)",
+      "tags": [
+        "消费洞察",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 5586593,
+      "created_time": 1774850472000,
+      "modified_time": 1774850472000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f9d7507d33444d85905f6ed0157bc957",
+      "title": "2026 中国香水行业研究及消费者洞察报告",
+      "summary": "2026 中国香水行业研究及消费者洞察报告",
+      "tags": [
+        "消费洞察",
+        "行业报告",
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "",
+      "type": "file",
+      "size": 5582267,
+      "created_time": 1774496556000,
+      "modified_time": 1774496556000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "2b47d66517f34120b8f6c1ba137ad8d2",
+      "title": "chillmore香氛品牌介绍",
+      "summary": "chillmore香氛品牌介绍",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 9343345,
+      "created_time": 1751357670000,
+      "modified_time": 1751357670000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "1b71cd82dc1e4ba7bb95c1ac72c54645",
+      "title": "城市便捷酒店睡得香香氛营销案例",
+      "summary": "城市便捷酒店睡得香香氛营销案例",
+      "tags": [
+        "营销策略"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 12714133,
+      "created_time": 1779764163664,
+      "modified_time": 1779764163664,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "3ce2b74286ea4dfeacc3b93febcb4e0d",
+      "title": "观夏 香氛产品手册 2024(1)",
+      "summary": "观夏 香氛产品手册 2024(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2024",
+      "date": "2024",
+      "url": "",
+      "type": "file",
+      "size": 6861458,
+      "created_time": 1741673252588,
+      "modified_time": 1741673252588,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "b7791d18cfc34f4f9fa5d64e648f46a5",
+      "title": "全季酒店--香氛设备布点原则20200806(1)",
+      "summary": "全季酒店--香氛设备布点原则20200806(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2020",
+      "date": "2020",
+      "url": "",
+      "type": "file",
+      "size": 3184299,
+      "created_time": 1741673390774,
+      "modified_time": 1741673390774,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "7f4a45d303e74f019b91f4bc6a58ea9a",
+      "title": "SEASONS季节香薰机社交种草方案(1)",
+      "summary": "SEASONS季节香薰机社交种草方案(1)",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 11046173,
+      "created_time": 1741664769483,
+      "modified_time": 1741664769483,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5f1d5b2c9cdf4934b785c36b7499600f",
+      "title": "新锐国潮香薰品牌 黑爪品牌介绍",
+      "summary": "新锐国潮香薰品牌 黑爪品牌介绍",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 32481501,
+      "created_time": 1751355482000,
+      "modified_time": 1751355482000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "9807f668472f469d864bae232344c018",
+      "title": "野兽青年-国潮香水品牌介绍",
+      "summary": "野兽青年-国潮香水品牌介绍",
+      "tags": [
+        "品牌研究"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "",
+      "type": "file",
+      "size": 14369120,
+      "created_time": 1751355264000,
+      "modified_time": 1751355264000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "90f95c7c651f4a60a1c4b9e6e939e4dc",
+      "title": "颖通中国：2023中国香水行业研究白皮书(1)",
+      "summary": "颖通中国：2023中国香水行业研究白皮书(1)",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2023",
+      "date": "2023",
+      "url": "",
+      "type": "file",
+      "size": 11245423,
+      "created_time": 1741665255028,
+      "modified_time": 1741665255028,
+      "month": "",
+      "source": ""
+    }
+  ],
+  "updated": "2026-05-26 18:03:10"
 }
