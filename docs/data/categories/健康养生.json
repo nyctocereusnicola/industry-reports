@@ -1,5 +1,23 @@
 {
   "category": "健康养生",
-  "file_count": 0,
-  "files": []
+  "file_count": 1,
+  "files": [
+    {
+      "token": "MoqhbSXgDoR7epxD1UGcOfEJn0g",
+      "title": "2019 中国【成人健康】管理白皮书",
+      "summary": "",
+      "tags": [
+        "健康养生",
+        "健康"
+      ],
+      "score": 57,
+      "year": "2019",
+      "date": "2019-01-01",
+      "url": "https://my.feishu.cn/file/MoqhbSXgDoR7epxD1UGcOfEJn0g",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-26",
+      "modified_time": "2026-05-26"
+    }
+  ]
 }

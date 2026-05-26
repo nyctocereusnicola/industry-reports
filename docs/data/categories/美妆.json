@@ -1,5 +1,57 @@
 {
   "category": "美妆",
-  "file_count": 0,
-  "files": []
+  "file_count": 3,
+  "files": [
+    {
+      "token": "MRo8bgkWtooBLsx3VspcdU5xnee",
+      "title": "小红书蒲公英 小红书护肤品类投放指南 2022",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "护肤"
+      ],
+      "score": 58,
+      "year": "2022",
+      "date": "2022-01-01",
+      "url": "https://my.feishu.cn/file/MRo8bgkWtooBLsx3VspcdU5xnee",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-26",
+      "modified_time": "2026-05-26"
+    },
+    {
+      "token": "RqMybPXYQopfsAxfJ2fcKu1knIg",
+      "title": "小红书蒲公英 彩妆类博主投放指南 2022",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "彩妆"
+      ],
+      "score": 58,
+      "year": "2022",
+      "date": "2022-01-01",
+      "url": "https://my.feishu.cn/file/RqMybPXYQopfsAxfJ2fcKu1knIg",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-26",
+      "modified_time": "2026-05-26"
+    },
+    {
+      "token": "G3ISbAhB1o7zeexohsAczYOIn4d",
+      "title": "小红书电商学习中心 小红书春上新-美妆个护行业玩法指南 2026",
+      "summary": "",
+      "tags": [
+        "美妆",
+        "美妆"
+      ],
+      "score": 59,
+      "year": "2026",
+      "date": "2026-01-01",
+      "url": "https://my.feishu.cn/file/G3ISbAhB1o7zeexohsAczYOIn4d",
+      "type": "file",
+      "size": 0,
+      "created_time": "2026-05-26",
+      "modified_time": "2026-05-26"
+    }
+  ]
 }
