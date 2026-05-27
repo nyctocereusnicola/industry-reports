@@ -102,32 +102,6 @@
         .search-wrap .clear-btn:hover{background:#f1f5f9}
         .search-wrap .clear-btn.visible{display:block}
 
-        /* 去重开关 */
-        .dedup-toggle{
-            display:flex;align-items:center;gap:6px;cursor:pointer;
-            font-size:12px;color:var(--text2);white-space:nowrap;
-            padding:6px 12px;border-radius:7px;transition:.15s;
-            background:#f8fafc;border:1px solid var(--border);
-            user-select:none;
-        }
-        .dedup-toggle:hover{background:var(--primary3);border-color:var(--primary2)}
-        .dedup-toggle input{width:14px;height:14px;accent-color:var(--primary);cursor:pointer}
-        .dedup-toggle .dt-label{font-weight:500}
-
-        /* 刷新按钮 */
-        .refresh-btn{
-            display:inline-flex;align-items:center;gap:6px;
-            padding:8px 16px;border-radius:7px;border:1px solid var(--primary);
-            background:var(--primary);color:#fff;font-size:12px;font-weight:600;
-            cursor:pointer;transition:.15s;white-space:nowrap;
-            font-family:inherit;
-        }
-        .refresh-btn:hover{background:var(--primary2);border-color:var(--primary2)}
-        .refresh-btn:active{transform:scale(.97)}
-        .refresh-btn.loading{opacity:.7;pointer-events:none}
-        .refresh-btn .rf-icon{font-size:15px;transition:transform .3s}
-        .refresh-btn.loading .rf-icon{animation:spin .7s linear infinite}
-
         /* 同步状态 */
         .sync-status{
             display:flex;align-items:center;gap:6px;
@@ -139,40 +113,6 @@
         .ss-dot.ok{background:#10b981;box-shadow:0 0 4px rgba(16,185,129,.4)}
         .ss-dot.old{background:#f59e0b;box-shadow:0 0 4px rgba(245,158,11,.4)}
         .ss-dot.err{background:#ef4444;box-shadow:0 0 4px rgba(239,68,68,.4)}
-
-        /* 重复标记 */
-        .card.dup-card{border-left:3px solid #f59e0b;opacity:.85}
-        .card.dup-card .c-dup-tag{
-            position:absolute;top:6px;left:6px;
-            font-size:9px;font-weight:600;padding:2px 7px;
-            border-radius:3px;background:#fef3c7;color:#b45309;
-        }
-
-        /* 统计面板 */
-        .stats-panel{
-            background:var(--card);margin:20px 24px 0;border-radius:var(--r);
-            border:1px solid var(--border);padding:20px 24px;
-            display:grid;grid-template-columns:200px 1fr 1fr;gap:24px;
-            align-items:start;
-        }
-        .stats-kpi{display:flex;flex-direction:column;gap:8px}
-        .stats-kpi .kpi-num{font-size:42px;font-weight:800;color:var(--primary);line-height:1}
-        .stats-kpi .kpi-label{font-size:13px;color:var(--text2)}
-        .stats-kpi .kpi-sub{font-size:11px;color:var(--text2)}
-        .stats-chart h4,.stats-dist h4{
-            font-size:12px;font-weight:600;color:var(--text2);
-            margin-bottom:10px;text-transform:uppercase;letter-spacing:.3px;
-        }
-        .bar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px}
-        .bar-row .bar-label{font-size:11px;width:64px;text-align:right;color:var(--text2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-        .bar-row .bar-track{flex:1;height:8px;background:#f1f5f9;border-radius:4px;overflow:hidden}
-        .bar-row .bar-fill{height:100%;border-radius:4px;background:var(--primary);transition:width .5s ease}
-        .bar-row .bar-val{font-size:10px;color:var(--text2);width:36px;text-align:right}
-        .trend-bars{display:flex;align-items:flex-end;gap:6px;height:80px;padding-top:4px}
-        .trend-bar-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px}
-        .trend-bar-item .tb-bar{width:100%;max-width:32px;background:var(--primary);border-radius:3px 3px 0 0;transition:height .5s ease;min-height:2px}
-        .trend-bar-item .tb-label{font-size:9px;color:var(--text2)}
-        .trend-bar-item .tb-val{font-size:10px;font-weight:600;color:var(--text)}
 
         /* 内容区 */
         .content{padding:20px 24px 40px}
@@ -262,7 +202,6 @@
         @media(max-width:768px){
             .sidebar{display:none}
             .main{margin-left:0}
-            .stats-panel{grid-template-columns:1fr;gap:16px}
             .grid{grid-template-columns:1fr}
             .content{padding:12px}
         }
@@ -303,35 +242,11 @@
             <input type="text" id="searchInp" placeholder="搜索标题、摘要、标签...">
             <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
         </div>
-        <label class="dedup-toggle" title="开启后隐藏重复报告">
-            <input type="checkbox" id="dedupChk" checked onchange="onDedup()">
-            <span class="dt-label">去重</span>
-        </label>
         <select class="sort-select" id="sourceSel" onchange="onSource()" style="width:auto;padding:5px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:#fff;outline:none;cursor:pointer">
             <option value="">全部来源</option>
             <option value="feishu">飞书</option>
             <option value="quark">夸克</option>
         </select>
-        <button class="refresh-btn" id="refreshBtn" onclick="refreshData()" title="重新拉取最新数据">
-            <span class="rf-icon">🔄</span> 刷新
-        </button>
-    </div>
-
-    <!-- 统计面板 -->
-    <div class="stats-panel" id="statsPanel">
-        <div class="stats-kpi">
-            <div class="kpi-num" id="kpiTotal">-</div>
-            <div class="kpi-label">报告总数</div>
-            <div class="kpi-sub" id="kpiUpdate">最近同步：加载中...</div>
-        </div>
-        <div class="stats-dist" id="distPanel">
-            <h4>🏷️ 行业分布 TOP 8</h4>
-            <div id="distBars"></div>
-        </div>
-        <div class="stats-chart" id="trendPanel">
-            <h4>📈 近期新增趋势（按年份）</h4>
-            <div id="trendBars" class="trend-bars"></div>
-        </div>
     </div>
 
     <!-- 内容 -->
@@ -339,9 +254,12 @@
         <div class="list-info">
             <span id="resultInfo">正在加载...</span>
             <select class="sort-select" id="sortSel" onchange="onSort()">
-                <option value="score">按质量评分 ↓</option>
-                <option value="date">按日期 ↓</option>
-                <option value="title">按标题 A-Z</option>
+                <option value="score-desc">按质量评分 高→低</option>
+                <option value="score-asc">按质量评分 低→高</option>
+                <option value="date-desc">按日期 新→旧</option>
+                <option value="date-asc">按日期 旧→新</option>
+                <option value="title-asc">按标题 A→Z</option>
+                <option value="title-desc">按标题 Z→A</option>
             </select>
         </div>
         <div class="grid" id="grid"></div>
@@ -367,15 +285,13 @@ const CATS = ["小红书","抖音","TikTok","营销方案","品牌手册",
               "跨境电商","其他"];
 
 // ==================== 全局状态 ====================
-let allData = [];         // 全部报告（已展开）
-let allRemoved = [];      // 被去重的报告
+let allData = [];         // 全部报告
 let catIdx = null;        // 飞书索引
 let quarkIdx = null;      // 夸克索引
 let curCat = "";
 let curPage = 1;
 let curSearch = "";
-let curSort = "score";
-let curDedup = true;      // 默认开启去重
+let curSort = "score-desc";
 let curSource = "";       // 来源筛选：""=全部, "feishu", "quark"
 
 // ==================== 初始化 ====================
@@ -443,54 +359,23 @@ function updateSyncStatus() {
     document.getElementById("sQuark").textContent = quarkTotal;
 }
 
-async function refreshData() {
-    const btn = document.getElementById("refreshBtn");
-    btn.classList.add("loading");
-    btn.querySelector(".rf-icon").textContent = "⏳";
-    btn.childNodes[1].textContent = " 刷新中...";
-
-    try {
-        await Promise.all([loadIdx(), loadQuarkIdx()]);
-        await loadAll();
-        btn.classList.remove("loading");
-        btn.querySelector(".rf-icon").textContent = "✅";
-        btn.childNodes[1].textContent = " 已刷新";
-        setTimeout(() => {
-            btn.querySelector(".rf-icon").textContent = "🔄";
-            btn.childNodes[1].textContent = " 刷新";
-        }, 2000);
-    } catch(e) {
-        btn.classList.remove("loading");
-        btn.querySelector(".rf-icon").textContent = "❌";
-        btn.childNodes[1].textContent = " 失败重试";
-        setTimeout(() => {
-            btn.querySelector(".rf-icon").textContent = "🔄";
-            btn.childNodes[1].textContent = " 刷新";
-        }, 3000);
-    }
-}
-
 async function loadAll() {
     document.getElementById("loadingBox").style.display = "block";
     document.getElementById("grid").innerHTML = "";
     document.getElementById("emptyBox").style.display = "none";
 
     // 并行加载飞书和夸克
-    const [feishuResult, quarkResult] = await Promise.all([
+    const [feishuFiles, quarkFiles] = await Promise.all([
         loadSource("data/categories/", "feishu"),
         loadSource("quark/data/categories/", "quark"),
     ]);
 
-    allData = [...feishuResult.files, ...quarkResult.files];
-    allRemoved = [...feishuResult.removed, ...quarkResult.removed];
+    allData = [...feishuFiles, ...quarkFiles];
     
-    const feishuTotal = allData.filter(f => f._source === "feishu").length;
-    const quarkTotal = allData.filter(f => f._source === "quark").length;
+    const feishuTotal = feishuFiles.length;
+    const quarkTotal = quarkFiles.length;
     document.getElementById("sFeishu").textContent = feishuTotal;
     document.getElementById("sQuark").textContent = quarkTotal;
-    
-    document.getElementById("kpiUpdate").textContent =
-        "最近同步：" + (catIdx?.updated || quarkIdx?.updated || "未知");
     
     document.getElementById("loadingBox").style.display = "none";
     refreshAll();
@@ -498,7 +383,6 @@ async function loadAll() {
 
 async function loadSource(basePath, source) {
     let merged = [];
-    let removedAll = [];
     for (const cat of CATS) {
         try {
             const r = await fetch(`${basePath}${cat}.json`);
@@ -507,20 +391,14 @@ async function loadSource(basePath, source) {
                 if (Array.isArray(d.files)) {
                     d.files.forEach(f => { f._cat = cat; f._source = source; merged.push(f); });
                 }
-                if (Array.isArray(d._removed)) {
-                    d._removed.forEach(f => {
-                        f._cat = cat; f._source = source; f._dup = true; removedAll.push(f);
-                    });
-                }
             }
         } catch(e) {}
     }
-    return { files: merged, removed: removedAll };
+    return merged;
 }
 
 function refreshAll() {
     renderNavCounts();
-    renderStats();
     renderGrid();
 }
 
@@ -539,13 +417,12 @@ function renderNav() {
 }
 
 function renderNavCounts() {
-    const total = curDedup ? allData.length : (allData.length + allRemoved.length);
+    const total = allData.length;
     document.getElementById("cAll").textContent = total;
     document.getElementById("sTotal").textContent = total;
 
     const catCounts = {};
-    const source = curDedup ? allData : [...allData, ...allRemoved];
-    source.forEach(r => { catCounts[r._cat] = (catCounts[r._cat] || 0) + 1; });
+    allData.forEach(r => { catCounts[r._cat] = (catCounts[r._cat] || 0) + 1; });
     CATS.forEach(cat => {
         const el = document.getElementById("c" + cat.replace(/\s/g,"_"));
         if (el) {
@@ -573,47 +450,9 @@ function setCat(cat) {
     refreshAll();
 }
 
-// ==================== 统计面板 ====================
-function renderStats() {
-    const filtered = getFiltered();
-
-    // KPI
-    document.getElementById("kpiTotal").textContent = filtered.length;
-
-    // 行业分布
-    const catDist = {};
-    filtered.forEach(r => { catDist[r._cat] = (catDist[r._cat] || 0) + 1; });
-    const sorted = Object.entries(catDist).sort((a,b) => b[1] - a[1]).slice(0, 8);
-    const maxV = sorted.length > 0 ? sorted[0][1] : 1;
-    const colors = ["#4f46e5","#06b6d4","#10b981","#f59e0b","#ef4444","#8b5cf6","#ec4899","#14b8a6"];
-    document.getElementById("distBars").innerHTML = sorted.map(([c,v],i) => `
-        <div class="bar-row">
-            <span class="bar-label">${c}</span>
-            <span class="bar-track"><span class="bar-fill" style="width:${(v/maxV*100).toFixed(0)}%;background:${colors[i]}"></span></span>
-            <span class="bar-val">${v}</span>
-        </div>
-    `).join("") || '<div style="font-size:12px;color:var(--text2)">暂无数据</div>';
-
-    // 年份趋势
-    const yrDist = {};
-    filtered.forEach(r => {
-        const yr = r.year || "未知";
-        yrDist[yr] = (yrDist[yr] || 0) + 1;
-    });
-    const yrSorted = Object.entries(yrDist).sort((a,b) => a[0].localeCompare(b[0]));
-    const yrMax = yrSorted.length > 0 ? Math.max(...yrSorted.map(([,v]) => v)) : 1;
-    document.getElementById("trendBars").innerHTML = yrSorted.map(([yr, v]) => `
-        <div class="trend-bar-item">
-            <div class="tb-val">${v}</div>
-            <div class="tb-bar" style="height:${Math.max(4,(v/yrMax*64)).toFixed(0)}px"></div>
-            <div class="tb-label">${yr}</div>
-        </div>
-    `).join("") || '<div style="font-size:12px;color:var(--text2)padding-top:10px">暂无数据</div>';
-}
-
 // ==================== 过滤 & 排序 ====================
 function getFiltered() {
-    let result = curDedup ? [...allData] : [...allData, ...allRemoved];
+    let result = [...allData];
     if (curCat) result = result.filter(r => r._cat === curCat);
     if (curSource) result = result.filter(r => r._source === curSource);
     if (curSearch) {
@@ -624,24 +463,25 @@ function getFiltered() {
             (r.tags || []).some(t => t.toLowerCase().includes(q))
         );
     }
-    // 排序
-    if (curSort === "score") result.sort((a,b) => (b.score||0) - (a.score||0));
-    else if (curSort === "date") result.sort((a,b) => (b.year||"").localeCompare(a.year||""));
-    else if (curSort === "title") result.sort((a,b) => (a.title||"").localeCompare(b.title||""));
+    // 双向排序
+    const [field, dir] = curSort.split("-");
+    if (field === "score") {
+        result.sort((a, b) => dir === "desc" ? (b.score||0) - (a.score||0) : (a.score||0) - (b.score||0));
+    } else if (field === "date") {
+        result.sort((a, b) => dir === "desc"
+            ? (b.year||"").localeCompare(a.year||"")
+            : (a.year||"").localeCompare(b.year||""));
+    } else if (field === "title") {
+        result.sort((a, b) => dir === "desc"
+            ? (b.title||"").localeCompare(a.title||"")
+            : (a.title||"").localeCompare(b.title||""));
+    }
     return result;
-}
-
-function onDedup() {
-    curDedup = document.getElementById("dedupChk").checked;
-    curPage = 1;
-    renderStats();
-    renderGrid();
 }
 
 function onSource() {
     curSource = document.getElementById("sourceSel").value;
     curPage = 1;
-    renderStats();
     renderGrid();
 }
 
@@ -683,13 +523,10 @@ function renderCard(r) {
     const srcTag = `<span style="background:#e8f5e9;color:#2e7d32;font-weight:600">${srcLabel}</span>`;
     const tags = (r.tags || []).slice(0, 3).map(t => `<span>${esc(t)}</span>`).join("");
     const date = fmtDate(r.date) || fmtDate(r.year);
-    const dupCls = r._dup ? " dup-card" : "";
-    const dupTag = r._dup ? `<span class="c-dup-tag">⚡ 重复</span>` : "";
 
     return `
-    <div class="card${dupCls}">
+    <div class="card">
         <span class="c-score ${scls}">${sc}</span>
-        ${dupTag}
         <div class="c-title">${esc(r.title)}</div>
         <div class="c-summary">${esc(r.summary) || "暂无摘要"}</div>
         <div class="c-tags">${catTag}${srcTag}${tags}</div>
@@ -711,9 +548,8 @@ function renderGrid() {
         paged.length ? paged.map(renderCard).join("") : "";
     document.getElementById("emptyBox").style.display =
         paged.length ? "none" : "block";
-    const dupInfo = (!curDedup && allRemoved.length) ? ` · 含 ${allRemoved.length} 篇重复` : "";
     document.getElementById("resultInfo").textContent =
-        total ? `共 ${total} 篇报告${dupInfo}` : "暂无数据";
+        total ? `共 ${total} 篇报告` : "暂无数据";
 
     // 分页
     const pag = document.getElementById("pagination");
@@ -747,7 +583,6 @@ document.addEventListener("DOMContentLoaded", () => {
         searchTimer = setTimeout(() => {
             curSearch = v;
             curPage = 1;
-            renderStats();
             renderGrid();
         }, 250);
     });
