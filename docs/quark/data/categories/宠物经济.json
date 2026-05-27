@@ -1,6 +1,6 @@
 {
   "category": "宠物经济",
-  "count": 69,
+  "count": 68,
   "dup_removed": 0,
   "files": [
     {
@@ -1120,24 +1120,6 @@
       "source": "亿欧"
     },
     {
-      "token": "0b28d58a883a4213ae430fee808e8e3a",
-      "title": "宠物行业SHOPEE市场概况-2025.7.18-陈蔓华xlsx",
-      "summary": "宠物行业SHOPEE市场概况-2025.7.18-陈蔓华xlsx",
-      "tags": [
-        "行业报告"
-      ],
-      "score": 50,
-      "year": "2025",
-      "date": "2025",
-      "url": "https://pan.quark.cn/s/bf86ff7ea391",
-      "type": "file",
-      "size": 132410,
-      "created_time": 1779778632904,
-      "modified_time": 1779778632904,
-      "month": "",
-      "source": ""
-    },
-    {
       "token": "6456edac6303460fb9cc3c36bad0409f",
       "title": "宠物用品互联网服务平台商业计划书",
       "summary": "宠物用品互联网服务平台商业计划书",
@@ -1220,7 +1202,7 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "https://pan.quark.cn/s/6b573f3b3d96",
+      "url": "https://pan.quark.cn/s/9cb455941f74",
       "type": "file",
       "size": 5183544,
       "created_time": 1741673187642,
@@ -1238,7 +1220,7 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "",
+      "url": "https://pan.quark.cn/s/4168eb63e876",
       "type": "file",
       "size": 4878360,
       "created_time": 1724460918000,
@@ -1256,7 +1238,7 @@
       "score": 50,
       "year": "2023",
       "date": "2023",
-      "url": "",
+      "url": "https://pan.quark.cn/s/8466c2b9896f",
       "type": "file",
       "size": 4577509,
       "created_time": 1741665784502,
@@ -1274,7 +1256,7 @@
       "score": 50,
       "year": "未知",
       "date": "未知",
-      "url": "",
+      "url": "https://pan.quark.cn/s/4249785ce748",
       "type": "file",
       "size": 4276487,
       "created_time": 1741660529110,
@@ -1283,5 +1265,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 14:40:50"
+  "updated": "2026-05-27 19:49:29"
 }
