@@ -1,6 +1,6 @@
 {
   "category": "美妆个护",
-  "count": 486,
+  "count": 489,
   "dup_removed": 0,
   "files": [
     {
@@ -6075,6 +6075,24 @@
       "source": ""
     },
     {
+      "token": "24f48a9b715a4a2f950e3c876b0cc912",
+      "title": "2026年祛痘护肤品市场分析-魔镜洞察",
+      "summary": "2026年祛痘护肤品市场分析-魔镜洞察",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/a5bb3c679dd4",
+      "type": "file",
+      "size": 2777566,
+      "created_time": 1779071350431,
+      "modified_time": 1779071350431,
+      "month": "",
+      "source": ""
+    },
+    {
       "token": "282e86f46b2149d387f52aea5bc8c368",
       "title": "安全评估检测：2021化妆品安全及监管要求(1)",
       "summary": "安全评估检测：2021化妆品安全及监管要求(1)",
@@ -6415,6 +6433,25 @@
       "size": 3600833,
       "created_time": 1766558224000,
       "modified_time": 1766558224000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5b44fdc8830b4013ba0585473c753285",
+      "title": "东南亚美妆市场机遇（白皮书）",
+      "summary": "东南亚美妆市场机遇（白皮书）",
+      "tags": [
+        "行业报告",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "https://pan.quark.cn/s/38b2dbf3c319",
+      "type": "file",
+      "size": 7466628,
+      "created_time": 1779863164596,
+      "modified_time": 1779863164596,
       "month": "",
       "source": ""
     },
@@ -8928,7 +8965,25 @@
       "modified_time": 1751420180000,
       "month": "",
       "source": ""
+    },
+    {
+      "token": "b49990fb4e9b411a91d3a6984e0ffdfd",
+      "title": "《美妆头条》2026年05月报-第20期",
+      "summary": "《美妆头条》2026年05月报-第20期",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/9e6f909ab8c7",
+      "type": "file",
+      "size": 10936132,
+      "created_time": 1778492437877,
+      "modified_time": 1778492437877,
+      "month": "",
+      "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:30"
 }

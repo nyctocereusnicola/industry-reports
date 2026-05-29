@@ -1,6 +1,6 @@
 {
   "category": "大健康",
-  "count": 398,
+  "count": 404,
   "dup_removed": 0,
   "files": [
     {
@@ -5148,6 +5148,24 @@
       "source": ""
     },
     {
+      "token": "deb1a6f6c1c74d16a038a39f561c0d17",
+      "title": "2025全球宠物医疗市场洞察报告",
+      "summary": "2025全球宠物医疗市场洞察报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2025",
+      "date": "2025",
+      "url": "https://pan.quark.cn/s/2f115f481106",
+      "type": "file",
+      "size": 9033888,
+      "created_time": 1778462290705,
+      "modified_time": 1778462290705,
+      "month": "",
+      "source": ""
+    },
+    {
       "token": "b24ca502fe134778bf40bbece226aa2f",
       "title": "2025“新养生主义”人群洞察报告  集瓜数据",
       "summary": "2025“新养生主义”人群洞察报告  集瓜数据",
@@ -5275,6 +5293,78 @@
       "size": 1140306,
       "created_time": 1779075406157,
       "modified_time": 1779075406157,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "5feb1f9b02e94b278806eedcccfbec5d",
+      "title": "2026巨量引擎健康行业618大促攻略",
+      "summary": "2026巨量引擎健康行业618大促攻略（数据来源：巨量）",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/b3842a1d5259",
+      "type": "file",
+      "size": 14766145,
+      "created_time": 1779332753509,
+      "modified_time": 1779332753509,
+      "month": "",
+      "source": "巨量"
+    },
+    {
+      "token": "3eac2fca691b4913aab2a5af65e07c8f",
+      "title": "2026年大健康的下一阶段报告-从功能消费到意义消费的跃迁",
+      "summary": "2026年大健康的下一阶段报告-从功能消费到意义消费的跃迁",
+      "tags": [
+        "消费趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/406d1656ce1c",
+      "type": "file",
+      "size": 1333279,
+      "created_time": 1778643231459,
+      "modified_time": 1778643231459,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "36669c12bcee4b969bb7d069cbea61cf",
+      "title": "2026中国大健康按摩足疗产业生存与发展白皮书",
+      "summary": "2026中国大健康按摩足疗产业生存与发展白皮书",
+      "tags": [
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/3db2f9677386",
+      "type": "file",
+      "size": 8766629,
+      "created_time": 1779689755317,
+      "modified_time": 1779689755317,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "f55d9d2d5d4242a9b4995e64c6891b06",
+      "title": "2026中国银龄阅读全景洞察报告",
+      "summary": "2026中国银龄阅读全景洞察报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/cff246e535c8",
+      "type": "file",
+      "size": 1140306,
+      "created_time": 1778808223688,
+      "modified_time": 1778808223688,
       "month": "",
       "source": ""
     },
@@ -7173,6 +7263,24 @@
       "source": ""
     },
     {
+      "token": "c418077c7a254e7981bb64a1ec0747f0",
+      "title": "中国医药：AI有望改变创新药研发范式",
+      "summary": "中国医药：AI有望改变创新药研发范式",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "未知",
+      "date": "未知",
+      "url": "https://pan.quark.cn/s/cc0f59e24586",
+      "type": "file",
+      "size": 5469557,
+      "created_time": 1779689756263,
+      "modified_time": 1779689756263,
+      "month": "",
+      "source": ""
+    },
+    {
       "token": "d53c8d21b70345e9a5a6cef5c8e2dddf",
       "title": "智慧健康养老云平台商业计划书",
       "summary": "智慧健康养老云平台商业计划书",
@@ -7282,5 +7390,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:30"
 }

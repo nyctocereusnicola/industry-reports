@@ -1,6 +1,6 @@
 {
   "category": "奢侈品",
-  "count": 23,
+  "count": 24,
   "dup_removed": 0,
   "files": [
     {
@@ -392,6 +392,27 @@
       "source": ""
     },
     {
+      "token": "a94f79c28bad44d79915561bf7c9d9a2",
+      "title": "奢侈品行业十字路口：2026年消费者与增长指南",
+      "summary": "奢侈品行业十字路口：2026年消费者与增长指南",
+      "tags": [
+        "消费洞察",
+        "行业报告",
+        "消费趋势",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/8305b4aaf9e5",
+      "type": "file",
+      "size": 2491287,
+      "created_time": 1779159983528,
+      "modified_time": 1779159983528,
+      "month": "",
+      "source": ""
+    },
+    {
       "token": "1bf4bc0aef7d42118fb1aa0b99ef4e6a",
       "title": "尧舜禹珠宝品牌战略定位策划创意案",
       "summary": "尧舜禹珠宝品牌战略定位策划创意案",
@@ -429,5 +450,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:31"
 }

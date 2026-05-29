@@ -1,6 +1,6 @@
 {
   "category": "户外运动",
-  "count": 67,
+  "count": 68,
   "dup_removed": 0,
   "files": [
     {
@@ -513,6 +513,24 @@
       "size": 9066619,
       "created_time": 1760631672846,
       "modified_time": 1760631672846,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "05a1ab5b851d41e4b05fe8eac89a219c",
+      "title": "2026年全球及中国跑步鞋行业独立研究报告",
+      "summary": "2026年全球及中国跑步鞋行业独立研究报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/f1c424737c07",
+      "type": "file",
+      "size": 1987724,
+      "created_time": 1778548064866,
+      "modified_time": 1778548064866,
       "month": "",
       "source": ""
     },
@@ -1223,5 +1241,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:31"
 }

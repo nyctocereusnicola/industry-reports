@@ -1,8 +1,26 @@
 {
   "category": "家居生活",
-  "count": 117,
+  "count": 118,
   "dup_removed": 0,
   "files": [
+    {
+      "token": "64bf8adf01cf4511bb0e81b84af44232",
+      "title": "05 2026亚马逊生活日用品类攻略手册",
+      "summary": "05 2026亚马逊生活日用品类攻略手册",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/c5925a395955",
+      "type": "file",
+      "size": 19666132,
+      "created_time": 1779266481306,
+      "modified_time": 1779266481306,
+      "month": "",
+      "source": ""
+    },
     {
       "token": "083a28d6259f4604bd9e00400c42be9c",
       "title": "2018 国货品质生活(1)",
@@ -2141,5 +2159,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:31"
 }

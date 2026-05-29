@@ -1,6 +1,6 @@
 {
   "category": "服饰时尚",
-  "count": 62,
+  "count": 63,
   "dup_removed": 0,
   "files": [
     {
@@ -503,6 +503,26 @@
       "size": 5396744,
       "created_time": 1769755874000,
       "modified_time": 1769755874000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "4f7309d2221d41089fbc6f87f6d1911d",
+      "title": "2026鞋服行业产品升级与增长机会白皮书-数字100",
+      "summary": "2026鞋服行业产品升级与增长机会白皮书-数字100",
+      "tags": [
+        "行业报告",
+        "行业白皮书",
+        "增长趋势"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/cb15ac8229a9",
+      "type": "file",
+      "size": 7815320,
+      "created_time": 1779332752789,
+      "modified_time": 1779332752789,
       "month": "",
       "source": ""
     },
@@ -1146,5 +1166,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:31"
 }

@@ -1,6 +1,6 @@
 {
   "category": "快消零售",
-  "count": 91,
+  "count": 92,
   "dup_removed": 0,
   "files": [
     {
@@ -797,6 +797,24 @@
       "size": 11385007,
       "created_time": 1774065200000,
       "modified_time": 1774065200000,
+      "month": "",
+      "source": ""
+    },
+    {
+      "token": "fcacd62a139b453683fb8dca01b52754",
+      "title": "2026 中国便利店发展报告",
+      "summary": "2026 中国便利店发展报告",
+      "tags": [
+        "行业报告"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/8b2b0171db96",
+      "type": "file",
+      "size": 7230144,
+      "created_time": 1779776378205,
+      "modified_time": 1779776378205,
       "month": "",
       "source": ""
     },
@@ -1676,5 +1694,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:31"
 }

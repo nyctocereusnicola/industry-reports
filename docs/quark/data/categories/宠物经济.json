@@ -1,6 +1,6 @@
 {
   "category": "宠物经济",
-  "count": 68,
+  "count": 69,
   "dup_removed": 0,
   "files": [
     {
@@ -1029,6 +1029,25 @@
       "source": ""
     },
     {
+      "token": "a2600acf9c56448eb01af890f5537e46",
+      "title": "2026年宠物新品趋势白皮书",
+      "summary": "2026年宠物新品趋势白皮书",
+      "tags": [
+        "趋势分析",
+        "行业白皮书"
+      ],
+      "score": 50,
+      "year": "2026",
+      "date": "2026",
+      "url": "https://pan.quark.cn/s/3936357cbc99",
+      "type": "file",
+      "size": 18335996,
+      "created_time": 1779153602584,
+      "modified_time": 1779153602584,
+      "month": "",
+      "source": ""
+    },
+    {
       "token": "f16b6e90a3824a458d5adb5aaff754df",
       "title": "宝路×京东5月宠物品类专场创意方案(1)",
       "summary": "宝路×京东5月宠物品类专场创意方案(1)",
@@ -1265,5 +1284,5 @@
       "source": ""
     }
   ],
-  "updated": "2026-05-27 19:49:29"
+  "updated": "2026-05-29 09:32:31"
 }
