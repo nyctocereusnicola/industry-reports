@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>行业报告仪表盘 — Industry Reports</title>
+    <title>行业报告仪表盘（夸克网盘） — Industry Reports</title>
     <style>
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         :root{
@@ -211,14 +211,13 @@
 
 <!-- ==================== 侧栏 ==================== -->
 <aside class="sidebar">
-    <div class="sb-logo">📊 行业报告<span>双源聚合</span></div>
+    <div class="sb-logo">📊 行业报告<span>夸克网盘</span></div>
     <div class="sb-sync" id="sbSync">
         <span class="ss-dot ok"></span>
         <span id="sbSyncText">数据就绪</span>
     </div>
     <div class="sb-stats">
         <div class="sb-stat"><strong id="sTotal">-</strong>总报告</div>
-        <div class="sb-stat"><strong id="sFeishu">-</strong>飞书</div>
         <div class="sb-stat"><strong id="sQuark">-</strong>夸克</div>
     </div>
     <nav class="sb-nav">
@@ -228,7 +227,7 @@
         </a>
         <div class="nav-hd" style="margin-top:6px">行业分类</div>
     </nav>
-    <div class="sb-foot">数据来源：飞书云端 + 夸克网盘 · GitHub Pages 托管</div>
+    <div class="sb-foot">数据来源：夸克网盘 · GitHub Pages 托管</div>
 </aside>
 
 <!-- ==================== 主区 ==================== -->
@@ -242,11 +241,7 @@
             <input type="text" id="searchInp" placeholder="搜索标题、摘要、标签...">
             <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
         </div>
-        <select class="sort-select" id="sourceSel" onchange="onSource()" style="width:auto;padding:5px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:#fff;outline:none;cursor:pointer">
-            <option value="">全部来源</option>
-            <option value="feishu">飞书</option>
-            <option value="quark">夸克</option>
-        </select>
+
     </div>
 
     <!-- 内容 -->
@@ -286,28 +281,18 @@ const CATS = ["小红书","抖音","TikTok","营销方案","品牌手册",
 
 // ==================== 全局状态 ====================
 let allData = [];         // 全部报告
-let catIdx = null;        // 飞书索引
 let quarkIdx = null;      // 夸克索引
 let curCat = "";
 let curPage = 1;
 let curSearch = "";
 let curSort = "score-desc";
-let curSource = "";       // 来源筛选：""=全部, "feishu", "quark"
 
 // ==================== 初始化 ====================
 function init() {
     renderNav();
-    Promise.all([loadIdx(), loadQuarkIdx()]).then(() => {
+    loadQuarkIdx().then(() => {
         loadAll();
     });
-}
-
-async function loadIdx() {
-    try {
-        const r = await fetch("data/categories/_index.json?" + Date.now());
-        if (r.ok) catIdx = await r.json();
-        updateSyncStatus();
-    } catch(e) { console.warn("飞书索引加载失败"); }
 }
 
 async function loadQuarkIdx() {
@@ -323,19 +308,14 @@ function updateSyncStatus() {
     const txt = document.getElementById("sbSyncText");
     const dot = el?.querySelector(".ss-dot");
     
-    // 取两个索引中较新的
-    const dates = [];
-    if (catIdx?.updated) dates.push(new Date(catIdx.updated));
-    if (quarkIdx?.updated) dates.push(new Date(quarkIdx.updated));
-    
-    if (dates.length === 0) {
+    if (!quarkIdx?.updated) {
         txt.textContent = "尚未同步";
         dot.className = "ss-dot err";
         el.className = "sb-sync outdated";
         return;
     }
     
-    const lastSync = new Date(Math.max(...dates));
+    const lastSync = new Date(quarkIdx.updated);
     const now = new Date();
     const diffMin = (now - lastSync) / 60000;
     if (diffMin < 60) {
@@ -353,9 +333,7 @@ function updateSyncStatus() {
     }
     
     // 更新统计
-    const feishuTotal = catIdx?.total_files || 0;
     const quarkTotal = quarkIdx?.total_files || 0;
-    document.getElementById("sFeishu").textContent = feishuTotal;
     document.getElementById("sQuark").textContent = quarkTotal;
 }
 
@@ -364,18 +342,13 @@ async function loadAll() {
     document.getElementById("grid").innerHTML = "";
     document.getElementById("emptyBox").style.display = "none";
 
-    // 并行加载飞书和夸克
-    const [feishuFiles, quarkFiles] = await Promise.all([
-        loadSource("data/categories/", "feishu"),
-        loadSource("quark/data/categories/", "quark"),
-    ]);
+    const quarkFiles = await loadSource("quark/data/categories/", "quark");
 
-    allData = [...feishuFiles, ...quarkFiles];
+    allData = quarkFiles;
     
-    const feishuTotal = feishuFiles.length;
     const quarkTotal = quarkFiles.length;
-    document.getElementById("sFeishu").textContent = feishuTotal;
     document.getElementById("sQuark").textContent = quarkTotal;
+    document.getElementById("sTotal").textContent = quarkTotal;
     
     document.getElementById("loadingBox").style.display = "none";
     refreshAll();
@@ -454,7 +427,6 @@ function setCat(cat) {
 function getFiltered() {
     let result = [...allData];
     if (curCat) result = result.filter(r => r._cat === curCat);
-    if (curSource) result = result.filter(r => r._source === curSource);
     if (curSearch) {
         const q = curSearch.toLowerCase();
         result = result.filter(r =>
@@ -477,12 +449,6 @@ function getFiltered() {
             : (a.title||"").localeCompare(b.title||""));
     }
     return result;
-}
-
-function onSource() {
-    curSource = document.getElementById("sourceSel").value;
-    curPage = 1;
-    renderGrid();
 }
 
 function onSort() {
@@ -519,8 +485,6 @@ function renderCard(r) {
     const sc = r.score || 50;
     const scls = scoreClass(sc);
     const catTag = r._cat ? `<span class="tag-cat">${esc(r._cat)}</span>` : "";
-    const srcLabel = r._source === "quark" ? "☁️ 夸克" : "💬 飞书";
-    const srcTag = `<span style="background:#e8f5e9;color:#2e7d32;font-weight:600">${srcLabel}</span>`;
     const tags = (r.tags || []).slice(0, 3).map(t => `<span>${esc(t)}</span>`).join("");
     const date = fmtDate(r.date) || fmtDate(r.year);
 
@@ -529,7 +493,7 @@ function renderCard(r) {
         <span class="c-score ${scls}">${sc}</span>
         <div class="c-title">${esc(r.title)}</div>
         <div class="c-summary">${esc(r.summary) || "暂无摘要"}</div>
-        <div class="c-tags">${catTag}${srcTag}${tags}</div>
+        <div class="c-tags">${catTag}${tags}</div>
         <div class="c-footer">
             <span class="c-date">📅 ${date}</span>
             <a class="c-link" href="${url}" target="_blank" rel="noopener">📄 查看原文 →</a>
