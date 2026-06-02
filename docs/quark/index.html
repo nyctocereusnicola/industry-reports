@@ -257,10 +257,10 @@
         <div class="list-info">
             <span id="resultInfo">正在加载...</span>
             <select class="sort-select" id="sortSel" onchange="onSort()">
+                <option value="date-desc">按日期 新→旧（默认）</option>
+                <option value="date-asc">按日期 旧→新</option>
                 <option value="score-desc">按质量评分 高→低</option>
                 <option value="score-asc">按质量评分 低→高</option>
-                <option value="date-desc">按日期 新→旧</option>
-                <option value="date-asc">按日期 旧→新</option>
                 <option value="title-asc">按标题 A→Z</option>
                 <option value="title-desc">按标题 Z→A</option>
             </select>
@@ -293,7 +293,7 @@ let catIdx = null;        // 索引
 let curCat = "";
 let curPage = 1;
 let curSearch = "";
-let curSort = "score-desc";
+let curSort = "date-desc";
 
 // ==================== 初始化 ====================
 function init() {
@@ -430,9 +430,16 @@ function getFiltered() {
     if (field === "score") {
         result.sort((a, b) => dir === "desc" ? (b.score||0) - (a.score||0) : (a.score||0) - (b.score||0));
     } else if (field === "date") {
-        result.sort((a, b) => dir === "desc"
-            ? (b.year||"").localeCompare(a.year||"")
-            : (a.year||"").localeCompare(b.year||""));
+        result.sort((a, b) => {
+            const ay = a.year||"", by = b.year||"";
+            const aUnknown = !ay || ay === "未知" || ay === "未知日期";
+            const bUnknown = !by || by === "未知" || by === "未知日期";
+            // 无日期的始终排最后
+            if (aUnknown && bUnknown) return 0;
+            if (aUnknown) return 1;
+            if (bUnknown) return -1;
+            return dir === "desc" ? by.localeCompare(ay) : ay.localeCompare(by);
+        });
     } else if (field === "title") {
         result.sort((a, b) => dir === "desc"
             ? (b.title||"").localeCompare(a.title||"")
